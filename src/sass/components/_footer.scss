@@ -1,0 +1,118 @@
+@media screen and (max-width: 700px) {
+  .footer {
+    .footer-wrapper {
+      padding-bottom: 40px;
+      ul {
+        &.contacts, &.contacts.contacts_next {
+          width: 100%;
+          display: block;
+          text-align: center;
+          li {
+            margin-right: 0;
+            span {
+              &.name {
+                padding-bottom: 8px;
+                font-size: 18px;
+              }
+            }
+            .phone {
+              height: initial;
+              font-size: 35px;
+              line-height: 1;
+              text-align: center;
+            }
+            .icon-metro {
+              background-image: none!important;
+            }
+            .address {
+              padding: 0;
+              font-size: 18px;
+              text-align: center;
+              span {
+                left: 0;
+                font-size: 18px;
+              }
+              div {
+                margin-bottom: 10px;
+                &:before {
+                  content: '';
+                  position: relative;
+                  display: inline-block;
+                  width: 30px;
+                  height: 22px;
+                  margin-right: 6px;
+                  margin-bottom: -2px;
+                  //background-image: image_url('web/header/subway@2x.png');
+                  background-image: url('https://assets3.marytrufel.ru/assets/web/header/subway@2x-b63a9a12f8a040e320977e242ad5b98c.png');
+                  background-size: initial;
+                  background-position: 0 -27px;
+                  transform: translate3d(0,0,0);
+                }
+              }
+            }
+          }
+        }
+        &.fairy {
+          text-align: center;
+          li {
+            a {
+              width: 46px;
+              height: 46px;
+              background-size: contain;
+              background-repeat: no-repeat;
+            }
+          }
+        }
+      }
+      .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 40px 20px;
+      }
+      .working-time {
+        text-align: center;
+        font-size: 18px;
+        span {
+          font-size: 18px;
+        }
+      }
+      .short-email {
+        top: initial;
+        text-align: center;
+        line-height: 1.4;
+        font-size: 18px;
+        a {
+          padding: 0;
+          line-height: 1.2;
+          border-bottom: 1px solid #fcb4fe;
+          background: none;
+        }
+      }
+    }
+  }
+  .footer__hint {
+    position: relative;
+    width: 100%;
+    order: 2;
+    .order-button-wrapper {
+      display: flex;
+      justify-content: center;
+      height: 43px;
+      margin-top: 0;
+      margin-bottom: 10px;
+      .fitting-button {
+        //position: relative;
+        width: 260px;
+        height: 43px;
+        margin-left: 0;
+        cursor: pointer;
+        display: block;
+        background-size: 260px 100px;
+        background-position: 0 -4px;
+        &.show {
+          bottom: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,295 @@
+/*! gulp-start v0.0.1 | (c) 2020 Bulat | MIT License | https://github.com/BulatSa/gulp-start */
+@media screen and (max-width: 700px) {
+  /* line 3, src/sass/components/_footer.scss */
+  .footer .footer-wrapper {
+    padding-bottom: 40px;
+  }
+  /* line 6, src/sass/components/_footer.scss */
+  .footer .footer-wrapper ul.contacts, .footer .footer-wrapper ul.contacts.contacts_next {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  /* line 10, src/sass/components/_footer.scss */
+  .footer .footer-wrapper ul.contacts li, .footer .footer-wrapper ul.contacts.contacts_next li {
+    margin-right: 0;
+  }
+  /* line 13, src/sass/components/_footer.scss */
+  .footer .footer-wrapper ul.contacts li span.name, .footer .footer-wrapper ul.contacts.contacts_next li span.name {
+    padding-bottom: 8px;
+    font-size: 18px;
+  }
+  /* line 18, src/sass/components/_footer.scss */
+  .footer .footer-wrapper ul.contacts li .phone, .footer .footer-wrapper ul.contacts.contacts_next li .phone {
+    height: initial;
+    font-size: 35px;
+    line-height: 1;
+    text-align: center;
+  }
+  /* line 24, src/sass/components/_footer.scss */
+  .footer .footer-wrapper ul.contacts li .icon-metro, .footer .footer-wrapper ul.contacts.contacts_next li .icon-metro {
+    background-image: none !important;
+  }
+  /* line 27, src/sass/components/_footer.scss */
+  .footer .footer-wrapper ul.contacts li .address, .footer .footer-wrapper ul.contacts.contacts_next li .address {
+    padding: 0;
+    font-size: 18px;
+    text-align: center;
+  }
+  /* line 31, src/sass/components/_footer.scss */
+  .footer .footer-wrapper ul.contacts li .address span, .footer .footer-wrapper ul.contacts.contacts_next li .address span {
+    left: 0;
+    font-size: 18px;
+  }
+  /* line 35, src/sass/components/_footer.scss */
+  .footer .footer-wrapper ul.contacts li .address div, .footer .footer-wrapper ul.contacts.contacts_next li .address div {
+    margin-bottom: 10px;
+  }
+  /* line 37, src/sass/components/_footer.scss */
+  .footer .footer-wrapper ul.contacts li .address div:before, .footer .footer-wrapper ul.contacts.contacts_next li .address div:before {
+    content: '';
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 22px;
+    margin-right: 6px;
+    margin-bottom: -2px;
+    background-image: url("https://assets3.marytrufel.ru/assets/web/header/subway@2x-b63a9a12f8a040e320977e242ad5b98c.png");
+    background-size: initial;
+    background-position: 0 -27px;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  /* line 55, src/sass/components/_footer.scss */
+  .footer .footer-wrapper ul.fairy {
+    text-align: center;
+  }
+  /* line 58, src/sass/components/_footer.scss */
+  .footer .footer-wrapper ul.fairy li a {
+    width: 46px;
+    height: 46px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  /* line 67, src/sass/components/_footer.scss */
+  .footer .footer-wrapper .footer-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 40px 20px;
+  }
+  /* line 72, src/sass/components/_footer.scss */
+  .footer .footer-wrapper .working-time {
+    text-align: center;
+    font-size: 18px;
+  }
+  /* line 75, src/sass/components/_footer.scss */
+  .footer .footer-wrapper .working-time span {
+    font-size: 18px;
+  }
+  /* line 79, src/sass/components/_footer.scss */
+  .footer .footer-wrapper .short-email {
+    top: initial;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 18px;
+  }
+  /* line 84, src/sass/components/_footer.scss */
+  .footer .footer-wrapper .short-email a {
+    padding: 0;
+    line-height: 1.2;
+    border-bottom: 1px solid #fcb4fe;
+    background: none;
+  }
+  /* line 93, src/sass/components/_footer.scss */
+  .footer__hint {
+    position: relative;
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  /* line 97, src/sass/components/_footer.scss */
+  .footer__hint .order-button-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 43px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  /* line 103, src/sass/components/_footer.scss */
+  .footer__hint .order-button-wrapper .fitting-button {
+    width: 260px;
+    height: 43px;
+    margin-left: 0;
+    cursor: pointer;
+    display: block;
+    background-size: 260px 100px;
+    background-position: 0 -4px;
+  }
+  /* line 112, src/sass/components/_footer.scss */
+  .footer__hint .order-button-wrapper .fitting-button.show {
+    bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  /* line 2, src/sass/components/_favourite_link.scss */
+  .favourite-link {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  /* line 2, src/sass/components/_offer.scss */
+  .header {
+    display: none;
+  }
+  /* line 5, src/sass/components/_offer.scss */
+  .offers_page {
+    min-width: auto;
+  }
+  /* line 7, src/sass/components/_offer.scss */
+  .offers_page .social-buttons {
+    margin-top: 40px;
+  }
+  /* line 9, src/sass/components/_offer.scss */
+  .offers_page .social-buttons li {
+    margin-bottom: 7px;
+  }
+  /* line 14, src/sass/components/_offer.scss */
+  .offer__wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  /* line 18, src/sass/components/_offer.scss */
+  .offer__head {
+    text-align: center;
+  }
+  /* line 20, src/sass/components/_offer.scss */
+  .offer__head h1 {
+    width: 100%;
+    font-size: 30px;
+    line-height: 1;
+  }
+  /* line 26, src/sass/components/_offer.scss */
+  .offer__deadline {
+    max-width: 100%;
+  }
+  /* line 28, src/sass/components/_offer.scss */
+  .offer__deadline .unto {
+    width: 90px;
+    font-size: 48px;
+  }
+  /* line 32, src/sass/components/_offer.scss */
+  .offer__deadline .date {
+    font-size: 50px;
+  }
+  /* line 35, src/sass/components/_offer.scss */
+  .offer__deadline .month {
+    width: auto;
+    font-size: 36px;
+  }
+  /* line 40, src/sass/components/_offer.scss */
+  .offer__about {
+    margin-top: 10px;
+  }
+  /* line 42, src/sass/components/_offer.scss */
+  .offer__about .offer__description {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.6;
+  }
+  /* line 49, src/sass/components/_offer.scss */
+  .offer__about .offer__description p {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  /* line 54, src/sass/components/_offer.scss */
+  .offer__about .offer__image {
+    display: block;
+    width: 100%;
+    margin-top: 50px;
+    padding-right: 0;
+  }
+  /* line 59, src/sass/components/_offer.scss */
+  .offer__about .offer__image .badge {
+    display: none;
+  }
+  /* line 62, src/sass/components/_offer.scss */
+  .offer__about .offer__image img {
+    max-width: 480px;
+    float: none;
+    margin: 0 auto;
+  }
+  /* line 69, src/sass/components/_offer.scss */
+  .offer__actions {
+    margin-top: 60px;
+  }
+  /* line 71, src/sass/components/_offer.scss */
+  .offer__actions .title {
+    white-space: nowrap;
+  }
+  /* line 74, src/sass/components/_offer.scss */
+  .offer__actions .offer__button {
+    width: 196px;
+    height: 50px;
+    margin-top: 35px;
+    background-size: 196px 96px;
+  }
+  /* line 79, src/sass/components/_offer.scss */
+  .offer__actions .offer__button:hover {
+    background-position: 0 -51px;
+  }
+  /* line 85, src/sass/components/_offer.scss */
+  .offer__social {
+    margin-top: 50px;
+  }
+  /* line 87, src/sass/components/_offer.scss */
+  .offer__social h2 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  /* line 92, src/sass/components/_offer.scss */
+  .offer__social__subscribe {
+    margin-right: 0;
+  }
+  /* line 94, src/sass/components/_offer.scss */
+  .offer__social__subscribe .input__subscribe {
+    width: 100%;
+    max-width: 380px;
+    height: 60px;
+    margin-right: 0;
+    font-size: 20px;
+    line-height: 60px;
+    text-align: center;
+  }
+  /* line 103, src/sass/components/_offer.scss */
+  .offer__social__subscribe .submit__subscribe {
+    width: 186px;
+    height: 50px;
+    margin-top: 20px;
+    line-height: 50px;
+    background-size: 186px 100px;
+  }
+  /* line 109, src/sass/components/_offer.scss */
+  .offer__social__subscribe .submit__subscribe:hover {
+    background-position: 0 -50px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  /* line 2, src/sass/components/_base.scss */
+  .content, .footer-wrapper {
+    min-width: auto;
+  }
+}
