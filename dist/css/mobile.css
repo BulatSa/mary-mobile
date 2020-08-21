@@ -54,24 +54,22 @@
     height: 22px;
     margin-right: 6px;
     margin-bottom: -2px;
-    background-image: url("https://assets3.marytrufel.ru/assets/web/header/subway@2x-b63a9a12f8a040e320977e242ad5b98c.png");
-    background-size: initial;
-    background-position: 0 -27px;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    background-image: url("../images/icons/subway.png");
+    background-size: contain;
+    background-position: center center;
   }
-  /* line 55, src/sass/components/_footer.scss */
+  /* line 54, src/sass/components/_footer.scss */
   .footer .footer-wrapper ul.fairy {
     text-align: center;
   }
-  /* line 58, src/sass/components/_footer.scss */
+  /* line 57, src/sass/components/_footer.scss */
   .footer .footer-wrapper ul.fairy li a {
     width: 46px;
     height: 46px;
     background-size: contain;
     background-repeat: no-repeat;
   }
-  /* line 67, src/sass/components/_footer.scss */
+  /* line 66, src/sass/components/_footer.scss */
   .footer .footer-wrapper .footer-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -80,30 +78,30 @@
         flex-wrap: wrap;
     padding: 40px 20px;
   }
-  /* line 72, src/sass/components/_footer.scss */
+  /* line 71, src/sass/components/_footer.scss */
   .footer .footer-wrapper .working-time {
     text-align: center;
     font-size: 18px;
   }
-  /* line 75, src/sass/components/_footer.scss */
+  /* line 74, src/sass/components/_footer.scss */
   .footer .footer-wrapper .working-time span {
     font-size: 18px;
   }
-  /* line 79, src/sass/components/_footer.scss */
+  /* line 78, src/sass/components/_footer.scss */
   .footer .footer-wrapper .short-email {
     top: initial;
     text-align: center;
     line-height: 1.4;
     font-size: 18px;
   }
-  /* line 84, src/sass/components/_footer.scss */
+  /* line 83, src/sass/components/_footer.scss */
   .footer .footer-wrapper .short-email a {
     padding: 0;
     line-height: 1.2;
     border-bottom: 1px solid #fcb4fe;
     background: none;
   }
-  /* line 93, src/sass/components/_footer.scss */
+  /* line 92, src/sass/components/_footer.scss */
   .footer__hint {
     position: relative;
     width: 100%;
@@ -111,7 +109,7 @@
         -ms-flex-order: 2;
             order: 2;
   }
-  /* line 97, src/sass/components/_footer.scss */
+  /* line 96, src/sass/components/_footer.scss */
   .footer__hint .order-button-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -123,7 +121,7 @@
     margin-top: 0;
     margin-bottom: 10px;
   }
-  /* line 103, src/sass/components/_footer.scss */
+  /* line 102, src/sass/components/_footer.scss */
   .footer__hint .order-button-wrapper .fitting-button {
     width: 260px;
     height: 43px;
@@ -133,7 +131,7 @@
     background-size: 260px 100px;
     background-position: 0 -4px;
   }
-  /* line 112, src/sass/components/_footer.scss */
+  /* line 111, src/sass/components/_footer.scss */
   .footer__hint .order-button-wrapper .fitting-button.show {
     bottom: 20px;
   }

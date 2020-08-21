@@ -43,10 +43,9 @@
                   margin-right: 6px;
                   margin-bottom: -2px;
                   //background-image: image_url('web/header/subway@2x.png');
-                  background-image: url('https://assets3.marytrufel.ru/assets/web/header/subway@2x-b63a9a12f8a040e320977e242ad5b98c.png');
-                  background-size: initial;
-                  background-position: 0 -27px;
-                  transform: translate3d(0,0,0);
+                  background-image: url('../images/icons/subway.png');
+                  background-size: contain;
+                  background-position: center center;
                 }
               }
             }
