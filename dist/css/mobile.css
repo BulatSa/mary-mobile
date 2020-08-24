@@ -1,5 +1,16 @@
 /*! gulp-start v0.0.1 | (c) 2020 Bulat | MIT License | https://github.com/BulatSa/gulp-start */
 @media screen and (max-width: 700px) {
+  /* line 2, src/sass/components/_base.scss */
+  body {
+    padding-top: 50px;
+  }
+  /* line 5, src/sass/components/_base.scss */
+  .content, .footer-wrapper {
+    min-width: auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
   /* line 3, src/sass/components/_footer.scss */
   .footer .footer-wrapper {
     padding-bottom: 40px;
@@ -285,9 +296,140 @@
   }
 }
 
-@media screen and (max-width: 700px) {
-  /* line 2, src/sass/components/_base.scss */
-  .content, .footer-wrapper {
-    min-width: auto;
+/* line 1, src/sass/components/_menu-mobile.scss */
+.menu-mobile {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 5px 15px 10px;
+  background: url("../images/bg-top-menu.png") no-repeat top center;
+  background-size: 100% 100%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+
+/* line 13, src/sass/components/_menu-mobile.scss */
+.menu-mobile.hide {
+  -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+}
+
+@media (max-width: 680px) {
+  /* line 1, src/sass/components/_menu-mobile.scss */
+  .menu-mobile {
+    display: block;
   }
+}
+
+/* line 21, src/sass/components/_menu-mobile.scss */
+.menu-mobile__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 27, src/sass/components/_menu-mobile.scss */
+.menu-mobile__item {
+  display: block;
+}
+
+/* line 29, src/sass/components/_menu-mobile.scss */
+.menu-mobile__item img {
+  display: block;
+}
+
+/* line 32, src/sass/components/_menu-mobile.scss */
+.menu-mobile__item--burger {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 45px;
+  height: 34px;
+  cursor: pointer;
+  white-space: nowrap;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background: url("../images/icons/top-menu-cloud.png") no-repeat center;
+  background-size: contain;
+}
+
+/* line 44, src/sass/components/_menu-mobile.scss */
+.menu-mobile__item--burger figure {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 20px;
+  height: 2px;
+  margin: 0;
+  background-color: #000;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* line 54, src/sass/components/_menu-mobile.scss */
+.menu-mobile__item--burger figure:before, .menu-mobile__item--burger figure:after {
+  content: "";
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  background-color: #000;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+/* line 66, src/sass/components/_menu-mobile.scss */
+.menu-mobile__item--burger figure:before {
+  top: -6px;
+}
+
+/* line 70, src/sass/components/_menu-mobile.scss */
+.menu-mobile__item--burger figure:after {
+  bottom: -6px;
+}
+
+/* line 75, src/sass/components/_menu-mobile.scss */
+.menu-mobile__item--burger.open {
+  top: 15px;
+}
+
+/* line 77, src/sass/components/_menu-mobile.scss */
+.menu-mobile__item--burger.open figure {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+/* line 79, src/sass/components/_menu-mobile.scss */
+.menu-mobile__item--burger.open figure:after {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  opacity: 0;
+}
+
+/* line 83, src/sass/components/_menu-mobile.scss */
+.menu-mobile__item--burger.open figure:before {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  top: 0;
 }

@@ -2,7 +2,8 @@
 @import 'base/mixins';
 
 // Base
+@import "components/base";
 @import "components/footer";
 @import "components/favourite_link";
 @import "components/offer";
-@import "components/base";
+@import "components/menu-mobile";
