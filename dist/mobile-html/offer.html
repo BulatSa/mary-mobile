@@ -68,22 +68,71 @@
     <header class="menu-mobile">
       <div class="menu-mobile__items">
         <a href="/" class="menu-mobile__item">
-          <img src="/images/icons/top-menu-logo.svg" alt="">
+          <img src="/images/icons/top-menu-logo.svg" alt="" />
         </a>
         <a href="https://marytrufel.ru/favourites" class="menu-mobile__item">
-          <img src="/images/icons/top-menu-fav.svg" alt="">
+          <img src="/images/icons/top-menu-fav.svg" alt="" />
+        </a>
+        <a href="#" class="menu-mobile__item" data-menu-mobile-link="contact-menu">
+          <img src="/images/icons/top-menu-phone.svg" alt="" />
         </a>
         <a href="#" class="menu-mobile__item">
-          <img src="/images/icons/top-menu-phone.svg" alt="">
-        </a>
-        <a href="#" class="menu-mobile__item">
-          <img src="/images/icons/top-menu-geo.svg" alt="">
+          <img src="/images/icons/top-menu-geo.svg" alt="" />
         </a>
         <a href="#" class="menu-mobile__item menu-mobile__item--burger">
           <figure class="menu-mobile__burger"></figure>
         </a>
       </div>
     </header>
+
+
+    <div class="contact-menu">
+      <a href="#" class="contact-menu__close" data-menu-mobile-link="contact-menu"></a>
+      <div class="contact-menu__info">
+        <p class="contact-menu__info-text">
+          Отвечу на все вопросы!
+          <span>– Ваша фея на проводе</span>
+        </p>
+        <div class="contact-menu__info-links">
+          <a href="#" class="contact-menu__info-link contact-menu__info-link--fb">
+            <img src="/images/icons/contact-fb2x.png" alt="">
+          </a>
+          <a href="#" class="contact-menu__info-link contact-menu__info-link--tg">
+            <img src="/images/icons/contact-tg2x.png" alt="">
+          </a>
+          <a href="#" class="contact-menu__info-link contact-menu__info-link--wa">
+            <img src="/images/icons/contact-wa2x.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="contact-menu__adress">
+        <span class="contact-menu__adress-text">Наш салон</span>
+        <a href="tel:+74952910761" class="contact-menu__adress-phone">+7 495 291-07-61</a>
+        <span class="contact-menu__adress-metro">
+          <img src="/images/icons/subway.png" alt="">
+          МАЯКОВСКАЯ
+        </span>
+        <span class="contact-menu__adress-text">2-я Тверская-Ямская улица, дом 28</span>
+        <a href="https://yandex.ru/maps/213/moscow/?ll=37.593210%2C55.772730&mode=routes&rtext=~55.772730%2C37.593210&rtt=auto&ruri=~ymapsbm1%3A%2F%2Fgeo%3Fll%3D37.593%252C55.773%26spn%3D0.001%252C0.001%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%259C%25D0%25BE%25D1%2581%25D0%25BA%25D0%25B2%25D0%25B0%252C%25202-%25D1%258F%2520%25D0%25A2%25D0%25B2%25D0%25B5%25D1%2580%25D1%2581%25D0%25BA%25D0%25B0%25D1%258F-%25D0%25AF%25D0%25BC%25D1%2581%25D0%25BA%25D0%25B0%25D1%258F%2520%25D1%2583%25D0%25BB%25D0%25B8%25D1%2586%25D0%25B0%252C%252028&z=17" class="contact-menu__adress-maplink">
+          <img src="/images/icons/map-link.svg" alt="">
+          <span>Проложить маршрут</span>
+        </a>
+      </div>
+      <div class="contact-menu__adress">
+        <span class="contact-menu__adress-text">Ателье</span>
+        <a href="tel:+74952910341" class="contact-menu__adress-phone">+7 495 291-03-41</a>
+        <span class="contact-menu__adress-metro">
+          <img src="/images/icons/subway.png" alt="">
+          КУТУЗОВСКАЯ
+        </span>
+        <span class="contact-menu__adress-text">Кутузовский проспект дом 30 (напротив театра Петра Фоменко)</span>
+        <a href="https://yandex.ru/maps/213/moscow/?ll=37.535826%2C55.741475&mode=routes&rtext=~55.741475%2C37.535826&rtt=auto&ruri=~ymapsbm1%3A%2F%2Fgeo%3Fll%3D37.536%252C55.741%26spn%3D0.001%252C0.001%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%259C%25D0%25BE%25D1%2581%25D0%25BA%25D0%25B2%25D0%25B0%252C%2520%25D0%259A%25D1%2583%25D1%2582%25D1%2583%25D0%25B7%25D0%25BE%25D0%25B2%25D1%2581%25D0%25BA%25D0%25B8%25D0%25B9%2520%25D0%25BF%25D1%2580%25D0%25BE%25D1%2581%25D0%25BF%25D0%25B5%25D0%25BA%25D1%2582%252C%252030&z=17" class="contact-menu__adress-maplink">
+          <img src="/images/icons/map-link.svg" alt="">
+          <span>Проложить маршрут</span>
+        </a>
+      </div>
+    </div>
+
     <div class="content" data-role="content">
       <div class="header">
         <div class="logo" data-role="logo"></div>
@@ -362,5 +411,6 @@
         </div>
       </div>
     </div>
+    <script src='/js/mobile.js'></script>
   </body>
 </html>
