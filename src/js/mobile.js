@@ -1,7 +1,8 @@
 $(function () {
+  // Contact Menu Toggle
   const contactMenuToggle = (e) => {
     e.preventDefault();
-    
+
     const contactMenu = document.querySelector(".contact-menu");
     if (contactMenu.classList.contains("open")) {
       contactMenu.classList.remove("open");
@@ -17,6 +18,30 @@ $(function () {
   if (contactMobileOpenLink) {
     contactMobileOpenLink.forEach((el) => {
       el.addEventListener("click", contactMenuToggle);
-    })
+    });
   }
+  // End of Contact Menu Toggle
+
+  // menuMobileScrollToggle on Scroll
+  const menuMobile = document.querySelector(".menu-mobile");
+
+  if (menuMobile) {
+    let lastScrollTop = 0;
+
+    const menuMobileScrollToggle = () => {
+      let scrollTop = window.scrollY;
+
+      if (scrollTop > lastScrollTop) {
+        // Scroll down
+        menuMobile.classList.add("hide");
+      } else {
+        // Scroll up
+        menuMobile.classList.remove("hide");
+      }
+      lastScrollTop = scrollTop;
+    };
+
+    window.addEventListener("scroll", menuMobileScrollToggle);
+  }
+  // End of menuMobileScrollToggle on Scroll
 });
