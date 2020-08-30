@@ -27,15 +27,22 @@ $(function () {
 
   if (menuMobile) {
     let lastScrollTop = 0;
+    const menuTransparent = menuMobile.dataset.menuTransparent;
 
     const menuMobileScrollToggle = () => {
       let scrollTop = window.scrollY;
 
       if (scrollTop > lastScrollTop) {
         // Scroll down
+        if (menuTransparent && scrollTop > 120) {
+          menuMobile.classList.add("show-bg");
+        }
         menuMobile.classList.add("hide");
       } else {
         // Scroll up
+        if (menuTransparent && scrollTop < 120) {
+          menuMobile.classList.remove("show-bg");
+        }
         menuMobile.classList.remove("hide");
       }
       lastScrollTop = scrollTop;

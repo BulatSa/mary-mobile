@@ -13,6 +13,12 @@
   &.hide {
     transform: translate3d(0, -100%, 0);
   }
+  &[data-menu-transparent] {
+    background-position: 0 -50px;
+  }
+  &.show-bg {
+    background-position: 50% 0;
+  }
   @include res(s) {
     display: block;
   }

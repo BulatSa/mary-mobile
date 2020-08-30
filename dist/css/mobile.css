@@ -319,6 +319,16 @@
           transform: translate3d(0, -100%, 0);
 }
 
+/* line 16, src/sass/components/_menu-mobile.scss */
+.menu-mobile[data-menu-transparent] {
+  background-position: 0 -50px;
+}
+
+/* line 19, src/sass/components/_menu-mobile.scss */
+.menu-mobile.show-bg {
+  background-position: 50% 0;
+}
+
 @media (max-width: 680px) {
   /* line 1, src/sass/components/_menu-mobile.scss */
   .menu-mobile {
@@ -326,7 +336,7 @@
   }
 }
 
-/* line 21, src/sass/components/_menu-mobile.scss */
+/* line 27, src/sass/components/_menu-mobile.scss */
 .menu-mobile__items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -339,19 +349,19 @@
           justify-content: space-between;
 }
 
-/* line 27, src/sass/components/_menu-mobile.scss */
+/* line 33, src/sass/components/_menu-mobile.scss */
 .menu-mobile__item {
   display: block;
   -webkit-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
-/* line 31, src/sass/components/_menu-mobile.scss */
+/* line 37, src/sass/components/_menu-mobile.scss */
 .menu-mobile__item img {
   display: block;
 }
 
-/* line 34, src/sass/components/_menu-mobile.scss */
+/* line 40, src/sass/components/_menu-mobile.scss */
 .menu-mobile__item--burger {
   position: relative;
   display: -webkit-box;
@@ -375,7 +385,7 @@
   background-size: contain;
 }
 
-/* line 46, src/sass/components/_menu-mobile.scss */
+/* line 52, src/sass/components/_menu-mobile.scss */
 .menu-mobile__item--burger figure {
   display: inline-block;
   vertical-align: middle;
@@ -388,7 +398,7 @@
   transition: all 0.3s ease;
 }
 
-/* line 56, src/sass/components/_menu-mobile.scss */
+/* line 62, src/sass/components/_menu-mobile.scss */
 .menu-mobile__item--burger figure:before, .menu-mobile__item--burger figure:after {
   content: "";
   width: 20px;
@@ -401,35 +411,35 @@
   border-radius: 4px;
 }
 
-/* line 68, src/sass/components/_menu-mobile.scss */
+/* line 74, src/sass/components/_menu-mobile.scss */
 .menu-mobile__item--burger figure:before {
   top: -6px;
 }
 
-/* line 72, src/sass/components/_menu-mobile.scss */
+/* line 78, src/sass/components/_menu-mobile.scss */
 .menu-mobile__item--burger figure:after {
   bottom: -6px;
 }
 
-/* line 77, src/sass/components/_menu-mobile.scss */
+/* line 83, src/sass/components/_menu-mobile.scss */
 .menu-mobile__item--burger.open {
   top: 15px;
 }
 
-/* line 79, src/sass/components/_menu-mobile.scss */
+/* line 85, src/sass/components/_menu-mobile.scss */
 .menu-mobile__item--burger.open figure {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-/* line 81, src/sass/components/_menu-mobile.scss */
+/* line 87, src/sass/components/_menu-mobile.scss */
 .menu-mobile__item--burger.open figure:after {
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
   opacity: 0;
 }
 
-/* line 85, src/sass/components/_menu-mobile.scss */
+/* line 91, src/sass/components/_menu-mobile.scss */
 .menu-mobile__item--burger.open figure:before {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
