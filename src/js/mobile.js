@@ -24,7 +24,6 @@ $(function () {
 
   // menuMobileScrollToggle on Scroll
   const menuMobile = document.querySelector(".menu-mobile");
-
   if (menuMobile) {
     let lastScrollTop = 0;
     const menuTransparent = menuMobile.dataset.menuTransparent;
