@@ -1,33 +1,54 @@
 /*! gulp-start v0.0.1 | (c) 2020 Bulat | MIT License | https://github.com/BulatSa/gulp-start */
 $((function () {
-  // Contact Menu Toggle
-  const contactMenuToggle = (e) => {
+  // Mobile Menu Toggle
+  const mobileMenuToggle = (e) => {
     e.preventDefault();
-
-    const contactMenu = document.querySelector(".contact-menu");
-    if (contactMenu.classList.contains("open")) {
-      contactMenu.classList.remove("open");
+    const dataLink = e.target.dataset.menuMobileLink;
+    const linkedMenu = document.querySelector(`.${dataLink}`);
+    const burger = document.querySelector(".menu-mobile__item--burger");
+    if (linkedMenu.classList.contains("open")) {
+      linkedMenu.classList.remove("open");
+      closeAllMobileMenu('data-menu-mobile-link');
+      mobileBurgerClose(burger);
     } else {
-      contactMenu.classList.add("open");
+      closeAllMobileMenu('data-menu-mobile-link');
+      linkedMenu.classList.add("open");
+      mobileBurgerOpen(burger);
     }
   };
 
-  const contactMobileOpenLink = document.querySelectorAll(
-    '[data-menu-mobile-link="contact-menu"]'
-  );
-
-  if (contactMobileOpenLink) {
-    contactMobileOpenLink.forEach((el) => {
-      el.addEventListener("click", contactMenuToggle);
+  const closeAllMobileMenu = (menuMobileLink) => {
+    const linkedMenuList = document.querySelectorAll(`[${menuMobileLink}]`);
+    linkedMenuList.forEach((el) => {
+      document
+        .querySelector(`.${el.dataset.menuMobileLink}`)
+        .classList.remove("open");
     });
   }
-  // End of Contact Menu Toggle
+
+  const mobileBurgerOpen = (burger) => {
+    burger.classList.add("open");
+  };
+
+  const mobileBurgerClose = (burger) => {
+    burger.classList.remove("open");
+    closeAllMobileMenu('data-menu-mobile-link');
+  };
+
+  const menuMobileLink = document.querySelectorAll("[data-menu-mobile-link]");
+  if (menuMobileLink) {
+    menuMobileLink.forEach((el) => {
+      el.addEventListener("click", mobileMenuToggle);
+    });
+  }
+  // End of Mobile Menu Toggle
 
   // menuMobileScrollToggle on Scroll
   const menuMobile = document.querySelector(".menu-mobile");
   if (menuMobile) {
     let lastScrollTop = 0;
-    const menuTransparent = menuMobile.dataset.menuTransparent;
+    const menuTransparent =
+      menuMobile.dataset.menuTransparent === "true" ? true : false;
 
     const menuMobileScrollToggle = () => {
       let scrollTop = window.scrollY;
@@ -37,13 +58,13 @@ $((function () {
         if (menuTransparent && scrollTop > 120) {
           menuMobile.classList.add("show-bg");
         }
-        menuMobile.classList.add("hide");
+        //menuMobile.classList.add("hide");
       } else {
         // Scroll up
         if (menuTransparent && scrollTop < 120) {
           menuMobile.classList.remove("show-bg");
         }
-        menuMobile.classList.remove("hide");
+        //menuMobile.classList.remove("hide");
       }
       lastScrollTop = scrollTop;
     };

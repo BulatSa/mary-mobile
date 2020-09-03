@@ -10,7 +10,8 @@
   transition: all 0.3s ease;
   transform: translate3d(100%,0,0);
   overflow: auto;
-  z-index: 501;
+  box-sizing: border-box;
+  z-index: 503;
   * {
     margin: 0;
     padding: 0;
@@ -66,6 +67,7 @@
   padding-right: 15px;
   background: url('../images/bg-contact-menu.png') no-repeat;
   background-position: 50% 0%;
+  background-size: 315px 270px;
 }
 
 .contact-menu__info-text {
@@ -89,7 +91,7 @@
 
 .contact-menu__info-link {
   position: relative;
-  margin: 0 5px;
+  margin: 0 6px;
   &:after {
     content: "";
     position: absolute;
@@ -98,6 +100,7 @@
     width: 18px;
     height: 15px;
     background: url("../images/icons/contact-stroke.png") no-repeat center;
+    background-size: 18px 15px;
     transform: translate3d(0, -50%, 0);
     z-index: 0;
   }

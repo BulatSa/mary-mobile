@@ -80,7 +80,7 @@
         <a href="#" class="menu-mobile__item" data-menu-mobile-link="contact-menu">
           <img src="/images/icons/top-menu-phone.svg" alt="" />
         </a>
-        <a href="#" class="menu-mobile__item">
+        <a href="#" class="menu-mobile__item" data-menu-mobile-link="contact-menu">
           <img src="/images/icons/top-menu-geo.svg" alt="" />
         </a>
         <a href="#" class="menu-mobile__item menu-mobile__item--burger" data-menu-mobile-link="product-menu">
@@ -137,136 +137,151 @@
     </div>
 
     <div class="product-menu">
-      <div class="product-menu__block">
-        <p class="product-menu__block-title">СИЛУЭТЫ</p>
-        <div class="product-menu__clothes">
-          <a href="#">
-            <img src="/images/icons/clothes-1.png" alt="Принцесса">
-            <span>Принцесса</span>
-          </a>
-          <a href="#">
-            <img src="/images/icons/clothes-2.png" alt="">
-            <span>Ампир</span>
-          </a>
-          <a href="#">
-            <img src="/images/icons/clothes-3.png" alt="">
-            <span>Русалка</span>
-          </a>
-          <a href="#">
-            <img src="/images/icons/clothes-4.png" alt="">
-            <span>Бальное</span>
-          </a>
-
-          <a href="#">
-            <img src="/images/icons/clothes-5.png" alt="">
-            <span>Прямое</span>
-          </a>
-          <a href="#">
-            <img src="/images/icons/clothes-6.png" alt="">
-            <span>Короткое</span>
-          </a>
-          <a href="#">
-            <img src="/images/icons/clothes-7.png" alt="">
-            <span>Вечернее</span>
-          </a>
-          <a href="#">
-            <img src="/images/icons/clothes-8.png" alt="">
-            <span>Костюмы</span>
-          </a>
-        </div>
-      </div>
-
-      <div class="product-menu__block">
-        <p class="product-menu__block-title">СВАДЕБНЫЕ ДИЗАЙНЕРЫ</p>
-        <div class="product-menu__category">
-            <a href="#">Наталья Романова</a>
-            <a href="#">Татьяна Каплун</a>
-            <a href="#">Марта </a>
-            <a href="#">Бламмо Биамо</a>
-            <a href="#">Кукла</a>
-            <a href="#">Патрисия</a>
-            <a href="#">Нора Навиано</a>
-            <a href="#">Анже Этуаль</a>
-            <a href="#">Луссано Брайдал</a>
-            <a href="#">Навиблю Брайдал</a>
-            <a href="#">Вона</a> 
-            <a href="#">Наталья Романова</a>
-            <a href="#">Татьяна Каплун</a>
-            <a href="#">Марта </a>
-            <a href="#">Бламмо Биамо</a>
-            <a href="#">Кукла</a>
-            <a href="#">Патрисия</a>
-        </div>
-      </div>
-
-      <div class="product-menu__block">
-        <p class="product-menu__block-title">ПОДБОРКИ</p>
-        <div class="product-menu__category product-menu__category--min">
-          <a href="#">Кружевные</a>
-          <a href="#">Бохо</a>
-          <a href="#">Атласные</a>
-          <a href="#">Простые</a>
-          <a href="#">С длинным рукавом</a>
-          <a href="#">С открытой спиной</a>
-          <a href="#">Трансформеры</a>
-          <a href="#">Для беременных</a>
-          <a href="#">Кружевные</a>
-          <a href="#">Бохо</a>
-          <a href="#">Атласные</a>
-          <a href="#">Простые</a>
-          <a href="#">С длинным рукавом</a>
-          <a href="#">С открытой спиной</a>
-          <a href="#">Трансформеры</a>
-          <a href="#">Для беременных</a>
-        </div>
-      </div>
-
-      <div class="product-menu__block">
-        <div class="product-menu__sizes">
-          <a href="#">
-            <img src="/images/icons/size-xl.png" alt="XL">
-            <span>Большие</span>
-          </a>
-          <a href="#">
-            <img src="/images/icons/size-s.png" alt="S">
-            <span>Маленькие</span>
-          </a>
-        </div>
-        <div class="product-menu__colors">
-          <a href="#" class="product-menu__color product-menu__color--ivo">
-            <span>Айвори</span>
-          </a>
-          <a href="#" class="product-menu__color product-menu__color--pink">
-            <span>Розовые</span>
-          </a>
-          <a href="#" class="product-menu__color product-menu__color--cap">
-            <span>Капучино</span>
-          </a>
-          <a href="#" class="product-menu__color product-menu__color--blue">
-            <span>Голубые</span>
-          </a>
-        </div>
-      </div>
-
-      <div class="product-menu__block">
-        <p class="product-menu__block-title">ПО ЦЕНЕ</p>
-        <div class="product-menu__prices">
-          <div class="product-menu__price">
-            <a href="#">До 40 тыс. ₽</a>
-            <a href="#">До 70 тыс. ₽</a>
-          </div>
-          <div class="product-menu__price">
-            <a href="#">До 100 тыс. ₽</a>
-            <a href="#">Еще дороже</a>
-          </div>
-          <div class="product-menu__price product-menu__price--spec">
+      <div class="product-menu__scroll-wrap">
+        <div class="product-menu__block">
+          <p class="product-menu__block-title">СИЛУЭТЫ</p>
+          <div class="product-menu__clothes">
             <a href="#">
-              <img src="/images/special-price.png" alt="">
+              <img src="/images/icons/clothes-1.png" alt="Принцесса">
+              <span>Принцесса</span>
+            </a>
+            <a href="#">
+              <img src="/images/icons/clothes-2.png" alt="">
+              <span>Ампир</span>
+            </a>
+            <a href="#">
+              <img src="/images/icons/clothes-3.png" alt="">
+              <span>Русалка</span>
+            </a>
+            <a href="#">
+              <img src="/images/icons/clothes-4.png" alt="">
+              <span>Бальное</span>
+            </a>
+  
+            <a href="#">
+              <img src="/images/icons/clothes-5.png" alt="">
+              <span>Прямое</span>
+            </a>
+            <a href="#">
+              <img src="/images/icons/clothes-6.png" alt="">
+              <span>Короткое</span>
+            </a>
+            <a href="#">
+              <img src="/images/icons/clothes-7.png" alt="">
+              <span>Вечернее</span>
+            </a>
+            <a href="#">
+              <img src="/images/icons/clothes-8.png" alt="">
+              <span>Костюмы</span>
             </a>
           </div>
         </div>
+  
+        <div class="product-menu__block">
+          <p class="product-menu__block-title">СВАДЕБНЫЕ ДИЗАЙНЕРЫ</p>
+          <div class="product-menu__category">
+              <a href="#">Наталья Романова</a>
+              <a href="#">Татьяна Каплун</a>
+              <a href="#">Марта </a>
+              <a href="#">Бламмо Биамо</a>
+              <a href="#">Кукла</a>
+              <a href="#">Патрисия</a>
+              <a href="#">Нора Навиано</a>
+              <a href="#">Анже Этуаль</a>
+              <a href="#">Луссано Брайдал</a>
+              <a href="#">Навиблю Брайдал</a>
+              <a href="#">Вона</a> 
+              <a href="#">Наталья Романова</a>
+              <a href="#">Татьяна Каплун</a>
+              <a href="#">Марта </a>
+              <a href="#">Бламмо Биамо</a>
+              <a href="#">Кукла</a>
+              <a href="#">Патрисия</a>
+          </div>
+        </div>
+  
+        <div class="product-menu__block">
+          <p class="product-menu__block-title">ПОДБОРКИ</p>
+          <div class="product-menu__category product-menu__category--min">
+            <a href="#">Кружевные</a>
+            <a href="#">Бохо</a>
+            <a href="#">Атласные</a>
+            <a href="#">Простые</a>
+            <a href="#">С длинным рукавом</a>
+            <a href="#">С открытой спиной</a>
+            <a href="#">Платья-трансформеры</a>
+            <a href="#">Для беременных</a>
+            <a href="#">Кружевные</a>
+            <a href="#">Бохо</a>
+            <a href="#">Атласные</a>
+            <a href="#">Простые</a>
+            <a href="#">С длинным рукавом</a>
+            <a href="#">С открытой спиной</a>
+            <a href="#">Трансформеры</a>
+            <a href="#">Для беременных</a>
+          </div>
+        </div>
+  
+        <div class="product-menu__block">
+          <div class="product-menu__sizes">
+            <a href="#">
+              <img src="/images/icons/size-xl.png" alt="XL">
+              <span>Большие</span>
+            </a>
+            <a href="#">
+              <img src="/images/icons/size-s.png" alt="S">
+              <span>Маленькие</span>
+            </a>
+          </div>
+          <div class="product-menu__colors">
+            <a href="#" class="product-menu__color product-menu__color--ivo">
+              <span>Айвори</span>
+            </a>
+            <a href="#" class="product-menu__color product-menu__color--pink">
+              <span>Розовые</span>
+            </a>
+            <a href="#" class="product-menu__color product-menu__color--cap">
+              <span>Капучино</span>
+            </a>
+            <a href="#" class="product-menu__color product-menu__color--blue">
+              <span>Голубые</span>
+            </a>
+  
+            <a href="#" class="product-menu__color product-menu__color--ivo">
+              <span>Айвори</span>
+            </a>
+            <a href="#" class="product-menu__color product-menu__color--pink">
+              <span>Розовые</span>
+            </a>
+            <a href="#" class="product-menu__color product-menu__color--cap">
+              <span>Капучино</span>
+            </a>
+            <a href="#" class="product-menu__color product-menu__color--blue">
+              <span>Голубые</span>
+            </a>
+          </div>
+        </div>
+  
+        <div class="product-menu__block">
+          <p class="product-menu__block-title">ПО ЦЕНЕ</p>
+          <div class="product-menu__prices">
+            <div class="product-menu__price">
+              <a href="#">До 40 тыс. ₽</a>
+              <a href="#">До 70 тыс. ₽</a>
+            </div>
+            <div class="product-menu__price">
+              <a href="#">До 100 тыс. ₽</a>
+              <a href="#">Еще дороже</a>
+            </div>
+            <div class="product-menu__price product-menu__price--spec">
+              <a href="#">
+                <img src="/images/special-price.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-
+      
     </div>
 
     <div class="content" data-role="content">
