@@ -303,7 +303,7 @@
   top: 0;
   left: 0;
   right: 0;
-  padding: 5px 15px 10px;
+  padding: 3px 15px 5px;
   background: url("../images/bg-top-menu.png") no-repeat top center;
   background-size: 100% 100%;
   -webkit-transition: all 0.3s ease;
@@ -359,22 +359,24 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0 -5px;
 }
 
-/* line 41, src/sass/components/_menu-mobile.scss */
+/* line 42, src/sass/components/_menu-mobile.scss */
 .menu-mobile__item {
   display: block;
+  padding: 5px;
   -webkit-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
-/* line 45, src/sass/components/_menu-mobile.scss */
+/* line 47, src/sass/components/_menu-mobile.scss */
 .menu-mobile__item img {
   display: block;
   pointer-events: none;
 }
 
-/* line 49, src/sass/components/_menu-mobile.scss */
+/* line 51, src/sass/components/_menu-mobile.scss */
 .menu-mobile__item--burger {
   position: relative;
   display: -webkit-box;
@@ -386,8 +388,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 45px;
-  height: 34px;
+  width: 50px;
+  height: 40px;
   cursor: pointer;
   white-space: nowrap;
   -webkit-user-select: none;
@@ -395,10 +397,10 @@
       -ms-user-select: none;
           user-select: none;
   background: url("../images/icons/top-menu-cloud.png") no-repeat center;
-  background-size: contain;
+  background-size: 45px 34px;
 }
 
-/* line 61, src/sass/components/_menu-mobile.scss */
+/* line 63, src/sass/components/_menu-mobile.scss */
 .menu-mobile__item--burger figure {
   display: inline-block;
   vertical-align: middle;
@@ -413,7 +415,7 @@
   pointer-events: none;
 }
 
-/* line 72, src/sass/components/_menu-mobile.scss */
+/* line 74, src/sass/components/_menu-mobile.scss */
 .menu-mobile__item--burger figure:before, .menu-mobile__item--burger figure:after {
   content: "";
   width: 20px;
@@ -426,31 +428,31 @@
   border-radius: 4px;
 }
 
-/* line 84, src/sass/components/_menu-mobile.scss */
+/* line 86, src/sass/components/_menu-mobile.scss */
 .menu-mobile__item--burger figure:before {
   top: -6px;
 }
 
-/* line 88, src/sass/components/_menu-mobile.scss */
+/* line 90, src/sass/components/_menu-mobile.scss */
 .menu-mobile__item--burger figure:after {
   bottom: -6px;
 }
 
-/* line 94, src/sass/components/_menu-mobile.scss */
+/* line 96, src/sass/components/_menu-mobile.scss */
 .menu-mobile__item--burger.open figure {
   background: #A764BF;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-/* line 97, src/sass/components/_menu-mobile.scss */
+/* line 99, src/sass/components/_menu-mobile.scss */
 .menu-mobile__item--burger.open figure:after {
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
   opacity: 0;
 }
 
-/* line 101, src/sass/components/_menu-mobile.scss */
+/* line 103, src/sass/components/_menu-mobile.scss */
 .menu-mobile__item--burger.open figure:before {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
@@ -721,8 +723,8 @@
   right: 0;
   width: 100%;
   height: 100%;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   -webkit-transform: translate3d(0, -100%, 0);
           transform: translate3d(0, -100%, 0);
   overflow: auto;
@@ -826,8 +828,8 @@
   display: grid;
   grid-template-rows: repeat(6, 1fr);
   grid-auto-flow: column;
-  margin: 0 -15px;
-  padding: 5px 15px 0;
+  margin: 0 -15px -10px;
+  padding: 5px 15px 10px;
   white-space: nowrap;
   overflow: auto;
   text-align: left;
@@ -884,8 +886,8 @@
       -ms-flex-align: start;
           align-items: flex-start;
   white-space: nowrap;
-  margin: 0 -15px;
-  padding: 0 7px;
+  margin: 0 -15px -10px;
+  padding: 0 7px 10px;
   overflow: auto;
 }
 
