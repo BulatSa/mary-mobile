@@ -1,0 +1,26 @@
+@media screen and (max-width: 700px) {
+  .dress-page {
+    .pager, .pager__wrapper {
+      min-width: 100%;
+    }
+    .silhouette-toggler-wrapper {
+      display: none;
+    }
+    .columns {
+      display: flex;
+      flex-wrap: wrap;
+      .columns__right {
+        width: 100%;
+        margin: 0;
+        float: none;
+        order: 1;
+      }
+      .columns__left {
+        width: 100%;
+        margin: 0;
+        float: none;
+        order: 0;
+      }
+    }
+  }
+}

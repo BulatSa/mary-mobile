@@ -2,7 +2,10 @@
   body {
     padding-top: 50px;
   }
-  .content, .footer-wrapper {
-    min-width: auto;
+  html, body, .content, .footer-wrapper {
+    min-width: auto!important;
+  }
+  .logo-link {
+    display: none;
   }
 }
