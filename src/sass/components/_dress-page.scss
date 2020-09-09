@@ -6,6 +6,32 @@
     .silhouette-toggler-wrapper {
       display: none;
     }
+    .image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      margin: 0;
+      .image-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding-bottom: 0!important;
+        .photo {
+          position: relative;
+          top: initial;
+          left: initial;
+          right: initial;
+          display: block;
+          max-width: 100%;
+          width: auto!important;
+          height: auto!important;
+          max-height: 380px;
+          margin: 0 auto;
+        }
+      }
+    }
     .columns {
       display: flex;
       flex-wrap: wrap;
@@ -14,13 +40,179 @@
         margin: 0;
         float: none;
         order: 1;
+        .columns__right__padding {
+          position: relative;
+          display: flex;
+          flex-wrap: wrap;
+          padding: 0;
+          .columns__right__padding__delivery {
+            width: 100%;
+            margin: 0;
+            .columns__right__padding__delivery__label {
+              min-width: 300px;
+              width: calc(100% + 40px);
+              margin: 0 -20px;
+            }
+            .columns__right__padding__delivery__description {
+              margin-bottom: 10px;
+            }
+            form {
+              .form-group {
+                &.submit {
+                  display: flex;
+                  margin-top: 0;
+                  padding-top: 6px;
+                  justify-content: center;
+                  align-items: flex-start;
+                  input {
+                    bottom: initial;
+                  }
+                  &:before {
+                    width: 40px;
+                    height: 37px;
+                    margin-top: -10px;
+                    margin-bottom: 0;
+                    background-size: 40px 37px;
+                  }
+                  &:after {
+                    width: 40px;
+                    height: 37px;
+                    margin-top: -10px;
+                    margin-bottom: 0;
+                    background-size: 40px 37px;
+                  }
+                }
+              }
+            }
+          }
+          .columns__right__padding__service {
+            margin-top: 50px;
+            margin-bottom: 40px;
+            margin-left: 0;
+            p {
+              font-size: 24px;
+            }
+          }
+        }
       }
       .columns__left {
         width: 100%;
         margin: 0;
         float: none;
         order: 0;
+        .columns__left__holder {
+          padding: 0;
+        }
+        .columns__left__padding {
+          padding: 0;
+          margin: 0 -20px 10px;
+        }
       }
+    }
+    .panel-parent {
+      margin-left: auto;
+      margin-bottom: 20px;
+    }
+    .dress__fav {
+      &.dress__fav_big {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: auto;
+        margin: 0;
+        font-size: 14px;
+        background-position: center;
+        background-size: 60px auto;
+      }
+    }
+    .content {
+      padding-top: 15px;
+      padding-left: 20px;
+      padding-right: 20px;
+      .content__about {
+        margin: 0 0 20px;
+      }
+    }
+    .panel-container {
+      padding-left: 0;
+    }
+    .panel-top {
+      float: none;
+      margin-right: 0;
+      margin-bottom: -55px;
+    }
+    .panel {
+      float: none;
+      margin: 0;
+      .panel__content {
+        .designer {
+          margin-top: 0;
+        }
+        .panel__content__middle {
+          margin: 0;
+        }
+      }
+      .panel__bottom {
+        top: initial;
+        margin-top: -40px;
+      }
+    }
+    .pager {
+      margin: 0;
+      padding: 30px 20px 0;
+    }
+    .pager__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .pager__prev, .pager__next {
+      width: 50%;
+      float: none;
+      margin: 0;
+      .label {
+        font-size: 16px;
+      }
+    }
+    .pager__prev {
+      .images {
+        position: relative;
+        .preview {
+          &.rotated {
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translate(-30px, 3px) rotate(10deg);
+          }
+        }
+      }
+      .arrow {
+        width: 30px;
+        height: 7px;
+        background-size: 60px 22px;
+      }
+    }
+    .pager__next {
+      .images {
+        position: relative;
+        .preview {
+          &.rotated {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(30px, 3px) rotate(-10deg);
+          }
+        }
+      }
+      .arrow {
+        width: 30px;
+        height: 7px;
+        background-position: 100% 0;
+        background-size: 60px 22px;
+      }
+    }
+    .pager__all {
+      margin: 0 auto;
     }
   }
 }

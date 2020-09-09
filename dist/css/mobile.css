@@ -1082,6 +1082,47 @@
     display: none;
   }
   /* line 9, src/sass/components/_dress-page.scss */
+  .dress-page .image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+    margin: 0;
+  }
+  /* line 15, src/sass/components/_dress-page.scss */
+  .dress-page .image .image-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+    padding-bottom: 0 !important;
+  }
+  /* line 21, src/sass/components/_dress-page.scss */
+  .dress-page .image .image-wrapper .photo {
+    position: relative;
+    top: initial;
+    left: initial;
+    right: initial;
+    display: block;
+    max-width: 100%;
+    width: auto !important;
+    height: auto !important;
+    max-height: 380px;
+    margin: 0 auto;
+  }
+  /* line 35, src/sass/components/_dress-page.scss */
   .dress-page .columns {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1089,7 +1130,7 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  /* line 12, src/sass/components/_dress-page.scss */
+  /* line 38, src/sass/components/_dress-page.scss */
   .dress-page .columns .columns__right {
     width: 100%;
     margin: 0;
@@ -1098,7 +1139,76 @@
         -ms-flex-order: 1;
             order: 1;
   }
-  /* line 18, src/sass/components/_dress-page.scss */
+  /* line 43, src/sass/components/_dress-page.scss */
+  .dress-page .columns .columns__right .columns__right__padding {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0;
+  }
+  /* line 48, src/sass/components/_dress-page.scss */
+  .dress-page .columns .columns__right .columns__right__padding .columns__right__padding__delivery {
+    width: 100%;
+    margin: 0;
+  }
+  /* line 51, src/sass/components/_dress-page.scss */
+  .dress-page .columns .columns__right .columns__right__padding .columns__right__padding__delivery .columns__right__padding__delivery__label {
+    min-width: 300px;
+    width: calc(100% + 40px);
+    margin: 0 -20px;
+  }
+  /* line 56, src/sass/components/_dress-page.scss */
+  .dress-page .columns .columns__right .columns__right__padding .columns__right__padding__delivery .columns__right__padding__delivery__description {
+    margin-bottom: 10px;
+  }
+  /* line 61, src/sass/components/_dress-page.scss */
+  .dress-page .columns .columns__right .columns__right__padding .columns__right__padding__delivery form .form-group.submit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 0;
+    padding-top: 6px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  /* line 67, src/sass/components/_dress-page.scss */
+  .dress-page .columns .columns__right .columns__right__padding .columns__right__padding__delivery form .form-group.submit input {
+    bottom: initial;
+  }
+  /* line 70, src/sass/components/_dress-page.scss */
+  .dress-page .columns .columns__right .columns__right__padding .columns__right__padding__delivery form .form-group.submit:before {
+    width: 40px;
+    height: 37px;
+    margin-top: -10px;
+    margin-bottom: 0;
+    background-size: 40px 37px;
+  }
+  /* line 77, src/sass/components/_dress-page.scss */
+  .dress-page .columns .columns__right .columns__right__padding .columns__right__padding__delivery form .form-group.submit:after {
+    width: 40px;
+    height: 37px;
+    margin-top: -10px;
+    margin-bottom: 0;
+    background-size: 40px 37px;
+  }
+  /* line 88, src/sass/components/_dress-page.scss */
+  .dress-page .columns .columns__right .columns__right__padding .columns__right__padding__service {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-left: 0;
+  }
+  /* line 92, src/sass/components/_dress-page.scss */
+  .dress-page .columns .columns__right .columns__right__padding .columns__right__padding__service p {
+    font-size: 24px;
+  }
+  /* line 98, src/sass/components/_dress-page.scss */
   .dress-page .columns .columns__left {
     width: 100%;
     margin: 0;
@@ -1106,5 +1216,133 @@
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
+  }
+  /* line 103, src/sass/components/_dress-page.scss */
+  .dress-page .columns .columns__left .columns__left__holder {
+    padding: 0;
+  }
+  /* line 106, src/sass/components/_dress-page.scss */
+  .dress-page .columns .columns__left .columns__left__padding {
+    padding: 0;
+    margin: 0 -20px 10px;
+  }
+  /* line 112, src/sass/components/_dress-page.scss */
+  .dress-page .panel-parent {
+    margin-left: auto;
+    margin-bottom: 20px;
+  }
+  /* line 117, src/sass/components/_dress-page.scss */
+  .dress-page .dress__fav.dress__fav_big {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: auto;
+    margin: 0;
+    font-size: 14px;
+    background-position: center;
+    background-size: 60px auto;
+  }
+  /* line 129, src/sass/components/_dress-page.scss */
+  .dress-page .content {
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  /* line 133, src/sass/components/_dress-page.scss */
+  .dress-page .content .content__about {
+    margin: 0 0 20px;
+  }
+  /* line 137, src/sass/components/_dress-page.scss */
+  .dress-page .panel-container {
+    padding-left: 0;
+  }
+  /* line 140, src/sass/components/_dress-page.scss */
+  .dress-page .panel-top {
+    float: none;
+    margin-right: 0;
+    margin-bottom: -55px;
+  }
+  /* line 145, src/sass/components/_dress-page.scss */
+  .dress-page .panel {
+    float: none;
+    margin: 0;
+  }
+  /* line 149, src/sass/components/_dress-page.scss */
+  .dress-page .panel .panel__content .designer {
+    margin-top: 0;
+  }
+  /* line 152, src/sass/components/_dress-page.scss */
+  .dress-page .panel .panel__content .panel__content__middle {
+    margin: 0;
+  }
+  /* line 156, src/sass/components/_dress-page.scss */
+  .dress-page .panel .panel__bottom {
+    top: initial;
+    margin-top: -40px;
+  }
+  /* line 161, src/sass/components/_dress-page.scss */
+  .dress-page .pager {
+    margin: 0;
+    padding: 30px 20px 0;
+  }
+  /* line 165, src/sass/components/_dress-page.scss */
+  .dress-page .pager__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  /* line 169, src/sass/components/_dress-page.scss */
+  .dress-page .pager__prev, .dress-page .pager__next {
+    width: 50%;
+    float: none;
+    margin: 0;
+  }
+  /* line 173, src/sass/components/_dress-page.scss */
+  .dress-page .pager__prev .label, .dress-page .pager__next .label {
+    font-size: 16px;
+  }
+  /* line 178, src/sass/components/_dress-page.scss */
+  .dress-page .pager__prev .images {
+    position: relative;
+  }
+  /* line 181, src/sass/components/_dress-page.scss */
+  .dress-page .pager__prev .images .preview.rotated {
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transform: translate(-30px, 3px) rotate(10deg);
+            transform: translate(-30px, 3px) rotate(10deg);
+  }
+  /* line 189, src/sass/components/_dress-page.scss */
+  .dress-page .pager__prev .arrow {
+    width: 30px;
+    height: 7px;
+    background-size: 60px 22px;
+  }
+  /* line 196, src/sass/components/_dress-page.scss */
+  .dress-page .pager__next .images {
+    position: relative;
+  }
+  /* line 199, src/sass/components/_dress-page.scss */
+  .dress-page .pager__next .images .preview.rotated {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(30px, 3px) rotate(-10deg);
+            transform: translate(30px, 3px) rotate(-10deg);
+  }
+  /* line 207, src/sass/components/_dress-page.scss */
+  .dress-page .pager__next .arrow {
+    width: 30px;
+    height: 7px;
+    background-position: 100% 0;
+    background-size: 60px 22px;
+  }
+  /* line 214, src/sass/components/_dress-page.scss */
+  .dress-page .pager__all {
+    margin: 0 auto;
   }
 }
