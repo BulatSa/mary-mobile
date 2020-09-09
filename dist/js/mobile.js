@@ -78,9 +78,11 @@ $(function () {
     // Fotorama Slider
 
 
-    $(".columns__left__padding").fotorama({
-      //width: '100%',
-      height: "380"
-    }); // End of Fotorama Slider
+    if ($(".columns__left__padding").length) {
+      $(".columns__left__padding").fotorama({
+        height: "380"
+      });
+    } // End of Fotorama Slider
+
   }
 });
