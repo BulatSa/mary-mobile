@@ -1340,7 +1340,7 @@
 @media screen and (max-width: 700px) {
   /* line 2, src/sass/components/_features.scss */
   .services-page {
-    background: none !important;
+    background-image: none !important;
   }
   /* line 4, src/sass/components/_features.scss */
   .services-page:before {
@@ -1530,20 +1530,29 @@
   /* line 165, src/sass/components/_features.scss */
   .services-page .services__we-pay-road-and-deliver .services__we-pay-road-and-deliver__quick-order textarea {
     margin-bottom: 12px;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
   }
-  /* line 168, src/sass/components/_features.scss */
+  /* line 169, src/sass/components/_features.scss */
+  .services-page .services__we-pay-road-and-deliver .services__we-pay-road-and-deliver__quick-order input {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+  /* line 171, src/sass/components/_features.scss */
   .services-page .services__we-pay-road-and-deliver .services__we-pay-road-and-deliver__quick-order input[type="submit"] {
     margin-bottom: 10px;
   }
-  /* line 172, src/sass/components/_features.scss */
+  /* line 177, src/sass/components/_features.scss */
   .services-page .services__we-pay-road-and-deliver .services__we-pay-road-and-deliver__quick-order p.hint {
     font-size: 20px;
   }
-  /* line 178, src/sass/components/_features.scss */
+  /* line 183, src/sass/components/_features.scss */
   .services-page .services__free-fitting {
     display: none;
   }
-  /* line 181, src/sass/components/_features.scss */
+  /* line 186, src/sass/components/_features.scss */
   .services-page .services__photo-and-hashtag {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1553,20 +1562,20 @@
     margin-bottom: 140px;
     padding: 0 20px;
   }
-  /* line 186, src/sass/components/_features.scss */
+  /* line 191, src/sass/components/_features.scss */
   .services-page .services__photo-and-hashtag .services__photo-and-hashtag__left {
     float: none;
     width: 100%;
     padding: 0;
     text-align: center;
   }
-  /* line 191, src/sass/components/_features.scss */
+  /* line 196, src/sass/components/_features.scss */
   .services-page .services__photo-and-hashtag .services__photo-and-hashtag__left p {
     position: relative;
     margin-bottom: 20px;
     font-size: 20px;
   }
-  /* line 196, src/sass/components/_features.scss */
+  /* line 201, src/sass/components/_features.scss */
   .services-page .services__photo-and-hashtag .services__photo-and-hashtag__left p a.instagram {
     position: absolute;
     top: initial;
@@ -1577,46 +1586,46 @@
             transform: translate3d(-50%, 0, 0);
     z-index: 1;
   }
-  /* line 204, src/sass/components/_features.scss */
+  /* line 209, src/sass/components/_features.scss */
   .services-page .services__photo-and-hashtag .services__photo-and-hashtag__left p a.instagram img {
     display: block;
     margin: 0 auto;
     -webkit-transform: rotate(-13.87deg);
             transform: rotate(-13.87deg);
   }
-  /* line 213, src/sass/components/_features.scss */
+  /* line 218, src/sass/components/_features.scss */
   .services-page .services__photo-and-hashtag .services__photo-and-hashtag__right {
     float: none;
     width: 320px;
     margin: 0 auto;
     height: 255px;
   }
-  /* line 218, src/sass/components/_features.scss */
+  /* line 223, src/sass/components/_features.scss */
   .services-page .services__photo-and-hashtag .services__photo-and-hashtag__right .services__photo-and-hashtag__photo1,
   .services-page .services__photo-and-hashtag .services__photo-and-hashtag__right .services__photo-and-hashtag__photo2,
   .services-page .services__photo-and-hashtag .services__photo-and-hashtag__right .services__photo-and-hashtag__photo3 {
     width: 184px;
     height: 131px;
   }
-  /* line 224, src/sass/components/_features.scss */
+  /* line 229, src/sass/components/_features.scss */
   .services-page .services__photo-and-hashtag .services__photo-and-hashtag__right .services__photo-and-hashtag__photo1 {
     -webkit-transform: rotate(2.79deg);
             transform: rotate(2.79deg);
   }
-  /* line 227, src/sass/components/_features.scss */
+  /* line 232, src/sass/components/_features.scss */
   .services-page .services__photo-and-hashtag .services__photo-and-hashtag__right .services__photo-and-hashtag__photo2 {
     top: 30px;
     -webkit-transform: rotate(15deg);
             transform: rotate(15deg);
   }
-  /* line 231, src/sass/components/_features.scss */
+  /* line 236, src/sass/components/_features.scss */
   .services-page .services__photo-and-hashtag .services__photo-and-hashtag__right .services__photo-and-hashtag__photo3 {
     left: 40px;
     top: 100px;
     -webkit-transform: rotate(-10.14deg);
             transform: rotate(-10.14deg);
   }
-  /* line 238, src/sass/components/_features.scss */
+  /* line 243, src/sass/components/_features.scss */
   .services-page .services__coffee {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1626,22 +1635,25 @@
     margin-bottom: 50px;
     padding: 0 20px;
   }
-  /* line 243, src/sass/components/_features.scss */
+  /* line 248, src/sass/components/_features.scss */
   .services-page .services__coffee .services__coffee__left {
     width: 100%;
     margin-bottom: 30px;
   }
-  /* line 249, src/sass/components/_features.scss */
-  .services-page .services__coffee .services__coffee__left img.services__coffee__photo2 {
-    width: 44%;
-    margin-left: 6px;
-    margin-top: 20px;
-  }
   /* line 254, src/sass/components/_features.scss */
+  .services-page .services__coffee .services__coffee__left img.services__coffee__photo2 {
+    width: 48.5%;
+    margin-left: 0;
+    margin-top: 15px;
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+  }
+  /* line 260, src/sass/components/_features.scss */
   .services-page .services__coffee .services__coffee__left img.services__coffee__photo3 {
+    width: 48.5%;
     margin-top: 15px;
   }
-  /* line 259, src/sass/components/_features.scss */
+  /* line 266, src/sass/components/_features.scss */
   .services-page .services__coffee .services__coffee__right {
     position: relative;
     top: initial;
@@ -1652,7 +1664,7 @@
     width: 100%;
     text-align: center;
   }
-  /* line 267, src/sass/components/_features.scss */
+  /* line 274, src/sass/components/_features.scss */
   .services-page .services__coffee .services__coffee__right h2 {
     margin: 0;
     margin-bottom: 10px;
@@ -1661,16 +1673,16 @@
     line-height: 1;
     background-size: 204px 136px;
   }
-  /* line 275, src/sass/components/_features.scss */
+  /* line 282, src/sass/components/_features.scss */
   .services-page .services__coffee .services__coffee__right p {
     font-size: 20px;
   }
-  /* line 280, src/sass/components/_features.scss */
+  /* line 287, src/sass/components/_features.scss */
   .services-page .services__fitting-photo {
     margin-bottom: 50px;
     padding: 0 20px;
   }
-  /* line 283, src/sass/components/_features.scss */
+  /* line 290, src/sass/components/_features.scss */
   .services-page .services__fitting-photo h2 {
     margin-bottom: 10px;
     padding-top: 265px;
@@ -1678,16 +1690,16 @@
     line-height: 1;
     background-size: 332px 245px;
   }
-  /* line 290, src/sass/components/_features.scss */
+  /* line 297, src/sass/components/_features.scss */
   .services-page .services__fitting-photo p {
     font-size: 20px;
   }
-  /* line 294, src/sass/components/_features.scss */
+  /* line 301, src/sass/components/_features.scss */
   .services-page .services__make-up-and-hairstyle {
     padding-top: 0;
     padding-bottom: 50px;
   }
-  /* line 297, src/sass/components/_features.scss */
+  /* line 304, src/sass/components/_features.scss */
   .services-page .services__make-up-and-hairstyle .page_content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1695,7 +1707,7 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  /* line 301, src/sass/components/_features.scss */
+  /* line 308, src/sass/components/_features.scss */
   .services-page .services__make-up-and-hairstyle .services__make-up-and-hairstyle__left {
     width: 100%;
     padding: 0 20px;
@@ -1705,18 +1717,19 @@
         -ms-flex-order: 1;
             order: 1;
   }
-  /* line 307, src/sass/components/_features.scss */
+  /* line 314, src/sass/components/_features.scss */
   .services-page .services__make-up-and-hairstyle .services__make-up-and-hairstyle__left h2 {
     margin-bottom: 10px;
     font-size: 35px;
     line-height: 1;
     background-size: 332px 245px;
   }
-  /* line 313, src/sass/components/_features.scss */
+  /* line 320, src/sass/components/_features.scss */
   .services-page .services__make-up-and-hairstyle .services__make-up-and-hairstyle__left p {
     font-size: 20px;
+    margin-bottom: 0;
   }
-  /* line 317, src/sass/components/_features.scss */
+  /* line 325, src/sass/components/_features.scss */
   .services-page .services__make-up-and-hairstyle .services__make-up-and-hairstyle__right {
     position: relative;
     width: 100%;
@@ -1727,7 +1740,7 @@
         -ms-flex-order: 0;
             order: 0;
   }
-  /* line 324, src/sass/components/_features.scss */
+  /* line 332, src/sass/components/_features.scss */
   .services-page .services__make-up-and-hairstyle .services__make-up-and-hairstyle__right img {
     position: absolute;
     top: 25px;
@@ -1735,14 +1748,14 @@
     width: 169px;
     height: 237px;
   }
-  /* line 330, src/sass/components/_features.scss */
+  /* line 338, src/sass/components/_features.scss */
   .services-page .services__make-up-and-hairstyle .services__make-up-and-hairstyle__right img:nth-child(1) {
     left: -20px !important;
     -webkit-transform: rotate(-23.53deg);
             transform: rotate(-23.53deg);
     z-index: 1;
   }
-  /* line 335, src/sass/components/_features.scss */
+  /* line 343, src/sass/components/_features.scss */
   .services-page .services__make-up-and-hairstyle .services__make-up-and-hairstyle__right img:nth-child(2) {
     left: 50% !important;
     top: 3px;
@@ -1750,7 +1763,7 @@
             transform: translate3d(-50%, 0, 0);
     z-index: 2;
   }
-  /* line 341, src/sass/components/_features.scss */
+  /* line 349, src/sass/components/_features.scss */
   .services-page .services__make-up-and-hairstyle .services__make-up-and-hairstyle__right img:nth-child(3) {
     right: -20px;
     left: initial;
@@ -1758,7 +1771,7 @@
             transform: rotate(23deg);
     z-index: 3;
   }
-  /* line 350, src/sass/components/_features.scss */
+  /* line 358, src/sass/components/_features.scss */
   .services-page .services__store-dress {
     width: 100%;
     padding: 265px 20px 0;
@@ -1766,17 +1779,17 @@
     background-position: top center;
     background-size: 278px 245px;
   }
-  /* line 356, src/sass/components/_features.scss */
+  /* line 364, src/sass/components/_features.scss */
   .services-page .services__store-dress h2 {
     margin-bottom: 10px;
     line-height: 1;
     font-size: 35px;
   }
-  /* line 361, src/sass/components/_features.scss */
+  /* line 369, src/sass/components/_features.scss */
   .services-page .services__store-dress p {
     font-size: 20px;
   }
-  /* line 365, src/sass/components/_features.scss */
+  /* line 373, src/sass/components/_features.scss */
   .services-page .services__atelier {
     min-width: auto;
     min-height: auto;
@@ -1786,19 +1799,19 @@
     background-size: 742px 245px;
     background-position: 70% 0%;
   }
-  /* line 373, src/sass/components/_features.scss */
+  /* line 381, src/sass/components/_features.scss */
   .services-page .services__atelier .page_content {
     margin: 0;
     padding: 0;
   }
-  /* line 377, src/sass/components/_features.scss */
+  /* line 385, src/sass/components/_features.scss */
   .services-page .services__atelier h2 {
     margin-bottom: 10px;
     padding: 0;
     line-height: 1;
     font-size: 35px;
   }
-  /* line 383, src/sass/components/_features.scss */
+  /* line 391, src/sass/components/_features.scss */
   .services-page .services__atelier p {
     width: 100%;
     max-width: 100%;
@@ -1806,117 +1819,117 @@
     padding-bottom: 10px;
     font-size: 20px;
   }
-  /* line 391, src/sass/components/_features.scss */
+  /* line 399, src/sass/components/_features.scss */
   .services-page .services__fairy-on-the-wire {
     min-height: auto;
     margin-bottom: 50px;
     padding: 190px 20px 0;
     background-size: 375px 354px;
   }
-  /* line 396, src/sass/components/_features.scss */
+  /* line 404, src/sass/components/_features.scss */
   .services-page .services__fairy-on-the-wire h2 {
     margin-bottom: 120px;
     font-size: 25px;
   }
-  /* line 399, src/sass/components/_features.scss */
+  /* line 407, src/sass/components/_features.scss */
   .services-page .services__fairy-on-the-wire h2 span {
     display: block;
     font-size: 20px;
     line-height: 1.45;
   }
-  /* line 405, src/sass/components/_features.scss */
+  /* line 413, src/sass/components/_features.scss */
   .services-page .services__fairy-on-the-wire h3 {
     display: none;
   }
-  /* line 408, src/sass/components/_features.scss */
+  /* line 416, src/sass/components/_features.scss */
   .services-page .services__fairy-on-the-wire p {
     font-size: 20px !important;
     line-height: 1.45 !important;
   }
-  /* line 415, src/sass/components/_features.scss */
+  /* line 423, src/sass/components/_features.scss */
   .services-page .services__fairy-on-the-wire ul {
     top: 150px;
   }
-  /* line 418, src/sass/components/_features.scss */
+  /* line 426, src/sass/components/_features.scss */
   .services-page .services__fairy-on-the-wire ul a span {
     display: none;
   }
-  /* line 423, src/sass/components/_features.scss */
+  /* line 431, src/sass/components/_features.scss */
   .services-page .services__fairy-on-the-wire ul .whatsapp a {
     width: 45px;
     height: 80px;
     left: -36px;
     top: 135px;
   }
-  /* line 431, src/sass/components/_features.scss */
+  /* line 439, src/sass/components/_features.scss */
   .services-page .services__fairy-on-the-wire ul .facebook a {
     width: 58px;
     height: 80px;
     left: -147px;
     top: 120px;
   }
-  /* line 439, src/sass/components/_features.scss */
+  /* line 447, src/sass/components/_features.scss */
   .services-page .services__fairy-on-the-wire ul .telegramm a {
     width: 47px;
     height: 80px;
     left: -86px;
     top: 135px;
   }
-  /* line 447, src/sass/components/_features.scss */
+  /* line 455, src/sass/components/_features.scss */
   .services-page .services__fairy-on-the-wire ul .vk a {
     width: 63px;
     height: 80px;
     left: 13px;
     top: 134px;
   }
-  /* line 455, src/sass/components/_features.scss */
+  /* line 463, src/sass/components/_features.scss */
   .services-page .services__fairy-on-the-wire ul .instagram a {
     width: 50px;
     height: 80px;
     left: 80px;
     top: 116px;
   }
-  /* line 463, src/sass/components/_features.scss */
+  /* line 471, src/sass/components/_features.scss */
   .services-page .services__fairy-on-the-wire ul .email a {
     width: 50px;
     height: 80px;
     left: 133px;
     top: 76px;
   }
-  /* line 477, src/sass/components/_features.scss */
+  /* line 485, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selection-photos ul li a img.selection__image0 {
     -webkit-transform: rotate(-3deg) translate3d(0, 0, 0);
             transform: rotate(-3deg) translate3d(0, 0, 0);
   }
-  /* line 480, src/sass/components/_features.scss */
+  /* line 488, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selection-photos ul li a img.selection__image1 {
     -webkit-transform: rotate(8deg) translate3d(0, 0, 0);
             transform: rotate(8deg) translate3d(0, 0, 0);
   }
-  /* line 483, src/sass/components/_features.scss */
+  /* line 491, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selection-photos ul li a img.selection__image2 {
     -webkit-transform: rotate(2deg) translate3d(0, 0, 0);
             transform: rotate(2deg) translate3d(0, 0, 0);
   }
-  /* line 489, src/sass/components/_features.scss */
+  /* line 497, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selection-photos .more {
     margin-bottom: 10px;
   }
-  /* line 493, src/sass/components/_features.scss */
+  /* line 501, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selection-photos .more a span.c span.c2 br {
     display: none;
   }
-  /* line 499, src/sass/components/_features.scss */
+  /* line 507, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selection-photos .more span.title {
     font-size: 25px;
     line-height: 1.48;
     color: #000;
   }
-  /* line 504, src/sass/components/_features.scss */
+  /* line 512, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selection-photos .more span.u {
     font-size: 18px;
   }
-  /* line 507, src/sass/components/_features.scss */
+  /* line 515, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selection-photos .more span.arrow {
     display: block;
     width: 87px;
@@ -1925,27 +1938,27 @@
     background: url("../images/bg-mobile-arrow.png");
     background-size: 87px 20px;
   }
-  /* line 514, src/sass/components/_features.scss */
+  /* line 522, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selection-photos .more span.arrow .arrow-tail, .services-page .services__find-the-dress .selection-photos .more span.arrow .arrow-pike {
     display: none;
   }
-  /* line 521, src/sass/components/_features.scss */
+  /* line 529, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .page_content__title {
     margin-top: 0;
     line-height: 1;
     font-size: 35px;
   }
-  /* line 526, src/sass/components/_features.scss */
+  /* line 534, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selections-photo {
     width: 100%;
     display: block;
   }
-  /* line 529, src/sass/components/_features.scss */
+  /* line 537, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selections-photo .selection0,
   .services-page .services__find-the-dress .selections-photo .selection2 {
     display: none;
   }
-  /* line 533, src/sass/components/_features.scss */
+  /* line 541, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selections-photo li {
     display: block;
     width: 100%;
@@ -1953,17 +1966,17 @@
     max-width: 380px;
     margin: 0 auto;
   }
-  /* line 540, src/sass/components/_features.scss */
+  /* line 548, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selections-photo li span .title {
     max-width: 300px !important;
   }
-  /* line 543, src/sass/components/_features.scss */
+  /* line 551, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selections-photo li span .digits {
     font-size: 100px;
     line-height: 1;
     color: #c053cc !important;
   }
-  /* line 548, src/sass/components/_features.scss */
+  /* line 556, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selections-photo li span.u {
     font-size: 25px;
     line-height: 1.48;
@@ -1972,7 +1985,7 @@
   }
 }
 
-/* line 563, src/sass/components/_features.scss */
+/* line 571, src/sass/components/_features.scss */
 .services__fairy-on-the-wire h2 span {
   display: none;
 }

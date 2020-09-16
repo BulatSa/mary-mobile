@@ -1,6 +1,6 @@
 @media screen and (max-width: 700px) {
   .services-page {
-    background: none !important;
+    background-image: none !important;
     &:before {
       top: 0;
       height: 553px !important;
@@ -164,10 +164,15 @@
         }
         textarea {
           margin-bottom: 12px;
+          appearance: none;
         }
-        input[type="submit"] {
-          margin-bottom: 10px;
+        input {
+          appearance: none;
+          &[type="submit"] {
+            margin-bottom: 10px;
+          }
         }
+        
         p {
           &.hint {
             font-size: 20px;
@@ -247,11 +252,13 @@
           &.services__coffee__photo1 {
           }
           &.services__coffee__photo2 {
-            width: 44%;
-            margin-left: 6px;
-            margin-top: 20px;
+            width: 48.5%;
+            margin-left: 0;
+            margin-top: 15px;
+            transform: rotate(-3deg);
           }
           &.services__coffee__photo3 {
+            width: 48.5%;
             margin-top: 15px;
           }
         }
@@ -312,6 +319,7 @@
         }
         p {
           font-size: 20px;
+          margin-bottom: 0;
         }
       }
       .services__make-up-and-hairstyle__right {
