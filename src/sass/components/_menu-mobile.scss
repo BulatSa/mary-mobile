@@ -1,109 +1,111 @@
-.menu-mobile {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 3px 15px 5px;
-  background: url("../images/bg-top-menu.png") no-repeat top center;
-  background-size: 100% 100%;
-  transition: all 0.3s ease;
-  transform: translate3d(0, 0, 0);
-  box-sizing: border-box;
-  z-index: 502;
-  &.hide {
-    transform: translate3d(0, -100%, 0);
-  }
-  &[data-menu-transparent] {
-    background-position: 0 -50px;
-  }
-  &.show-bg {
-    background-position: 50% 0;
-  }
-  @include res(s) {
-    display: block;
-  }
-  * {
-    margin: 0;
-    padding: 0;
+@media screen and (max-width: 700px) {
+  .menu-mobile {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 3px 15px 5px;
+    background: url("../images/bg-top-menu.png") no-repeat top center;
+    background-size: 100% 100%;
+    transition: all 0.3s ease;
+    transform: translate3d(0, 0, 0);
     box-sizing: border-box;
-    -ms-text-size-adjust: 100%;
-	  -webkit-text-size-adjust: 100%;
+    z-index: 502;
+    &.hide {
+      transform: translate3d(0, -100%, 0);
+    }
+    &[data-menu-transparent] {
+      background-position: 0 -50px;
+    }
+    &.show-bg {
+      background-position: 50% 0;
+    }
+    @include res(s) {
+      display: block;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
   }
-}
 
-.menu-mobile__items {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 -5px;
-}
-
-.menu-mobile__item {
-  display: block;
-  padding: 5px;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
-  img {
-    display: block;
-    pointer-events: none;
-  }
-  &--burger {
-    position: relative;
+  .menu-mobile__items {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 40px;
-    cursor: pointer;
-    white-space: nowrap;
-    user-select: none;
-    background: url('../images/icons/top-menu-cloud.png') no-repeat center;
-    background-size: 45px 34px;
-    figure {
-      display: inline-block;
-      vertical-align: middle;
-      position: relative;
-      width: 20px;
-      height: 2px;
-      margin: 0;
-      border-radius: 4px;
-      background-color: #000;
-      transition: all 0.3s ease;
+    justify-content: space-between;
+    margin: 0 -5px;
+  }
+
+  .menu-mobile__item {
+    display: block;
+    padding: 5px;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    img {
+      display: block;
       pointer-events: none;
-      &:before,
-      &:after {
-        content: "";
+    }
+    &--burger {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 40px;
+      cursor: pointer;
+      white-space: nowrap;
+      user-select: none;
+      background: url("../images/icons/top-menu-cloud.png") no-repeat center;
+      background-size: 45px 34px;
+      figure {
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
         width: 20px;
         height: 2px;
-        position: absolute;
-        left: 0;
+        margin: 0;
+        border-radius: 4px;
         background-color: #000;
         transition: all 0.3s ease;
-        border-radius: 4px;
-      }
-
-      &:before {
-        top: -6px;
-      }
-
-      &:after {
-        bottom: -6px;
-      }
-    }
-
-    &.open {
-      figure {
-        background: #A764BF;
-        transform: rotate(45deg);
+        pointer-events: none;
+        &:before,
         &:after {
-          transform: scale(0.5);
-          opacity: 0;
+          content: "";
+          width: 20px;
+          height: 2px;
+          position: absolute;
+          left: 0;
+          background-color: #000;
+          transition: all 0.3s ease;
+          border-radius: 4px;
         }
+
         &:before {
-          transform: rotate(-90deg);
-          top: 0;
-          background: #A764BF;
+          top: -6px;
+        }
+
+        &:after {
+          bottom: -6px;
+        }
+      }
+
+      &.open {
+        figure {
+          background: #a764bf;
+          transform: rotate(45deg);
+          &:after {
+            transform: scale(0.5);
+            opacity: 0;
+          }
+          &:before {
+            transform: rotate(-90deg);
+            top: 0;
+            background: #a764bf;
+          }
         }
       }
     }

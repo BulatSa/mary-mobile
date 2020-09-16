@@ -300,168 +300,158 @@
   }
 }
 
-/* line 1, src/sass/components/_menu-mobile.scss */
-.menu-mobile {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 3px 15px 5px;
-  background: url("../images/bg-top-menu.png") no-repeat top center;
-  background-size: 100% 100%;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  z-index: 502;
+@media screen and (max-width: 700px) {
+  /* line 2, src/sass/components/_menu-mobile.scss */
+  .menu-mobile {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 3px 15px 5px;
+    background: url("../images/bg-top-menu.png") no-repeat top center;
+    background-size: 100% 100%;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    z-index: 502;
+  }
+  /* line 15, src/sass/components/_menu-mobile.scss */
+  .menu-mobile.hide {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+  /* line 18, src/sass/components/_menu-mobile.scss */
+  .menu-mobile[data-menu-transparent] {
+    background-position: 0 -50px;
+  }
+  /* line 21, src/sass/components/_menu-mobile.scss */
+  .menu-mobile.show-bg {
+    background-position: 50% 0;
+  }
 }
 
-/* line 14, src/sass/components/_menu-mobile.scss */
-.menu-mobile.hide {
-  -webkit-transform: translate3d(0, -100%, 0);
-          transform: translate3d(0, -100%, 0);
-}
-
-/* line 17, src/sass/components/_menu-mobile.scss */
-.menu-mobile[data-menu-transparent] {
-  background-position: 0 -50px;
-}
-
-/* line 20, src/sass/components/_menu-mobile.scss */
-.menu-mobile.show-bg {
-  background-position: 50% 0;
-}
-
-@media (max-width: 680px) {
-  /* line 1, src/sass/components/_menu-mobile.scss */
+@media screen and (max-width: 700px) and (max-width: 680px) {
+  /* line 2, src/sass/components/_menu-mobile.scss */
   .menu-mobile {
     display: block;
   }
 }
 
-/* line 26, src/sass/components/_menu-mobile.scss */
-.menu-mobile * {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-/* line 35, src/sass/components/_menu-mobile.scss */
-.menu-mobile__items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0 -5px;
-}
-
-/* line 42, src/sass/components/_menu-mobile.scss */
-.menu-mobile__item {
-  display: block;
-  padding: 5px;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-}
-
-/* line 47, src/sass/components/_menu-mobile.scss */
-.menu-mobile__item img {
-  display: block;
-  pointer-events: none;
-}
-
-/* line 51, src/sass/components/_menu-mobile.scss */
-.menu-mobile__item--burger {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 50px;
-  height: 40px;
-  cursor: pointer;
-  white-space: nowrap;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  background: url("../images/icons/top-menu-cloud.png") no-repeat center;
-  background-size: 45px 34px;
-}
-
-/* line 63, src/sass/components/_menu-mobile.scss */
-.menu-mobile__item--burger figure {
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-  width: 20px;
-  height: 2px;
-  margin: 0;
-  border-radius: 4px;
-  background-color: #000;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  pointer-events: none;
-}
-
-/* line 74, src/sass/components/_menu-mobile.scss */
-.menu-mobile__item--burger figure:before, .menu-mobile__item--burger figure:after {
-  content: "";
-  width: 20px;
-  height: 2px;
-  position: absolute;
-  left: 0;
-  background-color: #000;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  border-radius: 4px;
-}
-
-/* line 86, src/sass/components/_menu-mobile.scss */
-.menu-mobile__item--burger figure:before {
-  top: -6px;
-}
-
-/* line 90, src/sass/components/_menu-mobile.scss */
-.menu-mobile__item--burger figure:after {
-  bottom: -6px;
-}
-
-/* line 96, src/sass/components/_menu-mobile.scss */
-.menu-mobile__item--burger.open figure {
-  background: #A764BF;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-/* line 99, src/sass/components/_menu-mobile.scss */
-.menu-mobile__item--burger.open figure:after {
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
-  opacity: 0;
-}
-
-/* line 103, src/sass/components/_menu-mobile.scss */
-.menu-mobile__item--burger.open figure:before {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  top: 0;
-  background: #A764BF;
+@media screen and (max-width: 700px) {
+  /* line 27, src/sass/components/_menu-mobile.scss */
+  .menu-mobile * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  /* line 36, src/sass/components/_menu-mobile.scss */
+  .menu-mobile__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 -5px;
+  }
+  /* line 43, src/sass/components/_menu-mobile.scss */
+  .menu-mobile__item {
+    display: block;
+    padding: 5px;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  }
+  /* line 48, src/sass/components/_menu-mobile.scss */
+  .menu-mobile__item img {
+    display: block;
+    pointer-events: none;
+  }
+  /* line 52, src/sass/components/_menu-mobile.scss */
+  .menu-mobile__item--burger {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    white-space: nowrap;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: url("../images/icons/top-menu-cloud.png") no-repeat center;
+    background-size: 45px 34px;
+  }
+  /* line 64, src/sass/components/_menu-mobile.scss */
+  .menu-mobile__item--burger figure {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 20px;
+    height: 2px;
+    margin: 0;
+    border-radius: 4px;
+    background-color: #000;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+  /* line 75, src/sass/components/_menu-mobile.scss */
+  .menu-mobile__item--burger figure:before, .menu-mobile__item--burger figure:after {
+    content: "";
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    background-color: #000;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+  }
+  /* line 87, src/sass/components/_menu-mobile.scss */
+  .menu-mobile__item--burger figure:before {
+    top: -6px;
+  }
+  /* line 91, src/sass/components/_menu-mobile.scss */
+  .menu-mobile__item--burger figure:after {
+    bottom: -6px;
+  }
+  /* line 97, src/sass/components/_menu-mobile.scss */
+  .menu-mobile__item--burger.open figure {
+    background: #a764bf;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  /* line 100, src/sass/components/_menu-mobile.scss */
+  .menu-mobile__item--burger.open figure:after {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 0;
+  }
+  /* line 104, src/sass/components/_menu-mobile.scss */
+  .menu-mobile__item--burger.open figure:before {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    top: 0;
+    background: #a764bf;
+  }
 }
 
 /* line 1, src/sass/components/_contact-menu.scss */
@@ -1357,10 +1347,8 @@
     top: 0;
     height: 553px !important;
   }
-  /* line 8, src/sass/components/_features.scss */
-  .services-page * {
-    margin: 0;
-    padding: 0;
+  /* line 9, src/sass/components/_features.scss */
+  .services-page .content * {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     -ms-text-size-adjust: 100%;
@@ -1382,7 +1370,7 @@
   /* line 28, src/sass/components/_features.scss */
   .services-page .header .site-title {
     width: 100%;
-    padding-top: 85px;
+    padding-top: 35px;
   }
   /* line 32, src/sass/components/_features.scss */
   .services-page .header .salon-label {
@@ -1840,90 +1828,95 @@
   .services-page .services__fairy-on-the-wire h3 {
     display: none;
   }
-  /* line 413, src/sass/components/_features.scss */
+  /* line 408, src/sass/components/_features.scss */
+  .services-page .services__fairy-on-the-wire p {
+    font-size: 20px !important;
+    line-height: 1.45 !important;
+  }
+  /* line 415, src/sass/components/_features.scss */
   .services-page .services__fairy-on-the-wire ul {
     top: 150px;
   }
-  /* line 416, src/sass/components/_features.scss */
+  /* line 418, src/sass/components/_features.scss */
   .services-page .services__fairy-on-the-wire ul a span {
     display: none;
   }
-  /* line 421, src/sass/components/_features.scss */
+  /* line 423, src/sass/components/_features.scss */
   .services-page .services__fairy-on-the-wire ul .whatsapp a {
     width: 45px;
     height: 80px;
     left: -36px;
     top: 135px;
   }
-  /* line 429, src/sass/components/_features.scss */
+  /* line 431, src/sass/components/_features.scss */
   .services-page .services__fairy-on-the-wire ul .facebook a {
     width: 58px;
     height: 80px;
     left: -147px;
     top: 120px;
   }
-  /* line 437, src/sass/components/_features.scss */
+  /* line 439, src/sass/components/_features.scss */
   .services-page .services__fairy-on-the-wire ul .telegramm a {
     width: 47px;
     height: 80px;
     left: -86px;
     top: 135px;
   }
-  /* line 445, src/sass/components/_features.scss */
+  /* line 447, src/sass/components/_features.scss */
   .services-page .services__fairy-on-the-wire ul .vk a {
     width: 63px;
     height: 80px;
     left: 13px;
     top: 134px;
   }
-  /* line 453, src/sass/components/_features.scss */
+  /* line 455, src/sass/components/_features.scss */
   .services-page .services__fairy-on-the-wire ul .instagram a {
     width: 50px;
     height: 80px;
     left: 80px;
     top: 116px;
   }
-  /* line 461, src/sass/components/_features.scss */
+  /* line 463, src/sass/components/_features.scss */
   .services-page .services__fairy-on-the-wire ul .email a {
     width: 50px;
     height: 80px;
     left: 133px;
     top: 76px;
   }
-  /* line 475, src/sass/components/_features.scss */
+  /* line 477, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selection-photos ul li a img.selection__image0 {
     -webkit-transform: rotate(-3deg) translate3d(0, 0, 0);
             transform: rotate(-3deg) translate3d(0, 0, 0);
   }
-  /* line 478, src/sass/components/_features.scss */
+  /* line 480, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selection-photos ul li a img.selection__image1 {
     -webkit-transform: rotate(8deg) translate3d(0, 0, 0);
             transform: rotate(8deg) translate3d(0, 0, 0);
   }
-  /* line 481, src/sass/components/_features.scss */
+  /* line 483, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selection-photos ul li a img.selection__image2 {
     -webkit-transform: rotate(2deg) translate3d(0, 0, 0);
             transform: rotate(2deg) translate3d(0, 0, 0);
   }
-  /* line 487, src/sass/components/_features.scss */
+  /* line 489, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selection-photos .more {
     margin-bottom: 10px;
   }
-  /* line 491, src/sass/components/_features.scss */
+  /* line 493, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selection-photos .more a span.c span.c2 br {
     display: none;
   }
-  /* line 497, src/sass/components/_features.scss */
+  /* line 499, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selection-photos .more span.title {
     font-size: 25px;
     line-height: 1.48;
     color: #000;
   }
-  /* line 502, src/sass/components/_features.scss */
+  /* line 504, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selection-photos .more span.u {
     font-size: 18px;
   }
-  /* line 505, src/sass/components/_features.scss */
+  /* line 507, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selection-photos .more span.arrow {
     display: block;
     width: 87px;
@@ -1932,27 +1925,27 @@
     background: url("../images/bg-mobile-arrow.png");
     background-size: 87px 20px;
   }
-  /* line 512, src/sass/components/_features.scss */
+  /* line 514, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selection-photos .more span.arrow .arrow-tail, .services-page .services__find-the-dress .selection-photos .more span.arrow .arrow-pike {
     display: none;
   }
-  /* line 519, src/sass/components/_features.scss */
+  /* line 521, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .page_content__title {
     margin-top: 0;
     line-height: 1;
     font-size: 35px;
   }
-  /* line 524, src/sass/components/_features.scss */
+  /* line 526, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selections-photo {
     width: 100%;
     display: block;
   }
-  /* line 527, src/sass/components/_features.scss */
+  /* line 529, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selections-photo .selection0,
   .services-page .services__find-the-dress .selections-photo .selection2 {
     display: none;
   }
-  /* line 531, src/sass/components/_features.scss */
+  /* line 533, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selections-photo li {
     display: block;
     width: 100%;
@@ -1960,17 +1953,17 @@
     max-width: 380px;
     margin: 0 auto;
   }
-  /* line 538, src/sass/components/_features.scss */
+  /* line 540, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selections-photo li span .title {
     max-width: 300px !important;
   }
-  /* line 541, src/sass/components/_features.scss */
+  /* line 543, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selections-photo li span .digits {
     font-size: 100px;
     line-height: 1;
     color: #c053cc !important;
   }
-  /* line 546, src/sass/components/_features.scss */
+  /* line 548, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selections-photo li span.u {
     font-size: 25px;
     line-height: 1.48;
@@ -1979,7 +1972,7 @@
   }
 }
 
-/* line 561, src/sass/components/_features.scss */
+/* line 563, src/sass/components/_features.scss */
 .services__fairy-on-the-wire h2 span {
   display: none;
 }

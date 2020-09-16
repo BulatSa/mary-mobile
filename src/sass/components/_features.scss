@@ -5,12 +5,12 @@
       top: 0;
       height: 553px !important;
     }
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      -ms-text-size-adjust: 100%;
-      -webkit-text-size-adjust: 100%;
+    .content {
+      * {
+        box-sizing: border-box;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
     }
 
     .header {
@@ -27,7 +27,7 @@
       }
       .site-title {
         width: 100%;
-        padding-top: 85px;
+        padding-top: 35px;
       }
       .salon-label {
         width: 216px;
@@ -406,6 +406,8 @@
         display: none;
       }
       p {
+        font-size: 20px!important;
+        line-height: (29/20)!important;
         br {
           //display: none;
         }
