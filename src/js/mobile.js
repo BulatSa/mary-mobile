@@ -79,7 +79,18 @@ $(function () {
         height: "380",
       });
     }
-
     // End of Fotorama Slider
+
+    // Replace Service MakeUp block
+    const removeEventListeners = (el) => {
+      const elClone = el.cloneNode(true);
+      el.parentNode.replaceChild(elClone, el);
+    }
+
+    const serviceMakeUpBlock = document.querySelector('.services__make-up-and-hairstyle__right');
+    if (serviceMakeUpBlock) {
+      removeEventListeners(serviceMakeUpBlock);
+    }
+    // End Replace Service MakeUp block
   }
 });
