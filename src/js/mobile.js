@@ -73,14 +73,6 @@ $(function () {
     }
     // End of menuMobileScrollToggle on Scroll
 
-    // Fotorama Slider
-    if ($(".columns__left__padding").length) {
-      $(".columns__left__padding").fotorama({
-        height: "380",
-      });
-    }
-    // End of Fotorama Slider
-
     // Replace Service MakeUp block
     const removeEventListeners = (el) => {
       const elClone = el.cloneNode(true);
