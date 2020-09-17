@@ -1376,15 +1376,19 @@
   .services-page .header .salon-label {
     width: 216px;
     height: 17px;
+    padding: 0;
+    margin-bottom: 10px;
+    background: url("../images/bg-salon-label.png") no-repeat center;
     background-size: 216px 17px;
   }
-  /* line 37, src/sass/components/_features.scss */
+  /* line 40, src/sass/components/_features.scss */
   .services-page .header .salon-name {
     width: 265px;
     height: 46px;
+    background: url("../images/bg-salon-name.png") no-repeat center;
     background-size: 265px 46px;
   }
-  /* line 43, src/sass/components/_features.scss */
+  /* line 47, src/sass/components/_features.scss */
   .services-page .services__pleasant-care {
     height: auto;
     margin-bottom: 50px;
@@ -1394,7 +1398,7 @@
     background: url("../images/bg-header-features.png") no-repeat center bottom;
     background-size: 592px 358px;
   }
-  /* line 52, src/sass/components/_features.scss */
+  /* line 56, src/sass/components/_features.scss */
   .services-page .services__pleasant-care h2 {
     margin-top: 0;
     margin-bottom: 10px;
@@ -1402,7 +1406,7 @@
     line-height: 1.1;
     text-align: center;
   }
-  /* line 60, src/sass/components/_features.scss */
+  /* line 64, src/sass/components/_features.scss */
   .services-page .services__pleasant-care p {
     width: 100%;
     margin-top: 0;
@@ -1411,35 +1415,35 @@
     line-height: 1.2;
     text-align: center;
   }
-  /* line 69, src/sass/components/_features.scss */
+  /* line 73, src/sass/components/_features.scss */
   .services-page .services__we-pay-road-and-deliver {
     min-width: auto;
     text-align: center;
     background: none;
   }
-  /* line 73, src/sass/components/_features.scss */
+  /* line 77, src/sass/components/_features.scss */
   .services-page .services__we-pay-road-and-deliver .page_content {
     padding: 0;
   }
-  /* line 75, src/sass/components/_features.scss */
+  /* line 79, src/sass/components/_features.scss */
   .services-page .services__we-pay-road-and-deliver .page_content h2 {
     font-size: 34px;
     line-height: 0.88571;
   }
-  /* line 80, src/sass/components/_features.scss */
+  /* line 84, src/sass/components/_features.scss */
   .services-page .services__we-pay-road-and-deliver .services__we-pay-road-and-deliver__we-pay-road {
     min-height: auto;
     margin-bottom: 50px;
     padding: 0 20px;
     text-align: center;
   }
-  /* line 85, src/sass/components/_features.scss */
+  /* line 89, src/sass/components/_features.scss */
   .services-page .services__we-pay-road-and-deliver .services__we-pay-road-and-deliver__we-pay-road p {
     float: none;
     width: 100%;
     font-size: 20px;
   }
-  /* line 91, src/sass/components/_features.scss */
+  /* line 95, src/sass/components/_features.scss */
   .services-page .services__we-pay-road-and-deliver .services__we-pay-road-and-deliver__deliver {
     float: none;
     width: 100%;
@@ -1452,13 +1456,13 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
-  /* line 102, src/sass/components/_features.scss */
+  /* line 106, src/sass/components/_features.scss */
   .services-page .services__we-pay-road-and-deliver .services__we-pay-road-and-deliver__deliver p {
     float: none;
     width: 100%;
     font-size: 20px;
   }
-  /* line 108, src/sass/components/_features.scss */
+  /* line 112, src/sass/components/_features.scss */
   .services-page .services__we-pay-road-and-deliver .services__we-pay-road-and-deliver__icons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1470,42 +1474,42 @@
         flex-wrap: wrap;
     margin: 30px -15px 0;
   }
-  /* line 113, src/sass/components/_features.scss */
+  /* line 117, src/sass/components/_features.scss */
   .services-page .services__we-pay-road-and-deliver .services__we-pay-road-and-deliver__icons li {
     float: none;
     max-width: initial;
     margin: 0 15px 20px;
     white-space: nowrap;
   }
-  /* line 118, src/sass/components/_features.scss */
+  /* line 122, src/sass/components/_features.scss */
   .services-page .services__we-pay-road-and-deliver .services__we-pay-road-and-deliver__icons li:before {
     left: initial;
     top: initial;
     margin: 0 auto 15px;
   }
-  /* line 123, src/sass/components/_features.scss */
+  /* line 127, src/sass/components/_features.scss */
   .services-page .services__we-pay-road-and-deliver .services__we-pay-road-and-deliver__icons li span {
     display: block;
     text-align: center;
   }
-  /* line 126, src/sass/components/_features.scss */
+  /* line 130, src/sass/components/_features.scss */
   .services-page .services__we-pay-road-and-deliver .services__we-pay-road-and-deliver__icons li span.number {
     margin-bottom: -2px;
     font-size: 55px;
   }
-  /* line 133, src/sass/components/_features.scss */
+  /* line 137, src/sass/components/_features.scss */
   .services-page .services__we-pay-road-and-deliver .services__we-pay-road-and-deliver__icons .services__we-pay-road-and-deliver__icons__world:before {
     width: 74px;
     height: 50px;
     background-size: 74px 50px;
   }
-  /* line 140, src/sass/components/_features.scss */
+  /* line 144, src/sass/components/_features.scss */
   .services-page .services__we-pay-road-and-deliver .services__we-pay-road-and-deliver__icons .services__we-pay-road-and-deliver__icons__card:before {
     width: 57px;
     height: 50px;
     background-size: 57px 50px;
   }
-  /* line 147, src/sass/components/_features.scss */
+  /* line 151, src/sass/components/_features.scss */
   .services-page .services__we-pay-road-and-deliver .services__we-pay-road-and-deliver__quick-order {
     float: none;
     width: 100%;
@@ -1513,67 +1517,67 @@
     margin: 0 auto 50px;
     padding: 0 20px;
   }
-  /* line 153, src/sass/components/_features.scss */
+  /* line 157, src/sass/components/_features.scss */
   .services-page .services__we-pay-road-and-deliver .services__we-pay-road-and-deliver__quick-order h3 {
     margin: 0;
     padding-bottom: 20px;
     font-size: 35px;
     line-height: 0.85714;
   }
-  /* line 159, src/sass/components/_features.scss */
+  /* line 163, src/sass/components/_features.scss */
   .services-page .services__we-pay-road-and-deliver .services__we-pay-road-and-deliver__quick-order label {
     text-align: center;
     margin: 0;
     margin-bottom: 16px;
     font-size: 20px;
   }
-  /* line 165, src/sass/components/_features.scss */
+  /* line 169, src/sass/components/_features.scss */
   .services-page .services__we-pay-road-and-deliver .services__we-pay-road-and-deliver__quick-order textarea {
     margin-bottom: 12px;
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
   }
-  /* line 169, src/sass/components/_features.scss */
+  /* line 173, src/sass/components/_features.scss */
   .services-page .services__we-pay-road-and-deliver .services__we-pay-road-and-deliver__quick-order input {
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
   }
-  /* line 171, src/sass/components/_features.scss */
+  /* line 175, src/sass/components/_features.scss */
   .services-page .services__we-pay-road-and-deliver .services__we-pay-road-and-deliver__quick-order input[type="submit"] {
     margin-bottom: 10px;
   }
-  /* line 177, src/sass/components/_features.scss */
+  /* line 181, src/sass/components/_features.scss */
   .services-page .services__we-pay-road-and-deliver .services__we-pay-road-and-deliver__quick-order p.hint {
     font-size: 20px;
   }
-  /* line 183, src/sass/components/_features.scss */
+  /* line 187, src/sass/components/_features.scss */
   .services-page .services__free-fitting {
     padding: 0 20px;
     margin-bottom: 50px;
   }
-  /* line 187, src/sass/components/_features.scss */
+  /* line 191, src/sass/components/_features.scss */
   .services-page .services__free-fitting .services__free-fitting__stage {
     height: 1046px;
     padding: 0 81px;
     background: url("../images/bg-feature-feeting-left.png") no-repeat left top;
     background-size: 81px 1046px;
   }
-  /* line 192, src/sass/components/_features.scss */
+  /* line 196, src/sass/components/_features.scss */
   .services-page .services__free-fitting .services__free-fitting__stage:after {
     width: 81px;
     height: 1046px;
     background: url("../images/bg-feature-feeting-right.png") no-repeat left top;
     background-size: 81px 1046px;
   }
-  /* line 199, src/sass/components/_features.scss */
+  /* line 203, src/sass/components/_features.scss */
   .services-page .services__free-fitting .services__free-fitting__stage__center {
     height: 1046px;
     background: url("../images/bg-feature-feeting-center.png") repeat-x center top;
     background-size: 1px 1046px;
   }
-  /* line 204, src/sass/components/_features.scss */
+  /* line 208, src/sass/components/_features.scss */
   .services-page .services__free-fitting .services__free-fitting__stage__content {
     top: 0;
     left: 11px;
@@ -1582,7 +1586,7 @@
     background-size: 445px 492px;
     background-position: center bottom;
   }
-  /* line 212, src/sass/components/_features.scss */
+  /* line 216, src/sass/components/_features.scss */
   .services-page .services__free-fitting .services__free-fitting__stage__content-block {
     width: 100%;
     margin-left: 0;
@@ -1590,24 +1594,24 @@
     padding-top: 50px;
     text-align: center;
   }
-  /* line 218, src/sass/components/_features.scss */
+  /* line 222, src/sass/components/_features.scss */
   .services-page .services__free-fitting .services__free-fitting__stage__content-block h2 {
     margin-top: 0;
     margin-bottom: 10px;
     font-size: 35px;
     line-height: 1;
   }
-  /* line 224, src/sass/components/_features.scss */
+  /* line 228, src/sass/components/_features.scss */
   .services-page .services__free-fitting .services__free-fitting__stage__content-block p {
     margin-top: 0;
     font-size: 20px;
   }
-  /* line 229, src/sass/components/_features.scss */
+  /* line 233, src/sass/components/_features.scss */
   .services-page .services__free-fitting .fitting-button {
     margin: 0 auto;
     background-position: 0 -4px;
   }
-  /* line 234, src/sass/components/_features.scss */
+  /* line 238, src/sass/components/_features.scss */
   .services-page .services__photo-and-hashtag {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1617,20 +1621,20 @@
     margin-bottom: 140px;
     padding: 0 20px;
   }
-  /* line 239, src/sass/components/_features.scss */
+  /* line 243, src/sass/components/_features.scss */
   .services-page .services__photo-and-hashtag .services__photo-and-hashtag__left {
     float: none;
     width: 100%;
     padding: 0;
     text-align: center;
   }
-  /* line 244, src/sass/components/_features.scss */
+  /* line 248, src/sass/components/_features.scss */
   .services-page .services__photo-and-hashtag .services__photo-and-hashtag__left p {
     position: relative;
     margin-bottom: 20px;
     font-size: 20px;
   }
-  /* line 249, src/sass/components/_features.scss */
+  /* line 253, src/sass/components/_features.scss */
   .services-page .services__photo-and-hashtag .services__photo-and-hashtag__left p a.instagram {
     position: absolute;
     top: initial;
@@ -1641,46 +1645,46 @@
             transform: translate3d(-50%, 0, 0);
     z-index: 1;
   }
-  /* line 257, src/sass/components/_features.scss */
+  /* line 261, src/sass/components/_features.scss */
   .services-page .services__photo-and-hashtag .services__photo-and-hashtag__left p a.instagram img {
     display: block;
     margin: 0 auto;
     -webkit-transform: rotate(-13.87deg);
             transform: rotate(-13.87deg);
   }
-  /* line 266, src/sass/components/_features.scss */
+  /* line 270, src/sass/components/_features.scss */
   .services-page .services__photo-and-hashtag .services__photo-and-hashtag__right {
     float: none;
     width: 320px;
     margin: 0 auto;
     height: 255px;
   }
-  /* line 271, src/sass/components/_features.scss */
+  /* line 275, src/sass/components/_features.scss */
   .services-page .services__photo-and-hashtag .services__photo-and-hashtag__right .services__photo-and-hashtag__photo1,
   .services-page .services__photo-and-hashtag .services__photo-and-hashtag__right .services__photo-and-hashtag__photo2,
   .services-page .services__photo-and-hashtag .services__photo-and-hashtag__right .services__photo-and-hashtag__photo3 {
     width: 184px;
     height: 131px;
   }
-  /* line 277, src/sass/components/_features.scss */
+  /* line 281, src/sass/components/_features.scss */
   .services-page .services__photo-and-hashtag .services__photo-and-hashtag__right .services__photo-and-hashtag__photo1 {
     -webkit-transform: rotate(2.79deg);
             transform: rotate(2.79deg);
   }
-  /* line 280, src/sass/components/_features.scss */
+  /* line 284, src/sass/components/_features.scss */
   .services-page .services__photo-and-hashtag .services__photo-and-hashtag__right .services__photo-and-hashtag__photo2 {
     top: 30px;
     -webkit-transform: rotate(15deg);
             transform: rotate(15deg);
   }
-  /* line 284, src/sass/components/_features.scss */
+  /* line 288, src/sass/components/_features.scss */
   .services-page .services__photo-and-hashtag .services__photo-and-hashtag__right .services__photo-and-hashtag__photo3 {
     left: 40px;
     top: 100px;
     -webkit-transform: rotate(-10.14deg);
             transform: rotate(-10.14deg);
   }
-  /* line 291, src/sass/components/_features.scss */
+  /* line 295, src/sass/components/_features.scss */
   .services-page .services__coffee {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1690,12 +1694,12 @@
     margin-bottom: 50px;
     padding: 0 20px;
   }
-  /* line 296, src/sass/components/_features.scss */
+  /* line 300, src/sass/components/_features.scss */
   .services-page .services__coffee .services__coffee__left {
     width: 100%;
     margin-bottom: 30px;
   }
-  /* line 302, src/sass/components/_features.scss */
+  /* line 306, src/sass/components/_features.scss */
   .services-page .services__coffee .services__coffee__left img.services__coffee__photo2 {
     width: 48.5%;
     margin-left: 0;
@@ -1703,12 +1707,12 @@
     -webkit-transform: rotate(-3deg);
             transform: rotate(-3deg);
   }
-  /* line 308, src/sass/components/_features.scss */
+  /* line 312, src/sass/components/_features.scss */
   .services-page .services__coffee .services__coffee__left img.services__coffee__photo3 {
     width: 48.5%;
     margin-top: 15px;
   }
-  /* line 314, src/sass/components/_features.scss */
+  /* line 318, src/sass/components/_features.scss */
   .services-page .services__coffee .services__coffee__right {
     position: relative;
     top: initial;
@@ -1719,7 +1723,7 @@
     width: 100%;
     text-align: center;
   }
-  /* line 322, src/sass/components/_features.scss */
+  /* line 326, src/sass/components/_features.scss */
   .services-page .services__coffee .services__coffee__right h2 {
     margin: 0;
     margin-bottom: 10px;
@@ -1728,16 +1732,16 @@
     line-height: 1;
     background-size: 204px 136px;
   }
-  /* line 330, src/sass/components/_features.scss */
+  /* line 334, src/sass/components/_features.scss */
   .services-page .services__coffee .services__coffee__right p {
     font-size: 20px;
   }
-  /* line 335, src/sass/components/_features.scss */
+  /* line 339, src/sass/components/_features.scss */
   .services-page .services__fitting-photo {
     margin-bottom: 50px;
     padding: 0 20px;
   }
-  /* line 338, src/sass/components/_features.scss */
+  /* line 342, src/sass/components/_features.scss */
   .services-page .services__fitting-photo h2 {
     margin-bottom: 10px;
     padding-top: 265px;
@@ -1745,16 +1749,16 @@
     line-height: 1;
     background-size: 332px 245px;
   }
-  /* line 345, src/sass/components/_features.scss */
+  /* line 349, src/sass/components/_features.scss */
   .services-page .services__fitting-photo p {
     font-size: 20px;
   }
-  /* line 349, src/sass/components/_features.scss */
+  /* line 353, src/sass/components/_features.scss */
   .services-page .services__make-up-and-hairstyle {
     padding-top: 0;
     padding-bottom: 50px;
   }
-  /* line 352, src/sass/components/_features.scss */
+  /* line 356, src/sass/components/_features.scss */
   .services-page .services__make-up-and-hairstyle .page_content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1762,7 +1766,7 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  /* line 356, src/sass/components/_features.scss */
+  /* line 360, src/sass/components/_features.scss */
   .services-page .services__make-up-and-hairstyle .services__make-up-and-hairstyle__left {
     width: 100%;
     padding: 0 20px;
@@ -1772,19 +1776,19 @@
         -ms-flex-order: 1;
             order: 1;
   }
-  /* line 362, src/sass/components/_features.scss */
+  /* line 366, src/sass/components/_features.scss */
   .services-page .services__make-up-and-hairstyle .services__make-up-and-hairstyle__left h2 {
     margin-bottom: 10px;
     font-size: 35px;
     line-height: 1;
     background-size: 332px 245px;
   }
-  /* line 368, src/sass/components/_features.scss */
+  /* line 372, src/sass/components/_features.scss */
   .services-page .services__make-up-and-hairstyle .services__make-up-and-hairstyle__left p {
     font-size: 20px;
     margin-bottom: 0;
   }
-  /* line 373, src/sass/components/_features.scss */
+  /* line 377, src/sass/components/_features.scss */
   .services-page .services__make-up-and-hairstyle .services__make-up-and-hairstyle__right {
     position: relative;
     width: 100%;
@@ -1795,7 +1799,7 @@
         -ms-flex-order: 0;
             order: 0;
   }
-  /* line 380, src/sass/components/_features.scss */
+  /* line 384, src/sass/components/_features.scss */
   .services-page .services__make-up-and-hairstyle .services__make-up-and-hairstyle__right img {
     position: absolute;
     top: 25px;
@@ -1803,14 +1807,14 @@
     width: 169px;
     height: 237px;
   }
-  /* line 386, src/sass/components/_features.scss */
+  /* line 390, src/sass/components/_features.scss */
   .services-page .services__make-up-and-hairstyle .services__make-up-and-hairstyle__right img:nth-child(1) {
     left: -20px !important;
     -webkit-transform: rotate(-23.53deg);
             transform: rotate(-23.53deg);
     z-index: 1;
   }
-  /* line 391, src/sass/components/_features.scss */
+  /* line 395, src/sass/components/_features.scss */
   .services-page .services__make-up-and-hairstyle .services__make-up-and-hairstyle__right img:nth-child(2) {
     left: 50% !important;
     top: 3px;
@@ -1818,7 +1822,7 @@
             transform: translate3d(-50%, 0, 0);
     z-index: 2;
   }
-  /* line 397, src/sass/components/_features.scss */
+  /* line 401, src/sass/components/_features.scss */
   .services-page .services__make-up-and-hairstyle .services__make-up-and-hairstyle__right img:nth-child(3) {
     right: -20px;
     left: initial;
@@ -1826,7 +1830,7 @@
             transform: rotate(23deg);
     z-index: 3;
   }
-  /* line 406, src/sass/components/_features.scss */
+  /* line 410, src/sass/components/_features.scss */
   .services-page .services__store-dress {
     width: 100%;
     padding: 265px 20px 0;
@@ -1834,17 +1838,17 @@
     background-position: top center;
     background-size: 278px 245px;
   }
-  /* line 412, src/sass/components/_features.scss */
+  /* line 416, src/sass/components/_features.scss */
   .services-page .services__store-dress h2 {
     margin-bottom: 10px;
     line-height: 1;
     font-size: 35px;
   }
-  /* line 417, src/sass/components/_features.scss */
+  /* line 421, src/sass/components/_features.scss */
   .services-page .services__store-dress p {
     font-size: 20px;
   }
-  /* line 421, src/sass/components/_features.scss */
+  /* line 425, src/sass/components/_features.scss */
   .services-page .services__atelier {
     min-width: auto;
     min-height: auto;
@@ -1854,19 +1858,19 @@
     background-size: 742px 245px;
     background-position: 70% 0%;
   }
-  /* line 429, src/sass/components/_features.scss */
+  /* line 433, src/sass/components/_features.scss */
   .services-page .services__atelier .page_content {
     margin: 0;
     padding: 0;
   }
-  /* line 433, src/sass/components/_features.scss */
+  /* line 437, src/sass/components/_features.scss */
   .services-page .services__atelier h2 {
     margin-bottom: 10px;
     padding: 0;
     line-height: 1;
     font-size: 35px;
   }
-  /* line 439, src/sass/components/_features.scss */
+  /* line 443, src/sass/components/_features.scss */
   .services-page .services__atelier p {
     width: 100%;
     max-width: 100%;
@@ -1874,121 +1878,121 @@
     padding-bottom: 10px;
     font-size: 20px;
   }
-  /* line 447, src/sass/components/_features.scss */
+  /* line 451, src/sass/components/_features.scss */
   .services-page .services__fairy-on-the-wire {
     min-height: auto;
     margin-bottom: 50px;
     padding: 190px 20px 0;
     background-size: 375px 354px;
   }
-  /* line 452, src/sass/components/_features.scss */
+  /* line 456, src/sass/components/_features.scss */
   .services-page .services__fairy-on-the-wire h2 {
     margin-bottom: 120px;
     font-size: 25px;
   }
-  /* line 455, src/sass/components/_features.scss */
+  /* line 459, src/sass/components/_features.scss */
   .services-page .services__fairy-on-the-wire h2 span {
     display: block;
     font-size: 20px;
     line-height: 1.45;
   }
-  /* line 461, src/sass/components/_features.scss */
+  /* line 465, src/sass/components/_features.scss */
   .services-page .services__fairy-on-the-wire h3 {
     display: none;
   }
-  /* line 464, src/sass/components/_features.scss */
+  /* line 468, src/sass/components/_features.scss */
   .services-page .services__fairy-on-the-wire p {
     font-size: 20px !important;
     line-height: 1.45 !important;
   }
-  /* line 471, src/sass/components/_features.scss */
+  /* line 475, src/sass/components/_features.scss */
   .services-page .services__fairy-on-the-wire ul {
     top: 150px;
   }
-  /* line 474, src/sass/components/_features.scss */
+  /* line 478, src/sass/components/_features.scss */
   .services-page .services__fairy-on-the-wire ul a span {
     display: none;
   }
-  /* line 479, src/sass/components/_features.scss */
+  /* line 483, src/sass/components/_features.scss */
   .services-page .services__fairy-on-the-wire ul .whatsapp a {
     width: 45px;
     height: 80px;
     left: -36px;
     top: 135px;
   }
-  /* line 487, src/sass/components/_features.scss */
+  /* line 491, src/sass/components/_features.scss */
   .services-page .services__fairy-on-the-wire ul .facebook a {
     width: 58px;
     height: 80px;
     left: -147px;
     top: 120px;
   }
-  /* line 495, src/sass/components/_features.scss */
+  /* line 499, src/sass/components/_features.scss */
   .services-page .services__fairy-on-the-wire ul .telegramm a {
     width: 47px;
     height: 80px;
     left: -86px;
     top: 135px;
   }
-  /* line 503, src/sass/components/_features.scss */
+  /* line 507, src/sass/components/_features.scss */
   .services-page .services__fairy-on-the-wire ul .vk a {
     width: 63px;
     height: 80px;
     left: 13px;
     top: 134px;
   }
-  /* line 511, src/sass/components/_features.scss */
+  /* line 515, src/sass/components/_features.scss */
   .services-page .services__fairy-on-the-wire ul .instagram a {
     width: 50px;
     height: 80px;
     left: 80px;
     top: 116px;
   }
-  /* line 519, src/sass/components/_features.scss */
+  /* line 523, src/sass/components/_features.scss */
   .services-page .services__fairy-on-the-wire ul .email a {
     width: 50px;
     height: 80px;
     left: 133px;
     top: 76px;
   }
-  /* line 528, src/sass/components/_features.scss */
+  /* line 532, src/sass/components/_features.scss */
   .services-page .services__find-the-dress {
     background: #f4f5f0;
   }
-  /* line 534, src/sass/components/_features.scss */
+  /* line 538, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selection-photos ul li a img.selection__image0 {
     -webkit-transform: rotate(-3deg) translate3d(0, 0, 0);
             transform: rotate(-3deg) translate3d(0, 0, 0);
   }
-  /* line 537, src/sass/components/_features.scss */
+  /* line 541, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selection-photos ul li a img.selection__image1 {
     -webkit-transform: rotate(8deg) translate3d(0, 0, 0);
             transform: rotate(8deg) translate3d(0, 0, 0);
   }
-  /* line 540, src/sass/components/_features.scss */
+  /* line 544, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selection-photos ul li a img.selection__image2 {
     -webkit-transform: rotate(2deg) translate3d(0, 0, 0);
             transform: rotate(2deg) translate3d(0, 0, 0);
   }
-  /* line 546, src/sass/components/_features.scss */
+  /* line 550, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selection-photos .more {
     margin-bottom: 10px;
   }
-  /* line 550, src/sass/components/_features.scss */
+  /* line 554, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selection-photos .more a span.c span.c2 br {
     display: none;
   }
-  /* line 556, src/sass/components/_features.scss */
+  /* line 560, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selection-photos .more span.title {
     font-size: 25px;
     line-height: 1.48;
     color: #000;
   }
-  /* line 561, src/sass/components/_features.scss */
+  /* line 565, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selection-photos .more span.u {
     font-size: 18px;
   }
-  /* line 564, src/sass/components/_features.scss */
+  /* line 568, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selection-photos .more span.arrow {
     display: block;
     width: 87px;
@@ -1997,27 +2001,27 @@
     background: url("../images/bg-mobile-arrow.png");
     background-size: 87px 20px;
   }
-  /* line 571, src/sass/components/_features.scss */
+  /* line 575, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selection-photos .more span.arrow .arrow-tail, .services-page .services__find-the-dress .selection-photos .more span.arrow .arrow-pike {
     display: none;
   }
-  /* line 578, src/sass/components/_features.scss */
+  /* line 582, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .page_content__title {
     margin-top: 0;
     line-height: 1;
     font-size: 35px;
   }
-  /* line 583, src/sass/components/_features.scss */
+  /* line 587, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selections-photo {
     width: 100%;
     display: block;
   }
-  /* line 586, src/sass/components/_features.scss */
+  /* line 590, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selections-photo .selection0,
   .services-page .services__find-the-dress .selections-photo .selection2 {
     display: none;
   }
-  /* line 590, src/sass/components/_features.scss */
+  /* line 594, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selections-photo li {
     display: block;
     width: 100%;
@@ -2025,17 +2029,17 @@
     max-width: 380px;
     margin: 0 auto;
   }
-  /* line 597, src/sass/components/_features.scss */
+  /* line 601, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selections-photo li span .title {
     max-width: 300px !important;
   }
-  /* line 600, src/sass/components/_features.scss */
+  /* line 604, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selections-photo li span .digits {
     font-size: 100px;
     line-height: 1;
     color: #c053cc !important;
   }
-  /* line 605, src/sass/components/_features.scss */
+  /* line 609, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selections-photo li span.u {
     font-size: 25px;
     line-height: 1.48;
@@ -2044,7 +2048,7 @@
   }
 }
 
-/* line 620, src/sass/components/_features.scss */
+/* line 624, src/sass/components/_features.scss */
 .services__fairy-on-the-wire h2 span {
   display: none;
 }

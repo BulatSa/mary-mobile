@@ -32,11 +32,15 @@
       .salon-label {
         width: 216px;
         height: 17px;
+        padding: 0;
+        margin-bottom: 10px;
+        background: url("../images/bg-salon-label.png") no-repeat center;
         background-size: 216px 17px;
       }
       .salon-name {
         width: 265px;
         height: 46px;
+        background: url("../images/bg-salon-name.png") no-repeat center;
         background-size: 265px 46px;
       }
     }
