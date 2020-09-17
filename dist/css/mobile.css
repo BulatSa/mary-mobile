@@ -1391,7 +1391,7 @@
     padding: 0 20px;
     padding-bottom: 330px;
     text-align: center;
-    background: url("../images/bg-header-features-2.png") no-repeat center bottom;
+    background: url("../images/bg-header-features.png") no-repeat center bottom;
     background-size: 592px 358px;
   }
   /* line 52, src/sass/components/_features.scss */
@@ -1951,40 +1951,44 @@
     left: 133px;
     top: 76px;
   }
-  /* line 533, src/sass/components/_features.scss */
+  /* line 528, src/sass/components/_features.scss */
+  .services-page .services__find-the-dress {
+    background: #f4f5f0;
+  }
+  /* line 534, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selection-photos ul li a img.selection__image0 {
     -webkit-transform: rotate(-3deg) translate3d(0, 0, 0);
             transform: rotate(-3deg) translate3d(0, 0, 0);
   }
-  /* line 536, src/sass/components/_features.scss */
+  /* line 537, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selection-photos ul li a img.selection__image1 {
     -webkit-transform: rotate(8deg) translate3d(0, 0, 0);
             transform: rotate(8deg) translate3d(0, 0, 0);
   }
-  /* line 539, src/sass/components/_features.scss */
+  /* line 540, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selection-photos ul li a img.selection__image2 {
     -webkit-transform: rotate(2deg) translate3d(0, 0, 0);
             transform: rotate(2deg) translate3d(0, 0, 0);
   }
-  /* line 545, src/sass/components/_features.scss */
+  /* line 546, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selection-photos .more {
     margin-bottom: 10px;
   }
-  /* line 549, src/sass/components/_features.scss */
+  /* line 550, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selection-photos .more a span.c span.c2 br {
     display: none;
   }
-  /* line 555, src/sass/components/_features.scss */
+  /* line 556, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selection-photos .more span.title {
     font-size: 25px;
     line-height: 1.48;
     color: #000;
   }
-  /* line 560, src/sass/components/_features.scss */
+  /* line 561, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selection-photos .more span.u {
     font-size: 18px;
   }
-  /* line 563, src/sass/components/_features.scss */
+  /* line 564, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selection-photos .more span.arrow {
     display: block;
     width: 87px;
@@ -1993,27 +1997,27 @@
     background: url("../images/bg-mobile-arrow.png");
     background-size: 87px 20px;
   }
-  /* line 570, src/sass/components/_features.scss */
+  /* line 571, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selection-photos .more span.arrow .arrow-tail, .services-page .services__find-the-dress .selection-photos .more span.arrow .arrow-pike {
     display: none;
   }
-  /* line 577, src/sass/components/_features.scss */
+  /* line 578, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .page_content__title {
     margin-top: 0;
     line-height: 1;
     font-size: 35px;
   }
-  /* line 582, src/sass/components/_features.scss */
+  /* line 583, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selections-photo {
     width: 100%;
     display: block;
   }
-  /* line 585, src/sass/components/_features.scss */
+  /* line 586, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selections-photo .selection0,
   .services-page .services__find-the-dress .selections-photo .selection2 {
     display: none;
   }
-  /* line 589, src/sass/components/_features.scss */
+  /* line 590, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selections-photo li {
     display: block;
     width: 100%;
@@ -2021,17 +2025,17 @@
     max-width: 380px;
     margin: 0 auto;
   }
-  /* line 596, src/sass/components/_features.scss */
+  /* line 597, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selections-photo li span .title {
     max-width: 300px !important;
   }
-  /* line 599, src/sass/components/_features.scss */
+  /* line 600, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selections-photo li span .digits {
     font-size: 100px;
     line-height: 1;
     color: #c053cc !important;
   }
-  /* line 604, src/sass/components/_features.scss */
+  /* line 605, src/sass/components/_features.scss */
   .services-page .services__find-the-dress .selections-photo li span.u {
     font-size: 25px;
     line-height: 1.48;
@@ -2040,7 +2044,7 @@
   }
 }
 
-/* line 619, src/sass/components/_features.scss */
+/* line 620, src/sass/components/_features.scss */
 .services__fairy-on-the-wire h2 span {
   display: none;
 }
