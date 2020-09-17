@@ -300,8 +300,13 @@
   }
 }
 
+/* line 1, src/sass/components/_menu-mobile.scss */
+.menu-mobile {
+  display: none;
+}
+
 @media screen and (max-width: 700px) {
-  /* line 2, src/sass/components/_menu-mobile.scss */
+  /* line 5, src/sass/components/_menu-mobile.scss */
   .menu-mobile {
     display: none;
     position: fixed;
@@ -319,30 +324,30 @@
             box-sizing: border-box;
     z-index: 502;
   }
-  /* line 15, src/sass/components/_menu-mobile.scss */
+  /* line 18, src/sass/components/_menu-mobile.scss */
   .menu-mobile.hide {
     -webkit-transform: translate3d(0, -100%, 0);
             transform: translate3d(0, -100%, 0);
   }
-  /* line 18, src/sass/components/_menu-mobile.scss */
+  /* line 21, src/sass/components/_menu-mobile.scss */
   .menu-mobile[data-menu-transparent] {
     background-position: 0 -50px;
   }
-  /* line 21, src/sass/components/_menu-mobile.scss */
+  /* line 24, src/sass/components/_menu-mobile.scss */
   .menu-mobile.show-bg {
     background-position: 50% 0;
   }
 }
 
 @media screen and (max-width: 700px) and (max-width: 680px) {
-  /* line 2, src/sass/components/_menu-mobile.scss */
+  /* line 5, src/sass/components/_menu-mobile.scss */
   .menu-mobile {
     display: block;
   }
 }
 
 @media screen and (max-width: 700px) {
-  /* line 27, src/sass/components/_menu-mobile.scss */
+  /* line 30, src/sass/components/_menu-mobile.scss */
   .menu-mobile * {
     margin: 0;
     padding: 0;
@@ -351,7 +356,7 @@
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
   }
-  /* line 36, src/sass/components/_menu-mobile.scss */
+  /* line 39, src/sass/components/_menu-mobile.scss */
   .menu-mobile__items {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -364,19 +369,19 @@
             justify-content: space-between;
     margin: 0 -5px;
   }
-  /* line 43, src/sass/components/_menu-mobile.scss */
+  /* line 46, src/sass/components/_menu-mobile.scss */
   .menu-mobile__item {
     display: block;
     padding: 5px;
     -webkit-tap-highlight-color: transparent;
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   }
-  /* line 48, src/sass/components/_menu-mobile.scss */
+  /* line 51, src/sass/components/_menu-mobile.scss */
   .menu-mobile__item img {
     display: block;
     pointer-events: none;
   }
-  /* line 52, src/sass/components/_menu-mobile.scss */
+  /* line 55, src/sass/components/_menu-mobile.scss */
   .menu-mobile__item--burger {
     position: relative;
     display: -webkit-box;
@@ -399,7 +404,7 @@
     background: url("../images/icons/top-menu-cloud.png") no-repeat center;
     background-size: 45px 34px;
   }
-  /* line 64, src/sass/components/_menu-mobile.scss */
+  /* line 67, src/sass/components/_menu-mobile.scss */
   .menu-mobile__item--burger figure {
     display: inline-block;
     vertical-align: middle;
@@ -413,7 +418,7 @@
     transition: all 0.3s ease;
     pointer-events: none;
   }
-  /* line 75, src/sass/components/_menu-mobile.scss */
+  /* line 78, src/sass/components/_menu-mobile.scss */
   .menu-mobile__item--burger figure:before, .menu-mobile__item--burger figure:after {
     content: "";
     width: 20px;
@@ -425,27 +430,27 @@
     transition: all 0.3s ease;
     border-radius: 4px;
   }
-  /* line 87, src/sass/components/_menu-mobile.scss */
+  /* line 90, src/sass/components/_menu-mobile.scss */
   .menu-mobile__item--burger figure:before {
     top: -6px;
   }
-  /* line 91, src/sass/components/_menu-mobile.scss */
+  /* line 94, src/sass/components/_menu-mobile.scss */
   .menu-mobile__item--burger figure:after {
     bottom: -6px;
   }
-  /* line 97, src/sass/components/_menu-mobile.scss */
+  /* line 100, src/sass/components/_menu-mobile.scss */
   .menu-mobile__item--burger.open figure {
     background: #a764bf;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
   }
-  /* line 100, src/sass/components/_menu-mobile.scss */
+  /* line 103, src/sass/components/_menu-mobile.scss */
   .menu-mobile__item--burger.open figure:after {
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
     opacity: 0;
   }
-  /* line 104, src/sass/components/_menu-mobile.scss */
+  /* line 107, src/sass/components/_menu-mobile.scss */
   .menu-mobile__item--burger.open figure:before {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
