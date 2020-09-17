@@ -181,7 +181,55 @@
       }
     }
     .services__free-fitting {
-      display: none;
+      //display: none;
+      padding: 0 20px;
+      margin-bottom: 50px;
+      .services__free-fitting__stage {
+        height: 1046px;
+        padding: 0 81px;
+        background: url('../images/bg-feature-feeting-left.png') no-repeat left top;
+        background-size: 81px 1046px;
+        &:after {
+          width: 81px;
+          height: 1046px;
+          background: url('../images/bg-feature-feeting-right.png') no-repeat left top;
+          background-size: 81px 1046px;
+        }
+      }
+      .services__free-fitting__stage__center {
+        height: 1046px;
+        background: url('../images/bg-feature-feeting-center.png') repeat-x center top;
+        background-size: 1px 1046px;
+      }
+      .services__free-fitting__stage__content {
+        top: 0;
+        left: 11px;
+        right: 11px;
+        bottom: 11px;
+        background-size: 445px 492px;
+        background-position: center bottom;
+      }
+      .services__free-fitting__stage__content-block {
+        width: 100%;
+        margin-left: 0;
+        padding: 0 13px;
+        padding-top: 50px;
+        text-align: center;
+        h2 {
+          margin-top: 0;
+          margin-bottom: 10px;
+          font-size: 35px;
+          line-height: 1;
+        }
+        p {
+          margin-top: 0;
+          font-size: 20px;
+        }
+      }
+      .fitting-button {
+        margin: 0 auto;
+        background-position: 0 -4px;
+      }
     }
     .services__photo-and-hashtag {
       display: flex;
