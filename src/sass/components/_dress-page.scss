@@ -339,6 +339,28 @@
         display: none !important;
       }
     }
+    .footer__hint {
+      .order-button-wrapper {
+        .fitting-button {
+          width: 142px;
+          height: 44px;
+          left: 16px;
+          background: url('../images/bg-order-button-short.png');
+          background-size: 142px 44px;
+        }
+      }
+    }
+    .favourite-link {
+      display: block;
+      .favourite-link__control {
+        width: 47px;
+        height: 47px;
+        right: 16px;
+        bottom: 20px;
+        left: initial;
+        background-size: 47px 47px;
+      }
+    }
   }
 
   .evening.dress-page {

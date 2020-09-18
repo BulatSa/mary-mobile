@@ -1495,7 +1495,28 @@
   .dress-page .pager__all .next-collection-silhouette {
     display: none !important;
   }
-  /* line 351, src/sass/components/_dress-page.scss */
+  /* line 344, src/sass/components/_dress-page.scss */
+  .dress-page .footer__hint .order-button-wrapper .fitting-button {
+    width: 142px;
+    height: 44px;
+    left: 16px;
+    background: url("../images/bg-order-button-short.png");
+    background-size: 142px 44px;
+  }
+  /* line 353, src/sass/components/_dress-page.scss */
+  .dress-page .favourite-link {
+    display: block;
+  }
+  /* line 355, src/sass/components/_dress-page.scss */
+  .dress-page .favourite-link .favourite-link__control {
+    width: 47px;
+    height: 47px;
+    right: 16px;
+    bottom: 20px;
+    left: initial;
+    background-size: 47px 47px;
+  }
+  /* line 373, src/sass/components/_dress-page.scss */
   .evening.dress-page .columns .columns__right .columns__right__padding .columns__right__padding__service a.white span.arrow-after:after {
     top: 3px !important;
     width: 87px !important;
@@ -1503,7 +1524,7 @@
     background: url("../images/bg-mobile-arrow-purple.png") no-repeat center !important;
     background-size: 87px 20px !important;
   }
-  /* line 365, src/sass/components/_dress-page.scss */
+  /* line 387, src/sass/components/_dress-page.scss */
   .evening.dress-page .panel-top {
     float: none;
     width: 148px;
@@ -1513,18 +1534,18 @@
     background: url("../images/bg-product-panel-top-white.png") no-repeat center top;
     background-size: 148px 15px;
   }
-  /* line 374, src/sass/components/_dress-page.scss */
+  /* line 396, src/sass/components/_dress-page.scss */
   .evening.dress-page .panel {
     background: none;
   }
-  /* line 376, src/sass/components/_dress-page.scss */
+  /* line 398, src/sass/components/_dress-page.scss */
   .evening.dress-page .panel .panel__content {
     width: 148px;
     font-size: 10px;
     background: url("../images/bg-product-panel-middle-white.png") repeat-y center center;
     background-size: 148px 160px;
   }
-  /* line 383, src/sass/components/_dress-page.scss */
+  /* line 405, src/sass/components/_dress-page.scss */
   .evening.dress-page .panel .panel__bottom {
     top: initial;
     width: 148px;
@@ -1536,7 +1557,7 @@
     background-position: center bottom;
     background-size: 148px 15px;
   }
-  /* line 396, src/sass/components/_dress-page.scss */
+  /* line 418, src/sass/components/_dress-page.scss */
   .evening.dress-page .pager__next .arrow {
     width: 87px;
     height: 20px;
