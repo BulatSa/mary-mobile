@@ -2282,3 +2282,143 @@
 .services__fairy-on-the-wire h2 span {
   display: none;
 }
+
+@media screen and (max-width: 700px) {
+  /* line 2, src/sass/components/_main.scss */
+  .main-page {
+    padding-top: 0;
+  }
+  /* line 4, src/sass/components/_main.scss */
+  .main-page * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  /* line 9, src/sass/components/_main.scss */
+  .main-page .header {
+    display: block;
+    min-width: auto;
+    height: 592px;
+  }
+  /* line 13, src/sass/components/_main.scss */
+  .main-page .header .logo,
+  .main-page .header .line-wrapper,
+  .main-page .header .contacts {
+    display: none;
+  }
+  /* line 18, src/sass/components/_main.scss */
+  .main-page .header .header__container {
+    min-width: auto;
+    height: 100%;
+  }
+  /* line 21, src/sass/components/_main.scss */
+  .main-page .header .header__container .content {
+    height: 100%;
+  }
+  /* line 25, src/sass/components/_main.scss */
+  .main-page .header .header__container .site-title .salon-label {
+    width: 216px;
+    height: 17px;
+    padding-bottom: 10px;
+    background-size: 216px 17px;
+  }
+  /* line 31, src/sass/components/_main.scss */
+  .main-page .header .header__container .site-title .salon-name {
+    width: 265px;
+    height: 46px;
+    background-size: 265px 46px;
+  }
+  /* line 39, src/sass/components/_main.scss */
+  .main-page .header .header__container .fotorama .selection .selection__label {
+    bottom: 8%;
+  }
+  /* line 41, src/sass/components/_main.scss */
+  .main-page .header .header__container .fotorama .selection .selection__label h2 {
+    font-size: 26px;
+    line-height: 1.06667;
+  }
+  /* line 45, src/sass/components/_main.scss */
+  .main-page .header .header__container .fotorama .selection .selection__label p {
+    display: none;
+  }
+  /* line 51, src/sass/components/_main.scss */
+  .main-page .header .header__container .fotorama-mirror {
+    min-width: auto;
+    background-size: 620px;
+  }
+  /* line 54, src/sass/components/_main.scss */
+  .main-page .header .header__container .fotorama-mirror .header__content {
+    display: none;
+  }
+  /* line 57, src/sass/components/_main.scss */
+  .main-page .header .header__container .fotorama-mirror .mirror-front {
+    background-size: 564px;
+  }
+  /* line 60, src/sass/components/_main.scss */
+  .main-page .header .header__container .fotorama-mirror .site-title {
+    top: initial;
+    padding-top: 85px;
+  }
+  /* line 64, src/sass/components/_main.scss */
+  .main-page .header .header__container .fotorama-mirror .mirror-front {
+    top: 50px;
+  }
+  /* line 69, src/sass/components/_main.scss */
+  .main-page .header .header__container .fotorama-arrows .fotorama-dots {
+    left: 80px;
+    right: 80px;
+    bottom: 30px;
+  }
+  /* line 73, src/sass/components/_main.scss */
+  .main-page .header .header__container .fotorama-arrows .fotorama-dots .arrow-left {
+    bottom: -11px;
+    width: 17px;
+    height: 33px;
+    background-size: 17px 66px;
+    background-position: 0 0;
+  }
+  /* line 80, src/sass/components/_main.scss */
+  .main-page .header .header__container .fotorama-arrows .fotorama-dots .arrow-right {
+    bottom: -11px;
+    width: 17px;
+    height: 33px;
+    background-size: 17px 66px;
+    background-position: 0 0;
+  }
+  /* line 87, src/sass/components/_main.scss */
+  .main-page .header .header__container .fotorama-arrows .fotorama-dots .dot {
+    padding: 5px;
+  }
+  /* line 89, src/sass/components/_main.scss */
+  .main-page .header .header__container .fotorama-arrows .fotorama-dots .dot:before {
+    width: 12px;
+    height: 12px;
+  }
+  /* line 94, src/sass/components/_main.scss */
+  .main-page .header .header__container .fotorama-arrows .fotorama-dots .dot.active:before {
+    top: 3px;
+    border-width: 3px;
+  }
+  /* line 101, src/sass/components/_main.scss */
+  .main-page .header .header__container .fotorama-arrows .fotorama__wrap {
+    height: 100%;
+  }
+  /* line 109, src/sass/components/_main.scss */
+  .main-page .locations .map-link {
+    width: 100%;
+  }
+  /* line 111, src/sass/components/_main.scss */
+  .main-page .locations .map-link .map-border {
+    width: 100%;
+  }
+  /* line 114, src/sass/components/_main.scss */
+  .main-page .locations .map-link .map {
+    width: 100%;
+  }
+  /* line 120, src/sass/components/_main.scss */
+  .main-page .footer .advice,
+  .main-page .footer .footer-bottom {
+    display: none;
+  }
+}

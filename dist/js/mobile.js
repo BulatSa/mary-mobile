@@ -58,13 +58,13 @@ $(function () {
 
         if (scrollTop > lastScrollTop) {
           // Scroll down
-          if (menuTransparent && scrollTop > 120) {
+          if (menuTransparent && scrollTop > 50) {
             menuMobile.classList.add("show-bg");
           } //menuMobile.classList.add("hide");
 
         } else {
           // Scroll up
-          if (menuTransparent && scrollTop < 120) {
+          if (menuTransparent && scrollTop < 50) {
             menuMobile.classList.remove("show-bg");
           } //menuMobile.classList.remove("hide");
 
@@ -88,6 +88,14 @@ $(function () {
     if (serviceMakeUpBlock) {
       removeEventListeners(serviceMakeUpBlock);
     } // End Replace Service MakeUp block
+    // Main page Fotorama
+
+
+    if ($(".fotorama").length) {
+      $(".fotorama").fotorama({
+        width: "90%"
+      });
+    } // Main page Fotorama
 
   }
 });

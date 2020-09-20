@@ -1,0 +1,126 @@
+@media screen and (max-width: 700px) {
+  .main-page {
+    padding-top: 0;
+    * {
+      box-sizing: border-box;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+    .header {
+      display: block;
+      min-width: auto;
+      height: 592px;
+      .logo,
+      .line-wrapper,
+      .contacts {
+        display: none;
+      }
+      .header__container {
+        min-width: auto;
+        height: 100%;
+        .content {
+          height: 100%;
+        }
+        .site-title {
+          .salon-label {
+            width: 216px;
+            height: 17px;
+            padding-bottom: 10px;
+            background-size: 216px 17px;
+          }
+          .salon-name {
+            width: 265px;
+            height: 46px;
+            background-size: 265px 46px;
+          }
+        }
+        .fotorama {
+          .selection {
+            .selection__label {
+              bottom: 8%;
+              h2 {
+                font-size: 26px;
+                line-height: (32/30);
+              }
+              p {
+                display: none;
+              }
+            }
+          }
+        }
+        .fotorama-mirror {
+          min-width: auto;
+          background-size: 620px;
+          .header__content {
+            display: none;
+          }
+          .mirror-front {
+            background-size: 564px;
+          }
+          .site-title {
+            top: initial;
+            padding-top: 85px;
+          }
+          .mirror-front {
+            top: 50px;
+          }
+        }
+        .fotorama-arrows {
+          .fotorama-dots {
+            left: 80px;
+            right: 80px;
+            bottom: 30px;
+            .arrow-left {
+              bottom: -11px;
+              width: 17px;
+              height: 33px;
+              background-size: 17px 66px;
+              background-position: 0 0;
+            }
+            .arrow-right {
+              bottom: -11px;
+              width: 17px;
+              height: 33px;
+              background-size: 17px 66px;
+              background-position: 0 0;
+            }
+            .dot {
+              padding: 5px;
+              &:before {
+                width: 12px;
+                height: 12px;
+              }
+              &.active {
+                &:before {
+                  top: 3px;
+                  border-width: 3px;
+                }
+              }
+            }
+          }
+          .fotorama__wrap {
+            height: 100%;
+          }
+        }
+        
+      }
+    }
+    .locations {
+      .map-link {
+        width: 100%;
+        .map-border {
+          width: 100%;
+        }
+        .map {
+          width: 100%;
+        }
+      }
+    }
+    .footer {
+      .advice,
+      .footer-bottom {
+        display: none;
+      }
+    }
+  }
+}
