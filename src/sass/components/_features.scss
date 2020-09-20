@@ -167,16 +167,22 @@
           font-size: 20px;
         }
         textarea {
+          min-height: 195px;
           margin-bottom: 12px;
           appearance: none;
+          font-size: 20px;
         }
         input {
           appearance: none;
+          &[type="email"] {
+            height: 70px;
+            font-size: 20px;
+          }
           &[type="submit"] {
             margin-bottom: 10px;
           }
         }
-        
+
         p {
           &.hint {
             font-size: 20px;
@@ -191,18 +197,21 @@
       .services__free-fitting__stage {
         height: 1046px;
         padding: 0 81px;
-        background: url('../images/bg-feature-feeting-left.png') no-repeat left top;
+        background: url("../images/bg-feature-feeting-left.png") no-repeat left
+          top;
         background-size: 81px 1046px;
         &:after {
           width: 81px;
           height: 1046px;
-          background: url('../images/bg-feature-feeting-right.png') no-repeat left top;
+          background: url("../images/bg-feature-feeting-right.png") no-repeat
+            left top;
           background-size: 81px 1046px;
         }
       }
       .services__free-fitting__stage__center {
         height: 1046px;
-        background: url('../images/bg-feature-feeting-center.png') repeat-x center top;
+        background: url("../images/bg-feature-feeting-center.png") repeat-x
+          center top;
         background-size: 1px 1046px;
       }
       .services__free-fitting__stage__content {
@@ -466,8 +475,8 @@
         display: none;
       }
       p {
-        font-size: 20px!important;
-        line-height: (29/20)!important;
+        font-size: 20px !important;
+        line-height: (29/20) !important;
         br {
           //display: none;
         }
@@ -570,9 +579,10 @@
               width: 87px;
               height: 20px;
               margin: 20px auto 20px;
-              background: url('../images/bg-mobile-arrow.png');
+              background: url("../images/bg-mobile-arrow.png");
               background-size: 87px 20px;
-              .arrow-tail, .arrow-pike {
+              .arrow-tail,
+              .arrow-pike {
                 display: none;
               }
             }
