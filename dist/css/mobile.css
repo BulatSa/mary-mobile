@@ -2291,94 +2291,192 @@
   display: none;
 }
 
+/* line 2, src/sass/components/_main.scss */
+.main-page .header__mobile-offers {
+  display: none;
+}
+
 @media screen and (max-width: 700px) {
-  /* line 2, src/sass/components/_main.scss */
+  /* line 8, src/sass/components/_main.scss */
   .main-page {
     padding-top: 0;
   }
-  /* line 4, src/sass/components/_main.scss */
+  /* line 10, src/sass/components/_main.scss */
   .main-page * {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
   }
-  /* line 9, src/sass/components/_main.scss */
+  /* line 15, src/sass/components/_main.scss */
   .main-page .header {
     display: block;
     min-width: auto;
-    height: 592px;
+    margin-bottom: 50px;
+    background: url("../images/bg-fotorama-mirror-head.png") no-repeat center top, #000;
+    background-size: 620px 60px;
   }
-  /* line 13, src/sass/components/_main.scss */
+  /* line 23, src/sass/components/_main.scss */
   .main-page .header .logo,
   .main-page .header .line-wrapper,
   .main-page .header .contacts {
     display: none;
   }
-  /* line 18, src/sass/components/_main.scss */
+  /* line 28, src/sass/components/_main.scss */
   .main-page .header .header__container {
     min-width: auto;
-    height: 100%;
+    overflow: hidden;
   }
-  /* line 21, src/sass/components/_main.scss */
+  /* line 31, src/sass/components/_main.scss */
   .main-page .header .header__container .content {
-    height: 100%;
+    max-height: 624px;
+    padding-bottom: 30px;
   }
-  /* line 25, src/sass/components/_main.scss */
+  /* line 36, src/sass/components/_main.scss */
   .main-page .header .header__container .site-title .salon-label {
     width: 216px;
     height: 17px;
     padding-bottom: 10px;
     background-size: 216px 17px;
   }
-  /* line 31, src/sass/components/_main.scss */
+  /* line 42, src/sass/components/_main.scss */
   .main-page .header .header__container .site-title .salon-name {
     width: 265px;
     height: 46px;
     background-size: 265px 46px;
   }
-  /* line 39, src/sass/components/_main.scss */
-  .main-page .header .header__container .fotorama .selection .selection__label {
-    bottom: 8%;
+  /* line 48, src/sass/components/_main.scss */
+  .main-page .header .header__container .fotorama {
+    position: relative;
+    top: 30px;
   }
-  /* line 41, src/sass/components/_main.scss */
+  /* line 52, src/sass/components/_main.scss */
+  .main-page .header .header__container .fotorama .selection .selection__label {
+    bottom: 24%;
+  }
+  /* line 54, src/sass/components/_main.scss */
   .main-page .header .header__container .fotorama .selection .selection__label h2 {
     font-size: 26px;
     line-height: 1.06667;
   }
-  /* line 45, src/sass/components/_main.scss */
+  /* line 58, src/sass/components/_main.scss */
   .main-page .header .header__container .fotorama .selection .selection__label p {
     display: none;
   }
-  /* line 51, src/sass/components/_main.scss */
+  /* line 64, src/sass/components/_main.scss */
+  .main-page .header .header__container .fotorama__stage {
+    margin-top: 56px;
+  }
+  /* line 67, src/sass/components/_main.scss */
   .main-page .header .header__container .fotorama-mirror {
     min-width: auto;
+    max-height: 624px;
+    top: 30px;
     background-size: 620px;
+    background-position: 50% 30px;
   }
-  /* line 54, src/sass/components/_main.scss */
+  /* line 73, src/sass/components/_main.scss */
   .main-page .header .header__container .fotorama-mirror .header__content {
+    min-width: auto;
+  }
+  /* line 77, src/sass/components/_main.scss */
+  .main-page .header .header__container .fotorama-mirror .header__content .header__content__left {
+    width: 100%;
+    padding: 0;
+  }
+  /* line 80, src/sass/components/_main.scss */
+  .main-page .header .header__container .fotorama-mirror .header__content .header__content__left .offers {
+    font-size: 25px;
+    line-height: 1;
+  }
+  /* line 84, src/sass/components/_main.scss */
+  .main-page .header .header__container .fotorama-mirror .header__content .header__content__left .offers li:nth-child(odd) {
+    text-align: left;
+  }
+  /* line 87, src/sass/components/_main.scss */
+  .main-page .header .header__container .fotorama-mirror .header__content .header__content__left .offers li:nth-child(even) {
+    text-align: right;
+  }
+  /* line 91, src/sass/components/_main.scss */
+  .main-page .header .header__container .fotorama-mirror .header__content .header__content__left .offers a {
+    display: block;
+    font-size: 25px;
+  }
+  /* line 94, src/sass/components/_main.scss */
+  .main-page .header .header__container .fotorama-mirror .header__content .header__content__left .offers a br {
     display: none;
   }
-  /* line 57, src/sass/components/_main.scss */
+  /* line 97, src/sass/components/_main.scss */
+  .main-page .header .header__container .fotorama-mirror .header__content .header__content__left .offers a span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 15px;
+    padding-left: 114px;
+  }
+  /* line 103, src/sass/components/_main.scss */
+  .main-page .header .header__container .fotorama-mirror .header__content .header__content__left .offers a span:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 114px !important;
+    height: 113px !important;
+    background-size: 114px 113px !important;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  /* line 115, src/sass/components/_main.scss */
+  .main-page .header .header__container .fotorama-mirror .header__content .header__content__left .offers .deadline {
+    display: block;
+    margin-left: 114px;
+    padding: 0;
+    font-size: 18px;
+  }
+  /* line 123, src/sass/components/_main.scss */
+  .main-page .header .header__container .fotorama-mirror .header__content .header__content__right {
+    display: none;
+  }
+  /* line 127, src/sass/components/_main.scss */
+  .main-page .header .header__container .fotorama-mirror .header__content .header__content__right ul li:nth-child(3) {
+    display: none;
+  }
+  /* line 133, src/sass/components/_main.scss */
+  .main-page .header .header__container .fotorama-mirror .header__content .mirror-placeholder {
+    width: auto;
+    height: 80%;
+    left: 23%;
+    right: 23%;
+    top: initial;
+  }
+  /* line 141, src/sass/components/_main.scss */
   .main-page .header .header__container .fotorama-mirror .mirror-front {
     background-size: 564px;
   }
-  /* line 60, src/sass/components/_main.scss */
+  /* line 144, src/sass/components/_main.scss */
   .main-page .header .header__container .fotorama-mirror .site-title {
     top: initial;
-    padding-top: 85px;
+    padding-top: 65px;
   }
-  /* line 64, src/sass/components/_main.scss */
+  /* line 148, src/sass/components/_main.scss */
   .main-page .header .header__container .fotorama-mirror .mirror-front {
-    top: 50px;
+    top: 30px;
   }
-  /* line 69, src/sass/components/_main.scss */
+  /* line 152, src/sass/components/_main.scss */
+  .main-page .header .header__container .fotorama-arrows {
+    position: relative;
+  }
+  /* line 154, src/sass/components/_main.scss */
   .main-page .header .header__container .fotorama-arrows .fotorama-dots {
-    left: 80px;
-    right: 80px;
-    bottom: 30px;
+    left: 60px;
+    right: 60px;
+    bottom: 0px;
   }
-  /* line 73, src/sass/components/_main.scss */
+  /* line 158, src/sass/components/_main.scss */
   .main-page .header .header__container .fotorama-arrows .fotorama-dots .arrow-left {
     bottom: -11px;
     width: 17px;
@@ -2386,7 +2484,7 @@
     background-size: 17px 66px;
     background-position: 0 0;
   }
-  /* line 80, src/sass/components/_main.scss */
+  /* line 165, src/sass/components/_main.scss */
   .main-page .header .header__container .fotorama-arrows .fotorama-dots .arrow-right {
     bottom: -11px;
     width: 17px;
@@ -2394,37 +2492,372 @@
     background-size: 17px 66px;
     background-position: 0 0;
   }
-  /* line 87, src/sass/components/_main.scss */
+  /* line 172, src/sass/components/_main.scss */
   .main-page .header .header__container .fotorama-arrows .fotorama-dots .dot {
     padding: 5px;
   }
-  /* line 89, src/sass/components/_main.scss */
+  /* line 174, src/sass/components/_main.scss */
   .main-page .header .header__container .fotorama-arrows .fotorama-dots .dot:before {
     width: 12px;
     height: 12px;
   }
-  /* line 94, src/sass/components/_main.scss */
+  /* line 179, src/sass/components/_main.scss */
   .main-page .header .header__container .fotorama-arrows .fotorama-dots .dot.active:before {
     top: 3px;
     border-width: 3px;
   }
-  /* line 101, src/sass/components/_main.scss */
+  /* line 186, src/sass/components/_main.scss */
   .main-page .header .header__container .fotorama-arrows .fotorama__wrap {
     height: 100%;
   }
-  /* line 109, src/sass/components/_main.scss */
+  /* line 191, src/sass/components/_main.scss */
+  .main-page .header .header__mobile-offers {
+    display: block;
+    background: #210a21;
+  }
+  /* line 194, src/sass/components/_main.scss */
+  .main-page .header .header__mobile-offers * {
+    margin: 0;
+    padding: 0;
+  }
+  /* line 198, src/sass/components/_main.scss */
+  .main-page .header .header__mobile-offers ul {
+    list-style: none;
+  }
+  /* line 201, src/sass/components/_main.scss */
+  .main-page .header .header__mobile-offers .offers {
+    color: #ffe100;
+    font-size: 25px;
+    line-height: 1;
+  }
+  /* line 205, src/sass/components/_main.scss */
+  .main-page .header .header__mobile-offers .offers a {
+    color: #ffe100;
+    text-decoration: none;
+  }
+  /* line 210, src/sass/components/_main.scss */
+  .main-page .header .header__mobile-offers .offers li:nth-child(odd) {
+    text-align: left;
+  }
+  /* line 213, src/sass/components/_main.scss */
+  .main-page .header .header__mobile-offers .offers li:nth-child(even) {
+    text-align: right;
+  }
+  /* line 217, src/sass/components/_main.scss */
+  .main-page .header .header__mobile-offers .offers .deadline {
+    display: block;
+    font-size: 18px;
+  }
+  /* line 224, src/sass/components/_main.scss */
+  .main-page .content {
+    padding: 0 20px;
+  }
+  /* line 226, src/sass/components/_main.scss */
+  .main-page .content .banner {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  /* line 232, src/sass/components/_main.scss */
+  .main-page .content .banner div.icon-wrapper {
+    width: 100%;
+    height: 160px;
+    margin-bottom: 20px;
+  }
+  /* line 236, src/sass/components/_main.scss */
+  .main-page .content .banner div.icon-wrapper p {
+    max-width: 130px !important;
+    width: 100% !important;
+    max-height: 160px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    background-size: contain !important;
+  }
+  /* line 244, src/sass/components/_main.scss */
+  .main-page .content .banner div.icon-wrapper .background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 59px;
+    width: 90%;
+    background: url("../images/bg-main-banner-sale.png") no-repeat center right;
+    background-size: 97px 52px;
+  }
+  /* line 256, src/sass/components/_main.scss */
+  .main-page .content .banner div.text-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1;
+  }
+  /* line 264, src/sass/components/_main.scss */
+  .main-page .content .banner div.text-wrapper p {
+    padding: 0;
+  }
+  /* line 267, src/sass/components/_main.scss */
+  .main-page .content .banner div.text-wrapper .background {
+    display: none;
+  }
+  /* line 271, src/sass/components/_main.scss */
+  .main-page .content .banner div.button-wrapper {
+    width: 100%;
+    padding-top: 0;
+    text-align: center;
+  }
+  /* line 275, src/sass/components/_main.scss */
+  .main-page .content .banner div.button-wrapper a {
+    display: inline-block;
+    margin: 20px auto 13px;
+  }
+  /* line 278, src/sass/components/_main.scss */
+  .main-page .content .banner div.button-wrapper a .button {
+    margin: 0 auto;
+  }
+  /* line 282, src/sass/components/_main.scss */
+  .main-page .content .banner div.button-wrapper span {
+    display: block;
+    font-size: 20px;
+  }
+  /* line 288, src/sass/components/_main.scss */
+  .main-page .content .collections {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+  /* line 294, src/sass/components/_main.scss */
+  .main-page .content .collections li {
+    width: 100%;
+    float: none;
+    margin: 0 0 20px;
+  }
+  /* line 300, src/sass/components/_main.scss */
+  .main-page .content .collections a .name {
+    display: inline;
+    white-space: initial;
+    line-height: 1.4;
+    text-decoration: underline;
+    background: none;
+  }
+  /* line 308, src/sass/components/_main.scss */
+  .main-page .content .collections a.selection span.title {
+    font-size: 25px;
+    line-height: 1.25;
+    font-weight: normal;
+  }
+  /* line 312, src/sass/components/_main.scss */
+  .main-page .content .collections a.selection span.title span.digits {
+    font-size: 100px;
+    line-height: 1;
+  }
+  /* line 319, src/sass/components/_main.scss */
+  .main-page .content .collections .image-wrapper {
+    margin-bottom: 15px;
+  }
+  /* line 322, src/sass/components/_main.scss */
+  .main-page .content .collections .collection-0 {
+    width: calc(50% - 15px);
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  /* line 326, src/sass/components/_main.scss */
+  .main-page .content .collections .collection-1 {
+    width: calc(50% - 15px);
+    margin-top: 35px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  /* line 331, src/sass/components/_main.scss */
+  .main-page .content .collections .collection-2 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  /* line 333, src/sass/components/_main.scss */
+  .main-page .content .collections .collection-2 .image-wrapper {
+    margin-bottom: 20px;
+  }
+  /* line 337, src/sass/components/_main.scss */
+  .main-page .content .collections .collection-3 {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  /* line 340, src/sass/components/_main.scss */
+  .main-page .content .collections .collection-4 {
+    padding: 30px 0 30px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  /* line 343, src/sass/components/_main.scss */
+  .main-page .content .collections .collection-4 .selection {
+    padding-bottom: 0;
+  }
+  /* line 345, src/sass/components/_main.scss */
+  .main-page .content .collections .collection-4 .selection .selection__container {
+    position: relative;
+  }
+  /* line 350, src/sass/components/_main.scss */
+  .main-page .content .collections .collection-5 {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  /* line 354, src/sass/components/_main.scss */
+  .main-page .content .silhouettes-title {
+    margin: 0 auto 30px;
+  }
+  /* line 357, src/sass/components/_main.scss */
+  .main-page .content .silhouettes {
+    position: relative;
+    margin: 0 auto 50px;
+    padding-bottom: 40px;
+    opacity: 1;
+    background: url("../images/bg-mobile-arrow.png") no-repeat center bottom;
+    background-size: 87px 20px;
+  }
+  /* line 365, src/sass/components/_main.scss */
+  .main-page .content .silhouettes li {
+    display: block;
+  }
+  /* line 367, src/sass/components/_main.scss */
+  .main-page .content .silhouettes li a {
+    margin: 0 !important;
+    margin-top: 30px !important;
+  }
+  /* line 370, src/sass/components/_main.scss */
+  .main-page .content .silhouettes li a .hint {
+    width: 300px !important;
+    max-width: 340px !important;
+    top: initial !important;
+    bottom: initial !important;
+    left: 50% !important;
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+    font-size: 20px;
+    line-height: 1.2;
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+  }
+  /* line 381, src/sass/components/_main.scss */
+  .main-page .content .silhouettes li a .hint:before {
+    content: none;
+  }
+  /* line 384, src/sass/components/_main.scss */
+  .main-page .content .silhouettes li a .hint p {
+    margin-top: -30px;
+    margin-bottom: 300px;
+  }
+  /* line 395, src/sass/components/_main.scss */
+  .main-page .content .silhouettes .silhouette-2 a {
+    background-position-y: 18px;
+  }
+  /* line 397, src/sass/components/_main.scss */
+  .main-page .content .silhouettes .silhouette-2 a:hover {
+    background-position-y: -254px;
+  }
+  /* line 403, src/sass/components/_main.scss */
+  .main-page .content .silhouettes .silhouette-3 a {
+    background-position-y: 10px;
+  }
+  /* line 405, src/sass/components/_main.scss */
+  .main-page .content .silhouettes .silhouette-3 a:hover {
+    background-position-y: -262px;
+  }
+  /* line 411, src/sass/components/_main.scss */
+  .main-page .content .silhouettes .silhouette-short a {
+    height: 247px;
+    background-position-y: 71px;
+  }
+  /* line 414, src/sass/components/_main.scss */
+  .main-page .content .silhouettes .silhouette-short a:hover {
+    background-position-y: -200px;
+  }
+  /* line 420, src/sass/components/_main.scss */
+  .main-page .content .silhouettes .silhouette-4 a {
+    top: 3px;
+  }
+  /* line 440, src/sass/components/_main.scss */
+  .main-page .content .silhouettes .fotorama__arr {
+    top: 40%;
+  }
+  /* line 442, src/sass/components/_main.scss */
+  .main-page .content .silhouettes .fotorama__arr.fotorama__arr--prev {
+    display: inline-block;
+    width: 17px;
+    height: 33px;
+    background-image: url("../images/icons/fotorama-nav-left.png");
+    background-size: 17px 66px;
+    background-position: 0 0;
+  }
+  /* line 449, src/sass/components/_main.scss */
+  .main-page .content .silhouettes .fotorama__arr.fotorama__arr--prev:hover {
+    background-position: 0 100%;
+  }
+  /* line 453, src/sass/components/_main.scss */
+  .main-page .content .silhouettes .fotorama__arr.fotorama__arr--next {
+    display: inline-block;
+    width: 17px;
+    height: 33px;
+    background-image: url("../images/icons/fotorama-nav-right.png");
+    background-size: 17px 66px;
+    background-position: 0 0;
+  }
+  /* line 460, src/sass/components/_main.scss */
+  .main-page .content .silhouettes .fotorama__arr.fotorama__arr--next:hover {
+    background-position: 0 100%;
+  }
+  /* line 466, src/sass/components/_main.scss */
+  .main-page .content .silhouettes .fotorama__nav .fotorama__nav__frame {
+    width: 16px;
+  }
+  /* line 470, src/sass/components/_main.scss */
+  .main-page .content .silhouettes .fotorama__nav .fotorama__nav__frame .fotorama__dot {
+    margin: 0 2px;
+    border-width: 3px;
+    border-color: #ddd;
+  }
+  /* line 476, src/sass/components/_main.scss */
+  .main-page .content .silhouettes .fotorama__nav .fotorama__nav__frame.fotorama__active .fotorama__dot {
+    top: 11px;
+    border-width: 4px;
+    border-color: #a764bf;
+  }
+  /* line 492, src/sass/components/_main.scss */
+  .main-page .authors-container .about-us p.svidetel::before, .main-page .authors-container .about-us p.camera::before, .main-page .authors-container .about-us p.mirror::before {
+    content: none;
+  }
+  /* line 500, src/sass/components/_main.scss */
   .main-page .locations .map-link {
     width: 100%;
   }
-  /* line 111, src/sass/components/_main.scss */
+  /* line 502, src/sass/components/_main.scss */
   .main-page .locations .map-link .map-border {
     width: 100%;
   }
-  /* line 114, src/sass/components/_main.scss */
+  /* line 505, src/sass/components/_main.scss */
   .main-page .locations .map-link .map {
     width: 100%;
   }
-  /* line 120, src/sass/components/_main.scss */
+  /* line 511, src/sass/components/_main.scss */
   .main-page .footer .advice,
   .main-page .footer .footer-bottom {
     display: none;

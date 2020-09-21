@@ -1,3 +1,9 @@
+.main-page {
+  .header__mobile-offers {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .main-page {
     padding-top: 0;
@@ -9,7 +15,11 @@
     .header {
       display: block;
       min-width: auto;
-      height: 592px;
+      margin-bottom: 50px;
+      background: url("../images/bg-fotorama-mirror-head.png") no-repeat center
+          top,
+        #000;
+      background-size: 620px 60px;
       .logo,
       .line-wrapper,
       .contacts {
@@ -17,9 +27,10 @@
       }
       .header__container {
         min-width: auto;
-        height: 100%;
+        overflow: hidden;
         .content {
-          height: 100%;
+          max-height: 624px;
+          padding-bottom: 30px;
         }
         .site-title {
           .salon-label {
@@ -35,9 +46,11 @@
           }
         }
         .fotorama {
+          position: relative;
+          top: 30px;
           .selection {
             .selection__label {
-              bottom: 8%;
+              bottom: 24%;
               h2 {
                 font-size: 26px;
                 line-height: (32/30);
@@ -48,28 +61,100 @@
             }
           }
         }
+        .fotorama__stage {
+          margin-top: 56px;
+        }
         .fotorama-mirror {
           min-width: auto;
+          max-height: 624px;
+          top: 30px;
           background-size: 620px;
+          background-position: 50% 30px;
           .header__content {
-            display: none;
+            //display: none;
+
+            min-width: auto;
+            .header__content__left {
+              width: 100%;
+              padding: 0;
+              .offers {
+                font-size: 25px;
+                line-height: 1;
+                li {
+                  &:nth-child(odd) {
+                    text-align: left;
+                  }
+                  &:nth-child(even) {
+                    text-align: right;
+                  }
+                }
+                a {
+                  display: block;
+                  font-size: 25px;
+                  br {
+                    display: none;
+                  }
+                  span {
+                    display: flex;
+                    max-width: 100%;
+                    align-items: center;
+                    padding-top: 15px;
+                    padding-left: 114px;
+                    &:before {
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      display: block;
+                      width: 114px !important;
+                      height: 113px !important;
+                      background-size: 114px 113px !important;
+                      flex-shrink: 0;
+                    }
+                  }
+                }
+                .deadline {
+                  display: block;
+                  margin-left: 114px;
+                  padding: 0;
+                  font-size: 18px;
+                }
+              }
+            }
+            .header__content__right {
+              display: none;
+              ul {
+                li {
+                  &:nth-child(3) {
+                    display: none;
+                  }
+                }
+              }
+            }
+            .mirror-placeholder {
+              width: auto;
+              height: 80%;
+              left: 23%;
+              right: 23%;
+              top: initial;
+            }
           }
           .mirror-front {
             background-size: 564px;
           }
           .site-title {
             top: initial;
-            padding-top: 85px;
+            padding-top: 65px;
           }
           .mirror-front {
-            top: 50px;
+            top: 30px;
           }
         }
         .fotorama-arrows {
+          position: relative;
           .fotorama-dots {
-            left: 80px;
-            right: 80px;
-            bottom: 30px;
+            left: 60px;
+            right: 60px;
+            bottom: 0px;
             .arrow-left {
               bottom: -11px;
               width: 17px;
@@ -102,7 +187,313 @@
             height: 100%;
           }
         }
-        
+      }
+      .header__mobile-offers {
+        display: block;
+        background: #210a21;
+        * {
+          margin: 0;
+          padding: 0;
+        }
+        ul {
+          list-style: none;
+        }
+        .offers {
+          color: #ffe100;
+          font-size: 25px;
+          line-height: 1;
+          a {
+            color: #ffe100;
+            text-decoration: none;
+          }
+          li {
+            &:nth-child(odd) {
+              text-align: left;
+            }
+            &:nth-child(even) {
+              text-align: right;
+            }
+          }
+          .deadline {
+            display: block;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    .content {
+      padding: 0 20px;
+      .banner {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        text-align: center;
+        div.icon-wrapper {
+          width: 100%;
+          height: 160px;
+          margin-bottom: 20px;
+          p {
+            max-width: 130px !important;
+            width: 100% !important;
+            max-height: 160px !important;
+            height: auto !important;
+            margin: 0 auto !important;
+            background-size: contain !important;
+          }
+          .background {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            height: 59px;
+            width: 90%;
+            background: url("../images/bg-main-banner-sale.png") no-repeat
+              center right;
+            background-size: 97px 52px;
+          }
+        }
+        div.text-wrapper {
+          width: 100%;
+          margin-bottom: 20px;
+          padding: 0;
+          text-align: center;
+          font-size: 25px;
+          font-weight: bold;
+          line-height: 1;
+          p {
+            padding: 0;
+          }
+          .background {
+            display: none;
+          }
+        }
+        div.button-wrapper {
+          width: 100%;
+          padding-top: 0;
+          text-align: center;
+          a {
+            display: inline-block;
+            margin: 20px auto 13px;
+            .button {
+              margin: 0 auto;
+            }
+          }
+          span {
+            display: block;
+            font-size: 20px;
+          }
+        }
+      }
+      .collections {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        padding: 0;
+        li {
+          width: 100%;
+          float: none;
+          margin: 0 0 20px;
+        }
+        a {
+          .name {
+            display: inline;
+            white-space: initial;
+            line-height: 1.4;
+            text-decoration: underline;
+            background: none;
+          }
+          &.selection {
+            span.title {
+              font-size: 25px;
+              line-height: 1.25;
+              font-weight: normal;
+              span.digits {
+                font-size: 100px;
+                line-height: 1;
+              }
+            }
+          }
+        }
+        .image-wrapper {
+          margin-bottom: 15px;
+        }
+        .collection-0 {
+          width: calc(50% - 15px);
+          order: 0;
+        }
+        .collection-1 {
+          width: calc(50% - 15px);
+          margin-top: 35px;
+          order: 1;
+        }
+        .collection-2 {
+          order: 2;
+          .image-wrapper {
+            margin-bottom: 20px;
+          }
+        }
+        .collection-3 {
+          order: 5;
+        }
+        .collection-4 {
+          padding: 30px 0 30px;
+          order: 3;
+          .selection {
+            padding-bottom: 0;
+            .selection__container {
+              position: relative;
+            }
+          }
+        }
+        .collection-5 {
+          order: 4;
+        }
+      }
+      .silhouettes-title {
+        margin: 0 auto 30px;
+      }
+      .silhouettes {
+        position: relative;
+        margin: 0 auto 50px;
+        padding-bottom: 40px;
+        //padding-bottom: 100px;
+        opacity: 1;
+        background: url('../images/bg-mobile-arrow.png') no-repeat center bottom;
+        background-size: 87px 20px;
+        li {
+          display: block;
+          a {
+            margin: 0 !important;
+            margin-top: 30px!important;
+            .hint {
+              width: 300px !important;
+              max-width: 340px !important;
+              top: initial !important;
+              bottom: initial !important;
+              left: 50% !important;
+              padding-bottom: 0 !important;
+              padding-top: 0 !important;
+              font-size: 20px;
+              line-height: 1.2;
+              transform: translate3d(-50%, 0, 0);
+              &:before {
+                content: none;
+              }
+              p {
+                margin-top: -30px;
+                margin-bottom: 300px;
+              }
+            }
+          }
+        }
+        .silhouette-1 {
+         
+        }
+        .silhouette-2 {
+          a {
+            background-position-y: 18px;
+            &:hover {
+              background-position-y: -254px;
+            }
+          }
+        }
+        .silhouette-3 {
+          a {
+            background-position-y: 10px;
+            &:hover {
+              background-position-y: -262px;
+            }
+          }
+        }
+        .silhouette-short {
+          a {
+            height: 247px;
+            background-position-y: 71px;
+            &:hover {
+              background-position-y: -200px;
+            }
+          }
+        }
+        .silhouette-4 {
+          a {
+            top: 3px;
+            &:hover {
+            }
+            .hint {
+              p {
+               //margin-top: 10px;
+              }
+            }
+          }
+        }
+        .silhouette-5 {
+          a {
+            //height: 312px;
+            //background-position-y: 40px;
+            &:hover {
+              //background-position-y: 40px;
+            }
+          }
+        }
+        .fotorama__arr {
+          top: 40%;
+          &.fotorama__arr--prev {
+            display: inline-block;
+            width: 17px;
+            height: 33px;
+            background-image: url('../images/icons/fotorama-nav-left.png');
+            background-size: 17px 66px;
+            background-position: 0 0;
+            &:hover {
+              background-position: 0 100%;
+            }
+          }
+          &.fotorama__arr--next {
+            display: inline-block;
+            width: 17px;
+            height: 33px;
+            background-image: url('../images/icons/fotorama-nav-right.png');
+            background-size: 17px 66px;
+            background-position: 0 0;
+            &:hover {
+              background-position: 0 100%;
+            }
+          }
+        }
+        .fotorama__nav {
+          .fotorama__nav__frame {
+            width: 16px;
+          }
+          .fotorama__nav__frame {
+            .fotorama__dot {
+              margin: 0 2px;
+              border-width: 3px;
+              border-color: #ddd;
+            }
+            &.fotorama__active {
+              .fotorama__dot {
+                top: 11px;
+                border-width: 4px;
+                border-color: #a764bf;
+              }
+            }
+          }
+        }
+      }
+    }
+    .authors-container {
+      .about-us {
+        p {
+          &.svidetel,
+          &.camera,
+          &.mirror {
+            &::before {
+              content: none;
+            }
+          }
+        }
       }
     }
     .locations {

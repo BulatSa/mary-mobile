@@ -93,7 +93,14 @@ $(function () {
 
     if ($(".fotorama").length) {
       $(".fotorama").fotorama({
-        width: "90%"
+        width: "340px"
+      });
+    }
+
+    if ($(".silhouettes").length) {
+      $(".silhouettes").fotorama({
+        //width: "340px",
+        height: '460px'
       });
     } // Main page Fotorama
 
