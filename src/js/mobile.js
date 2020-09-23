@@ -77,9 +77,11 @@ $(function () {
     const removeEventListeners = (el) => {
       const elClone = el.cloneNode(true);
       el.parentNode.replaceChild(elClone, el);
-    }
+    };
 
-    const serviceMakeUpBlock = document.querySelector('.services__make-up-and-hairstyle__right');
+    const serviceMakeUpBlock = document.querySelector(
+      ".services__make-up-and-hairstyle__right"
+    );
     if (serviceMakeUpBlock) {
       removeEventListeners(serviceMakeUpBlock);
     }
@@ -95,10 +97,27 @@ $(function () {
     if ($(".silhouettes").length) {
       $(".silhouettes").fotorama({
         //width: "340px",
-        height: '460px'
-
+        height: "460px",
       });
     }
     // Main page Fotorama
+
+    // About us More
+    const $aboutUs = $(".authors-container .about-us");
+    const aboutUsLink = document.querySelector(
+      ".authors-container .about-us__more a"
+    );
+    const toggleAboutUsText = (e) => {
+      e.preventDefault();
+      if ($aboutUs.hasClass("open")) {
+        $aboutUs.removeClass("open");
+        aboutUsLink.textContent = "Читать далее";
+      } else {
+        $aboutUs.addClass("open");
+        aboutUsLink.textContent = "Свернуть";
+      }
+    };
+    aboutUsLink.addEventListener("click", toggleAboutUsText);
+    // About us More
   }
 });
