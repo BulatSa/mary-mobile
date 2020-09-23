@@ -100,6 +100,14 @@ $(function () {
         height: "460px",
       });
     }
+
+    if ($(".dark-pane .collections").length) {
+      $(".dark-pane .collections").fotorama({
+        width: "90%",
+        ratio: '5/6',
+        arrows: false
+      });
+    }
     // Main page Fotorama
 
     // About us More
