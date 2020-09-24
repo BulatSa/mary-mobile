@@ -114,21 +114,42 @@ $(function () {
     // About us More
 
 
-    var $aboutUs = $(".authors-container .about-us");
+    var aboutUs = document.querySelector(".authors-container .about-us");
     var aboutUsLink = document.querySelector(".authors-container .about-us__more a");
 
-    var toggleAboutUsText = function toggleAboutUsText(e) {
-      e.preventDefault();
+    if (aboutUsLink) {
+      var toggleAboutUsText = function toggleAboutUsText(e) {
+        e.preventDefault();
 
-      if ($aboutUs.hasClass("open")) {
-        $aboutUs.removeClass("open");
-        aboutUsLink.textContent = "Читать далее";
-      } else {
-        $aboutUs.addClass("open");
-        aboutUsLink.textContent = "Свернуть";
-      }
-    };
+        if (aboutUs.classList.contains("open")) {
+          aboutUs.classList.remove("open");
+          aboutUsLink.textContent = "Читать далее";
+        } else {
+          aboutUs.classList.add("open");
+          aboutUsLink.textContent = "Свернуть";
+        }
+      };
 
-    aboutUsLink.addEventListener("click", toggleAboutUsText); // About us More
+      aboutUsLink.addEventListener("click", toggleAboutUsText);
+    } // About us More
+    // Fitting button
+
+
+    var fittingButton = document.querySelector('.main-page .fitting-button');
+
+    if (fittingButton) {
+      var borderHeight = document.querySelector('.header.header_homepage').offsetHeight - window.innerHeight;
+
+      var toggleFittingButton = function toggleFittingButton() {
+        if (window.scrollY > borderHeight) {
+          fittingButton.classList.add('show-mobile');
+        } else {
+          fittingButton.classList.remove('show-mobile');
+        }
+      };
+
+      window.addEventListener('scroll', toggleFittingButton);
+    } // Fitting button
+
   }
 });

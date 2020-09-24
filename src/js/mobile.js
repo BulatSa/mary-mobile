@@ -111,21 +111,40 @@ $(function () {
     // Main page Fotorama
 
     // About us More
-    const $aboutUs = $(".authors-container .about-us");
+    const aboutUs = document.querySelector(".authors-container .about-us");
     const aboutUsLink = document.querySelector(
       ".authors-container .about-us__more a"
     );
-    const toggleAboutUsText = (e) => {
-      e.preventDefault();
-      if ($aboutUs.hasClass("open")) {
-        $aboutUs.removeClass("open");
-        aboutUsLink.textContent = "Читать далее";
-      } else {
-        $aboutUs.addClass("open");
-        aboutUsLink.textContent = "Свернуть";
-      }
-    };
-    aboutUsLink.addEventListener("click", toggleAboutUsText);
+
+    if (aboutUsLink) {
+      const toggleAboutUsText = (e) => {
+        e.preventDefault();
+        if (aboutUs.classList.contains("open")) {
+          aboutUs.classList.remove("open");
+          aboutUsLink.textContent = "Читать далее";
+        } else {
+          aboutUs.classList.add("open");
+          aboutUsLink.textContent = "Свернуть";
+        }
+      };
+
+      aboutUsLink.addEventListener("click", toggleAboutUsText);
+    }
     // About us More
+
+    // Fitting button
+    const fittingButton = document.querySelector('.main-page .fitting-button');
+    if (fittingButton) {
+      const borderHeight = document.querySelector('.header.header_homepage').offsetHeight - window.innerHeight;
+      const toggleFittingButton = () => {
+        if (window.scrollY > borderHeight) {
+          fittingButton.classList.add('show-mobile');
+        } else {
+          fittingButton.classList.remove('show-mobile');
+        }
+      }
+      window.addEventListener('scroll', toggleFittingButton);
+    }
+    // Fitting button
   }
 });
