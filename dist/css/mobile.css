@@ -2293,7 +2293,7 @@
 
 /* line 2, src/sass/components/_main.scss */
 .main-page .header__mobile-offers,
-.main-page .about-us__more {
+.main-page .about-us__more, .main-page .offers-mobile {
   display: none;
 }
 
