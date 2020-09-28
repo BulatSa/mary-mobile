@@ -9,3 +9,10 @@ package-lock.json
 ._*
 .Spotlight-V100
 .Trashes
+
+dist/mobile-html/catalog_files
+dist/mobile-html/features_files
+dist/mobile-html/main_files
+dist/mobile-html/offer_files
+dist/mobile-html/product_files
+dist/mobile-html/product-black_files
