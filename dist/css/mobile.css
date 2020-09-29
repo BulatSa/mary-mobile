@@ -3512,28 +3512,47 @@
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li:last-child {
     margin-bottom: 0;
   }
-  /* line 70, src/sass/components/_catalog.scss */
-  .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li a:hover p.price {
-    background-position: 0 28px;
+  /* line 71, src/sass/components/_catalog.scss */
+  .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li a:hover p.price .actual-price {
+    border-color: #ef37da;
   }
-  /* line 74, src/sass/components/_catalog.scss */
-  .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li a .price {
-    background-position: 0 28px;
+  /* line 76, src/sass/components/_catalog.scss */
+  .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li a p.price {
+    display: block;
+    text-align: center !important;
+    background: none;
   }
-  /* line 77, src/sass/components/_catalog.scss */
+  /* line 80, src/sass/components/_catalog.scss */
+  .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li a p.price .actual-price {
+    display: inline-block;
+    border-bottom: 1px solid #000;
+    -webkit-transform: none;
+            transform: none;
+  }
+  /* line 86, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li a span.actual-price {
     font-size: 20px;
   }
-  /* line 81, src/sass/components/_catalog.scss */
+  /* line 90, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li .photo-top-distance {
     padding: 0;
   }
-  /* line 83, src/sass/components/_catalog.scss */
+  /* line 92, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li .photo-top-distance .selection {
-    padding-bottom: 170%;
-    margin-top: 20px;
+    max-width: 380px;
+    padding-bottom: 0;
+    margin: 20px auto 0;
   }
-  /* line 90, src/sass/components/_catalog.scss */
+  /* line 96, src/sass/components/_catalog.scss */
+  .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li .photo-top-distance .selection span.selection__container {
+    position: relative;
+    display: block;
+  }
+  /* line 100, src/sass/components/_catalog.scss */
+  .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li .photo-top-distance .selection span.link {
+    margin: 20px auto 0;
+  }
+  /* line 107, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-1-1-1 .price .previous-price + .actual-price {
     text-align: right;
     top: -50px;
@@ -3541,48 +3560,48 @@
     -webkit-transform: scale(0.4);
             transform: scale(0.4);
   }
-  /* line 100, src/sass/components/_catalog.scss */
+  /* line 117, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-2-1-1 .price .previous-price + .actual-price {
     top: -40px;
     left: 60px;
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
   }
-  /* line 107, src/sass/components/_catalog.scss */
+  /* line 124, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-2-2-1 {
     width: 100%;
     padding-top: 0;
   }
-  /* line 111, src/sass/components/_catalog.scss */
+  /* line 128, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-2-2-1 .price .previous-price + .actual-price {
     text-align: right;
     top: -40px;
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
   }
-  /* line 118, src/sass/components/_catalog.scss */
+  /* line 135, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-2-2-2 {
     width: 100%;
     margin: 0;
   }
-  /* line 122, src/sass/components/_catalog.scss */
+  /* line 139, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-1-1 {
     width: calc(50% - 7px);
     padding-top: 0;
   }
-  /* line 126, src/sass/components/_catalog.scss */
+  /* line 143, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-1-1 .price .previous-price + .actual-price {
     top: -70px;
     left: -100px;
     -webkit-transform: scale(0.25);
             transform: scale(0.25);
   }
-  /* line 133, src/sass/components/_catalog.scss */
+  /* line 150, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-1-2 {
     width: calc(50% - 7px);
     padding-top: 0;
   }
-  /* line 137, src/sass/components/_catalog.scss */
+  /* line 154, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-1-2 .price .previous-price + .actual-price {
     text-align: right;
     top: -40px;
@@ -3590,7 +3609,7 @@
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
   }
-  /* line 147, src/sass/components/_catalog.scss */
+  /* line 164, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-1-3 .price .previous-price + .actual-price {
     text-align: right;
     top: -40px;
@@ -3598,7 +3617,7 @@
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
   }
-  /* line 157, src/sass/components/_catalog.scss */
+  /* line 174, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-2-1 .price .previous-price + .actual-price {
     text-align: right;
     top: -70px;
@@ -3606,7 +3625,7 @@
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
   }
-  /* line 167, src/sass/components/_catalog.scss */
+  /* line 184, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-2-2 .price .previous-price + .actual-price {
     top: -40px;
     left: initial;
@@ -3614,12 +3633,12 @@
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
   }
-  /* line 176, src/sass/components/_catalog.scss */
+  /* line 193, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-2-3 .image-wrapper {
     -webkit-transform: rotate(-2deg) translate3d(0, 0, 0);
             transform: rotate(-2deg) translate3d(0, 0, 0);
   }
-  /* line 180, src/sass/components/_catalog.scss */
+  /* line 197, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-2-3 .price .previous-price + .actual-price {
     text-align: right;
     top: -70px;
@@ -3627,12 +3646,12 @@
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
   }
-  /* line 188, src/sass/components/_catalog.scss */
+  /* line 205, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-3-1 {
     width: 100%;
     padding-top: 0;
   }
-  /* line 192, src/sass/components/_catalog.scss */
+  /* line 209, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-3-1 .price .previous-price + .actual-price {
     text-align: right;
     top: -80px;
@@ -3640,23 +3659,23 @@
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
   }
-  /* line 200, src/sass/components/_catalog.scss */
+  /* line 217, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-3-2 {
     width: calc(50% - 7px);
     padding-top: 0;
     margin-bottom: 0;
   }
-  /* line 204, src/sass/components/_catalog.scss */
+  /* line 221, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-3-2 .image-wrapper {
     -webkit-transform: none;
             transform: none;
   }
-  /* line 208, src/sass/components/_catalog.scss */
+  /* line 225, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-3-3 {
     width: calc(50% - 7px);
     padding-top: 0;
   }
-  /* line 212, src/sass/components/_catalog.scss */
+  /* line 229, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-3-3 .price .previous-price + .actual-price {
     top: -40px;
     left: initial;
@@ -3664,24 +3683,24 @@
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
   }
-  /* line 220, src/sass/components/_catalog.scss */
+  /* line 237, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-4-1 {
     width: calc(50% - 7px);
     padding-top: 0;
   }
-  /* line 224, src/sass/components/_catalog.scss */
+  /* line 241, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-4-1 .price .previous-price + .actual-price {
     top: -70px;
     left: -100px;
     -webkit-transform: scale(0.3);
             transform: scale(0.3);
   }
-  /* line 231, src/sass/components/_catalog.scss */
+  /* line 248, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-4-2 {
     width: calc(50% - 7px);
     padding-top: 0;
   }
-  /* line 235, src/sass/components/_catalog.scss */
+  /* line 252, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-4-2 .price .previous-price + .actual-price {
     text-align: right;
     top: -45px;
@@ -3689,7 +3708,7 @@
     -webkit-transform: scale(0.55);
             transform: scale(0.55);
   }
-  /* line 245, src/sass/components/_catalog.scss */
+  /* line 262, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-4-3 .price .previous-price + .actual-price {
     text-align: right;
     top: -50px;
@@ -3697,7 +3716,7 @@
     -webkit-transform: scale(0.75);
             transform: scale(0.75);
   }
-  /* line 256, src/sass/components/_catalog.scss */
+  /* line 273, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection a .name {
     display: inline;
     white-space: initial;
@@ -3705,43 +3724,43 @@
     text-decoration: underline;
     background: none;
   }
-  /* line 264, src/sass/components/_catalog.scss */
+  /* line 281, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection a.selection span.title {
     font-size: 25px;
     line-height: 1.25;
     font-weight: normal;
   }
-  /* line 268, src/sass/components/_catalog.scss */
+  /* line 285, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection a.selection span.title span.digits {
     font-size: 100px;
     line-height: 1;
     margin-top: -70px;
   }
-  /* line 274, src/sass/components/_catalog.scss */
+  /* line 291, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection a.selection .arrow {
     width: 87px;
     height: 20px;
     background: url("../images/bg-mobile-arrow.png") no-repeat center;
     background-size: 87px 20px !important;
   }
-  /* line 281, src/sass/components/_catalog.scss */
+  /* line 298, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection a.selection .link {
     margin-top: 20px;
   }
-  /* line 286, src/sass/components/_catalog.scss */
+  /* line 303, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection .image-wrapper {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
-  /* line 289, src/sass/components/_catalog.scss */
+  /* line 306, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection .small-factoid {
     padding-bottom: 0;
   }
-  /* line 291, src/sass/components/_catalog.scss */
+  /* line 308, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection .small-factoid span.text {
     font-size: 20px;
     line-height: 1.3;
   }
-  /* line 295, src/sass/components/_catalog.scss */
+  /* line 312, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection .small-factoid .small-factoid_content {
     position: relative;
     left: initial;
@@ -3749,32 +3768,32 @@
     top: initial;
     bottom: initial;
   }
-  /* line 302, src/sass/components/_catalog.scss */
+  /* line 319, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection .small-factoid .small-factoid_content1
 .small-factoid_content2
 .small-factoid_content3 {
     padding-top: 0;
   }
-  /* line 310, src/sass/components/_catalog.scss */
+  /* line 327, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .dress__fav.dress__fav_heart {
     width: 36px;
     height: 35px;
     background-size: 36px 35px;
   }
-  /* line 315, src/sass/components/_catalog.scss */
+  /* line 332, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .testimonial {
     width: 100%;
     height: auto;
     margin: 0 0 50px;
   }
-  /* line 319, src/sass/components/_catalog.scss */
+  /* line 336, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .testimonial .frame {
     width: 192px;
     height: 278px;
     margin: 0 auto 20px;
     background-size: contain;
   }
-  /* line 324, src/sass/components/_catalog.scss */
+  /* line 341, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .testimonial .frame img {
     display: block;
     width: 140px;
@@ -3784,7 +3803,7 @@
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
   }
-  /* line 333, src/sass/components/_catalog.scss */
+  /* line 350, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .testimonial .text-container-wrapper {
     display: block;
     position: relative;
@@ -3792,18 +3811,18 @@
     left: initial;
     height: auto;
   }
-  /* line 339, src/sass/components/_catalog.scss */
+  /* line 356, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .testimonial .text-container-wrapper .text-container {
     display: block;
   }
-  /* line 341, src/sass/components/_catalog.scss */
+  /* line 358, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .testimonial .text-container-wrapper .text-container .text {
     width: 100%;
     font-size: 20px;
     line-height: 1.3;
     text-align: center;
   }
-  /* line 346, src/sass/components/_catalog.scss */
+  /* line 363, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .testimonial .text-container-wrapper .text-container .text .quote-left {
     left: initial;
     width: 15px;
@@ -3811,23 +3830,23 @@
     margin-left: -20px;
     margin-top: 0;
   }
-  /* line 354, src/sass/components/_catalog.scss */
+  /* line 371, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .testimonial .text-container-wrapper .text-container .text .quote-right {
     width: 15px;
     height: 20px;
   }
-  /* line 359, src/sass/components/_catalog.scss */
+  /* line 376, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .testimonial .text-container-wrapper .text-container a {
     margin-top: 15px;
     padding: 0;
     text-align: center;
   }
-  /* line 367, src/sass/components/_catalog.scss */
+  /* line 384, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .fact-wrapper {
     height: auto !important;
     margin-bottom: 50px;
   }
-  /* line 370, src/sass/components/_catalog.scss */
+  /* line 387, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .fact-wrapper .fact {
     position: relative;
     top: initial !important;
@@ -3837,7 +3856,7 @@
     height: auto;
     margin: 0 auto;
   }
-  /* line 382, src/sass/components/_catalog.scss */
+  /* line 399, src/sass/components/_catalog.scss */
   .catalog .silhouette-toggler-wrapper {
     position: fixed;
     width: 59px;
@@ -3847,12 +3866,12 @@
     bottom: 20px;
     z-index: 500;
   }
-  /* line 390, src/sass/components/_catalog.scss */
+  /* line 407, src/sass/components/_catalog.scss */
   .catalog .silhouette-toggler-wrapper .silhouette-toggler-bg {
     height: 44px;
     margin-left: 0;
   }
-  /* line 393, src/sass/components/_catalog.scss */
+  /* line 410, src/sass/components/_catalog.scss */
   .catalog .silhouette-toggler-wrapper .silhouette-toggler-bg .silhouette-toggler {
     position: relative;
     right: initial;
@@ -3862,12 +3881,12 @@
     height: 44px;
     padding: 0;
   }
-  /* line 402, src/sass/components/_catalog.scss */
+  /* line 419, src/sass/components/_catalog.scss */
   .catalog .silhouette-toggler-wrapper .silhouette-toggler-bg .silhouette-toggler .silhouette-toggler-cloud-tail,
   .catalog .silhouette-toggler-wrapper .silhouette-toggler-bg .silhouette-toggler .silhouette-button {
     display: none;
   }
-  /* line 406, src/sass/components/_catalog.scss */
+  /* line 423, src/sass/components/_catalog.scss */
   .catalog .silhouette-toggler-wrapper .silhouette-toggler-bg .silhouette-toggler .silhouette-toggler-cloud {
     display: block;
     width: 100%;
@@ -3875,23 +3894,23 @@
     top: 0;
     left: 0;
   }
-  /* line 413, src/sass/components/_catalog.scss */
+  /* line 430, src/sass/components/_catalog.scss */
   .catalog .silhouette-toggler-wrapper .silhouette-toggler-bg .silhouette-toggler .turn-button {
     padding: 0;
     padding-top: 8px;
   }
-  /* line 416, src/sass/components/_catalog.scss */
+  /* line 433, src/sass/components/_catalog.scss */
   .catalog .silhouette-toggler-wrapper .silhouette-toggler-bg .silhouette-toggler .turn-button .turn-label {
     width: 25px;
     height: 19px;
     background: url("../images/icons/turn.png") no-repeat center;
     background-size: 25px 19px;
   }
-  /* line 430, src/sass/components/_catalog.scss */
+  /* line 447, src/sass/components/_catalog.scss */
   .catalog .next-collection-wrapper .next-collection {
     min-width: 100%;
   }
-  /* line 436, src/sass/components/_catalog.scss */
+  /* line 453, src/sass/components/_catalog.scss */
   .catalog .footer__hint .order-button-wrapper .fitting-button {
     width: 142px;
     height: 44px;

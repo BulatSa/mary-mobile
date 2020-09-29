@@ -68,11 +68,20 @@
                 a {
                   &:hover {
                     p.price {
-                      background-position: 0 28px;
+                      .actual-price {
+                        border-color: #ef37da;
+                      }
                     }
                   }
-                  .price {
-                    background-position: 0 28px;
+                  p.price {
+                    display: block;
+                    text-align: center!important;
+                    background: none;
+                    .actual-price {
+                      display: inline-block;
+                      border-bottom: 1px solid #000;
+                      transform: none;
+                    }
                   }
                   span.actual-price {
                     font-size: 20px;
@@ -81,8 +90,16 @@
                 .photo-top-distance {
                   padding: 0;
                   .selection {
-                    padding-bottom: 170%;
-                    margin-top: 20px;
+                    max-width: 380px;
+                    padding-bottom: 0;
+                    margin: 20px auto 0;
+                    span.selection__container {
+                      position: relative;
+                      display: block;
+                    }
+                    span.link {
+                      margin: 20px auto 0;
+                    }
                   }
                 }
                 &.photo-1-1-1 {
@@ -284,7 +301,7 @@
               }
             }
             .image-wrapper {
-              margin-bottom: 15px;
+              margin-bottom: 10px;
             }
             .small-factoid {
               padding-bottom: 0;
