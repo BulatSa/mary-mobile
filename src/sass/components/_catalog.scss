@@ -369,12 +369,16 @@
                   left: initial;
                   width: 15px;
                   height: 20px;
-                  margin-left: -20px;
+                  margin-left: -25px;
                   margin-top: 0;
                 }
                 .quote-right {
+                  position: relative;
                   width: 15px;
                   height: 20px;
+                  margin-left: 10px;
+                  vertical-align: sub;
+
                 }
               }
               a {
@@ -441,7 +445,7 @@
               background-size: 25px 19px;
             }
             p {
-              //display: none;
+              display: none!important;
             }
           }
         }

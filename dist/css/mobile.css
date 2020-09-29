@@ -3831,26 +3831,29 @@
     left: initial;
     width: 15px;
     height: 20px;
-    margin-left: -20px;
+    margin-left: -25px;
     margin-top: 0;
   }
   /* line 375, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .testimonial .text-container-wrapper .text-container .text .quote-right {
+    position: relative;
     width: 15px;
     height: 20px;
+    margin-left: 10px;
+    vertical-align: sub;
   }
-  /* line 380, src/sass/components/_catalog.scss */
+  /* line 384, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .testimonial .text-container-wrapper .text-container a {
     margin-top: 15px;
     padding: 0;
     text-align: center;
   }
-  /* line 388, src/sass/components/_catalog.scss */
+  /* line 392, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .fact-wrapper {
     height: auto !important;
     margin-bottom: 50px;
   }
-  /* line 391, src/sass/components/_catalog.scss */
+  /* line 395, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .fact-wrapper .fact {
     position: relative;
     top: initial !important;
@@ -3860,7 +3863,7 @@
     height: auto;
     margin: 0 auto;
   }
-  /* line 403, src/sass/components/_catalog.scss */
+  /* line 407, src/sass/components/_catalog.scss */
   .catalog .silhouette-toggler-wrapper {
     position: fixed;
     width: 59px;
@@ -3870,12 +3873,12 @@
     bottom: 20px;
     z-index: 500;
   }
-  /* line 411, src/sass/components/_catalog.scss */
+  /* line 415, src/sass/components/_catalog.scss */
   .catalog .silhouette-toggler-wrapper .silhouette-toggler-bg {
     height: 44px;
     margin-left: 0;
   }
-  /* line 414, src/sass/components/_catalog.scss */
+  /* line 418, src/sass/components/_catalog.scss */
   .catalog .silhouette-toggler-wrapper .silhouette-toggler-bg .silhouette-toggler {
     position: relative;
     right: initial;
@@ -3885,12 +3888,12 @@
     height: 44px;
     padding: 0;
   }
-  /* line 423, src/sass/components/_catalog.scss */
+  /* line 427, src/sass/components/_catalog.scss */
   .catalog .silhouette-toggler-wrapper .silhouette-toggler-bg .silhouette-toggler .silhouette-toggler-cloud-tail,
   .catalog .silhouette-toggler-wrapper .silhouette-toggler-bg .silhouette-toggler .silhouette-button {
     display: none;
   }
-  /* line 427, src/sass/components/_catalog.scss */
+  /* line 431, src/sass/components/_catalog.scss */
   .catalog .silhouette-toggler-wrapper .silhouette-toggler-bg .silhouette-toggler .silhouette-toggler-cloud {
     display: block;
     width: 100%;
@@ -3898,19 +3901,23 @@
     top: 0;
     left: 0;
   }
-  /* line 434, src/sass/components/_catalog.scss */
+  /* line 438, src/sass/components/_catalog.scss */
   .catalog .silhouette-toggler-wrapper .silhouette-toggler-bg .silhouette-toggler .turn-button {
     padding: 0;
     padding-top: 8px;
   }
-  /* line 437, src/sass/components/_catalog.scss */
+  /* line 441, src/sass/components/_catalog.scss */
   .catalog .silhouette-toggler-wrapper .silhouette-toggler-bg .silhouette-toggler .turn-button .turn-label {
     width: 25px;
     height: 19px;
     background: url("../images/icons/turn.png") no-repeat center;
     background-size: 25px 19px;
   }
-  /* line 451, src/sass/components/_catalog.scss */
+  /* line 447, src/sass/components/_catalog.scss */
+  .catalog .silhouette-toggler-wrapper .silhouette-toggler-bg .silhouette-toggler .turn-button p {
+    display: none !important;
+  }
+  /* line 455, src/sass/components/_catalog.scss */
   .catalog .next-collection-wrapper .next-collection {
     display: block;
     width: 100%;
@@ -3918,21 +3925,21 @@
     min-width: auto;
     margin: 0 auto;
   }
-  /* line 457, src/sass/components/_catalog.scss */
+  /* line 461, src/sass/components/_catalog.scss */
   .catalog .next-collection-wrapper .next-collection .next-collection__content {
     display: block;
     height: auto;
   }
-  /* line 461, src/sass/components/_catalog.scss */
+  /* line 465, src/sass/components/_catalog.scss */
   .catalog .next-collection-wrapper .next-collection p.name {
     padding: 0;
     font-size: 35px;
   }
-  /* line 464, src/sass/components/_catalog.scss */
+  /* line 468, src/sass/components/_catalog.scss */
   .catalog .next-collection-wrapper .next-collection p.name .title {
     margin-bottom: 300px;
   }
-  /* line 468, src/sass/components/_catalog.scss */
+  /* line 472, src/sass/components/_catalog.scss */
   .catalog .next-collection-wrapper .next-collection .preview-1 {
     position: absolute;
     top: 110px;
@@ -3945,7 +3952,7 @@
     -webkit-transform: translate(30px, 3px) rotate(-10deg);
             transform: translate(30px, 3px) rotate(-10deg);
   }
-  /* line 478, src/sass/components/_catalog.scss */
+  /* line 482, src/sass/components/_catalog.scss */
   .catalog .next-collection-wrapper .next-collection .preview-1 img {
     max-width: 168px;
     width: 100%;
@@ -3953,11 +3960,11 @@
     display: block;
     outline: none;
   }
-  /* line 485, src/sass/components/_catalog.scss */
+  /* line 489, src/sass/components/_catalog.scss */
   .catalog .next-collection-wrapper .next-collection .preview-1 .image-border {
     display: none;
   }
-  /* line 489, src/sass/components/_catalog.scss */
+  /* line 493, src/sass/components/_catalog.scss */
   .catalog .next-collection-wrapper .next-collection .preview-2 {
     top: 120px;
     display: block;
@@ -3965,7 +3972,7 @@
     width: 100%;
     margin-left: auto;
   }
-  /* line 495, src/sass/components/_catalog.scss */
+  /* line 499, src/sass/components/_catalog.scss */
   .catalog .next-collection-wrapper .next-collection .preview-2 img {
     max-width: 168px;
     width: 100%;
@@ -3973,11 +3980,11 @@
     display: block;
     outline: none;
   }
-  /* line 502, src/sass/components/_catalog.scss */
+  /* line 506, src/sass/components/_catalog.scss */
   .catalog .next-collection-wrapper .next-collection .preview-2 .image-border {
     display: none;
   }
-  /* line 506, src/sass/components/_catalog.scss */
+  /* line 510, src/sass/components/_catalog.scss */
   .catalog .next-collection-wrapper .next-collection .arrow {
     width: 87px;
     height: 20px;
@@ -3985,19 +3992,19 @@
     background-size: 87px 20px;
     z-index: 1;
   }
-  /* line 512, src/sass/components/_catalog.scss */
+  /* line 516, src/sass/components/_catalog.scss */
   .catalog .next-collection-wrapper .next-collection .arrow span {
     display: none !important;
     background: none !important;
   }
-  /* line 517, src/sass/components/_catalog.scss */
+  /* line 521, src/sass/components/_catalog.scss */
   .catalog .next-collection-wrapper .next-collection .dress-count {
     margin-top: 20px;
     font-size: 18px;
     background-position: 0 21px;
     background-size: 10px 1px;
   }
-  /* line 527, src/sass/components/_catalog.scss */
+  /* line 531, src/sass/components/_catalog.scss */
   .catalog .footer__hint .order-button-wrapper .fitting-button {
     width: 142px;
     height: 44px;
