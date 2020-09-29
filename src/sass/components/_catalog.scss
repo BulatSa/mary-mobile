@@ -62,6 +62,7 @@
                 float: none;
                 margin: 0 0 30px;
                 padding-top: 0;
+                overflow: hidden;
                 &:last-child {
                   margin-bottom: 0;
                 }
@@ -75,7 +76,7 @@
                   }
                   p.price {
                     display: block;
-                    text-align: center!important;
+                    text-align: center !important;
                     background: none;
                     .actual-price {
                       display: inline-block;
@@ -99,6 +100,9 @@
                     }
                     span.link {
                       margin: 20px auto 0;
+                      font-size: 18px;
+                      background-position: 0 21px;
+                      background-size: 10px 1px;
                     }
                   }
                 }
@@ -445,7 +449,77 @@
     }
     .next-collection-wrapper {
       .next-collection {
-        min-width: 100%;
+        display: block;
+        width: 100%;
+        max-width: 310px;
+        min-width: auto;
+        margin: 0 auto;
+        .next-collection__content {
+          display: block;
+          height: auto;
+        }
+        p.name {
+          padding: 0;
+          font-size: 35px;
+          .title {
+            margin-bottom: 300px;
+          }
+        }
+        .preview-1 {
+          position: absolute;
+          top: 110px;
+          left: 0;
+          right: initial;
+          display: block;
+          max-width: 168px;
+          width: 100%;
+          margin-left: auto;
+          transform: translate(30px, 3px) rotate(-10deg);
+          img {
+            max-width: 168px;
+            width: 100%;
+            height: auto;
+            display: block;
+            outline: none;
+          }
+          .image-border {
+            display: none;
+          }
+        }
+        .preview-2 {
+          top: 120px;
+          display: block;
+          max-width: 168px;
+          width: 100%;
+          margin-left: auto;
+          img {
+            max-width: 168px;
+            width: 100%;
+            height: auto;
+            display: block;
+            outline: none;
+          }
+          .image-border {
+            display: none;
+          }
+        }
+        .arrow {
+          width: 87px;
+          height: 20px;
+          background: url("../images/bg-mobile-arrow.png") no-repeat center;
+          background-size: 87px 20px;
+          z-index: 1;
+          span {
+            display: none !important;
+            background: none !important;
+          }
+        }
+        .dress-count {
+          margin-top: 20px;
+          font-size: 18px;
+          background-position: 0 21px;
+          background-size: 10px 1px;
+        }
       }
     }
     .footer__hint {
