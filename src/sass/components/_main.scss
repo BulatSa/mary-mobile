@@ -274,6 +274,7 @@
     }
     .content {
       padding: 0 20px;
+
       .banner {
         position: relative;
         display: flex;
@@ -320,6 +321,8 @@
           }
         }
         div.button-wrapper {
+          display: flex;
+          flex-direction: column;
           width: 100%;
           padding-top: 0;
           text-align: center;
@@ -350,6 +353,7 @@
         a {
           .name {
             display: inline;
+            margin: 0!important;
             white-space: initial;
             line-height: 1.4;
             text-decoration: underline;
@@ -469,8 +473,6 @@
         .silhouette-4 {
           a {
             top: 3px;
-            &:hover {
-            }
             .hint {
               p {
                 //margin-top: 10px;
@@ -935,6 +937,11 @@
       .map-link {
         width: 100%;
         height: 260px;
+        &:hover {
+          .map-border {
+            background-position: 0 -260px;
+          }
+        }
         .map-border {
           width: 100%;
           height: 260px;
