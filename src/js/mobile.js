@@ -104,8 +104,8 @@ $(function () {
     if ($(".dark-pane .collections").length) {
       $(".dark-pane .collections").fotorama({
         width: "90%",
-        ratio: '5/6',
-        arrows: false
+        ratio: "5/6",
+        arrows: false,
       });
     }
     // Main page Fotorama
@@ -132,58 +132,64 @@ $(function () {
     }
     // About us More
 
-
     // Fitting button
-    const fittingButton = document.querySelector('.main-page .fitting-button');
+    const fittingButton = document.querySelector(".main-page .fitting-button");
     if (fittingButton) {
-      const borderHeight = document.querySelector('.header.header_homepage').offsetHeight - window.innerHeight;
+      const borderHeight =
+        document.querySelector(".header.header_homepage").offsetHeight -
+        window.innerHeight;
       const toggleFittingButton = () => {
         if (window.scrollY > borderHeight) {
-          fittingButton.classList.add('show-mobile');
+          fittingButton.classList.add("show-mobile");
         } else {
-          fittingButton.classList.remove('show-mobile');
+          fittingButton.classList.remove("show-mobile");
         }
-      }
-      window.addEventListener('scroll', toggleFittingButton);
+      };
+      window.addEventListener("scroll", toggleFittingButton);
     }
     // Fitting button
 
     // Filtering catalog elements
-    const collectionList = document.querySelectorAll('.collection ul[data-role=collection_list]');
+    const collectionList = document.querySelectorAll(
+      ".collection ul[data-role=collection_list]"
+    );
     if (collectionList) {
+      const checkLiWideElemets = (li) => {
+        if (
+          li.classList.contains("photo-layout-factoid") ||
+          li.classList.contains("photo-layout-selection") ||
+          li.classList.contains("photo-layout-rotate")
+        ) {
+          return true;
+        }
+        return false;
+      };
 
       collectionList.forEach((el) => {
-        const collectionLi = el.querySelectorAll('li');
+        const collectionLi = el.querySelectorAll("li");
         if (collectionLi.length === 2) {
           let containsWideElements = false;
           collectionLi.forEach((li) => {
-            if (li.classList.contains('photo-layout-factoid') || li.classList.contains('photo-layout-selection') || li.classList.contains('photo-layout-rotate')) {
-              containsWideElements = true;
-            }
+            containsWideElements = checkLiWideElemets(li);
           });
           if (!containsWideElements) {
-            el.classList.add('halfed');
+            el.classList.add("halfed");
           }
         }
 
         if (collectionLi.length === 3) {
           let containsWideElements = false;
           collectionLi.forEach((li, i) => {
-            if (li.classList.contains('photo-layout-factoid') || li.classList.contains('photo-layout-selection') || li.classList.contains('photo-layout-rotate')) {
-              
-              if (i === 0 || i === 1) {
-                containsWideElements = true;
-              }
+            if (i === 0 || i === 1) {
+              containsWideElements = checkLiWideElemets(li);
             }
           });
           if (!containsWideElements) {
-            el.classList.add('halfed');
+            el.classList.add("halfed");
           }
         }
-
-      })
+      });
     }
-    
     // Filtering catalog elements
   }
 });
