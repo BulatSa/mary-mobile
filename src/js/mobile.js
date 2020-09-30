@@ -132,6 +132,7 @@ $(function () {
     }
     // About us More
 
+
     // Fitting button
     const fittingButton = document.querySelector('.main-page .fitting-button');
     if (fittingButton) {
@@ -146,5 +147,43 @@ $(function () {
       window.addEventListener('scroll', toggleFittingButton);
     }
     // Fitting button
+
+    // Filtering catalog elements
+    const collectionList = document.querySelectorAll('.collection ul[data-role=collection_list]');
+    if (collectionList) {
+
+      collectionList.forEach((el) => {
+        const collectionLi = el.querySelectorAll('li');
+        if (collectionLi.length === 2) {
+          let containsWideElements = false;
+          collectionLi.forEach((li) => {
+            if (li.classList.contains('photo-layout-factoid') || li.classList.contains('photo-layout-selection') || li.classList.contains('photo-layout-rotate')) {
+              containsWideElements = true;
+            }
+          });
+          if (!containsWideElements) {
+            el.classList.add('halfed');
+          }
+        }
+
+        if (collectionLi.length === 3) {
+          let containsWideElements = false;
+          collectionLi.forEach((li, i) => {
+            if (li.classList.contains('photo-layout-factoid') || li.classList.contains('photo-layout-selection') || li.classList.contains('photo-layout-rotate')) {
+              
+              if (i === 0 || i === 1) {
+                containsWideElements = true;
+              }
+            }
+          });
+          if (!containsWideElements) {
+            el.classList.add('halfed');
+          }
+        }
+
+      })
+    }
+    
+    // Filtering catalog elements
   }
 });

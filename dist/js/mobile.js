@@ -150,6 +150,44 @@ $(function () {
 
       window.addEventListener('scroll', toggleFittingButton);
     } // Fitting button
+    // Filtering catalog elements
+
+
+    var collectionList = document.querySelectorAll('.collection ul[data-role=collection_list]');
+
+    if (collectionList) {
+      collectionList.forEach(function (el) {
+        var collectionLi = el.querySelectorAll('li');
+
+        if (collectionLi.length === 2) {
+          var containsWideElements = false;
+          collectionLi.forEach(function (li) {
+            if (li.classList.contains('photo-layout-factoid') || li.classList.contains('photo-layout-selection') || li.classList.contains('photo-layout-rotate')) {
+              containsWideElements = true;
+            }
+          });
+
+          if (!containsWideElements) {
+            el.classList.add('halfed');
+          }
+        }
+
+        if (collectionLi.length === 3) {
+          var _containsWideElements = false;
+          collectionLi.forEach(function (li, i) {
+            if (li.classList.contains('photo-layout-factoid') || li.classList.contains('photo-layout-selection') || li.classList.contains('photo-layout-rotate')) {
+              if (i === 0 || i === 1) {
+                _containsWideElements = true;
+              }
+            }
+          });
+
+          if (!_containsWideElements) {
+            el.classList.add('halfed');
+          }
+        }
+      });
+    } // Filtering catalog elements
 
   }
 });
