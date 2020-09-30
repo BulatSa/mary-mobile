@@ -15,7 +15,7 @@
     .collections-wrapper {
       .collections {
         .designer-collection-wrapper {
-          margin-bottom: 30px;
+          //margin-bottom: 30px;
           .designer-collection {
             .collection-designer {
               width: 100%;
@@ -51,7 +51,7 @@
             margin: 0;
             padding: 0;
             & + .collection {
-              padding-top: 30px;
+              //padding-top: 30px;
             }
             ul {
               display: flex;
@@ -188,9 +188,8 @@
                 float: none;
                 margin: 0 0 30px;
                 padding-top: 0;
-                //Foverflow: hidden;
                 &:last-child {
-                  margin-bottom: 0;
+                  //margin-bottom: 0;
                 }
                 a {
                   &:hover {
@@ -241,6 +240,7 @@
                   }
                 }
                 &.photo-1-1-1 {
+                  margin-bottom: 30px;
                   .price {
                     .previous-price + .actual-price {
                       text-align: right;
@@ -272,7 +272,6 @@
                 }
                 &.photo-2-2-2 {
                   width: 100%;
-                  margin: 0;
                 }
                 &.photo-3-1-1 {
                   //width: calc(50% - 7px);
