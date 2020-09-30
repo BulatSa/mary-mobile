@@ -3827,7 +3827,7 @@
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection a.selection .arrow {
     width: 87px;
     height: 20px;
-    background: url("../images/bg-mobile-arrow.png") no-repeat center;
+    background: url("../images/bg-mobile-arrow.png") no-repeat center !important;
     background-size: 87px 20px !important;
   }
   /* line 444, src/sass/components/_catalog.scss */
@@ -4092,7 +4092,7 @@
   .catalog .next-collection-wrapper .next-collection .arrow {
     width: 87px;
     height: 20px;
-    background: url("../images/bg-mobile-arrow.png") no-repeat center;
+    background: url("../images/bg-mobile-arrow.png") no-repeat center !important;
     background-size: 87px 20px;
     z-index: 1;
   }
