@@ -1,4 +1,26 @@
 @media screen and (max-width: 700px) {
+  .dress__favourite-dresses-panel {
+    height: auto;
+    z-index: 500;
+    .dress__favourite-dresses-panel__container {
+      height: 100%;
+    }
+    .dress__favourite-dresses-panel__content {
+      height: 100%;
+      padding-bottom: 20px;
+    }
+    .dress__favourite-dresses-panel__toggler {
+      height: 45px;
+    }
+    .dress__favourite-dresses-panel__message {
+      max-width: calc(100% - 85px);
+      margin: 15px 0 0 14px;
+    }
+    .dress__favourite-dresses-panel__email-header {
+      clear: both;
+    }
+  }
+
   .catalog {
     text-align: center;
     * {
@@ -61,45 +83,41 @@
                 li {
                   &.photo-2-1-1 {
                     width: calc(50% - 7px);
-                    margin-bottom: 0;
                     .price {
                       .previous-price + .actual-price {
                         top: -35px;
                         left: -5px;
-                        transform: scale(0.4);
+                        transform: scale(0.45);
                       }
                     }
                   }
                   &.photo-2-1-2 {
                     width: calc(50% - 7px);
-                    margin-bottom: 0;
                     .price {
                       .previous-price + .actual-price {
                         top: -45px;
                         right: -5px;
-                        transform: scale(0.4);
+                        transform: scale(0.45);
                       }
                     }
                   }
                   &.photo-2-2-1 {
                     width: calc(50% - 7px);
-                    margin-bottom: 0;
                     .price {
                       .previous-price + .actual-price {
                         top: -35px;
                         left: -5px;
-                        transform: scale(0.4);
+                        transform: scale(0.45);
                       }
                     }
                   }
                   &.photo-2-2-2 {
                     width: calc(50% - 7px);
-                    margin-bottom: 0;
                     .price {
                       .previous-price + .actual-price {
                         top: -40px;
                         right: -5px;
-                        transform: scale(0.4);
+                        transform: scale(0.45);
                       }
                     }
                   }
@@ -437,7 +455,7 @@
                   width: 87px;
                   height: 20px;
                   background: url("../images/bg-mobile-arrow.png") no-repeat
-                    center!important;
+                    center !important;
                   background-size: 87px 20px !important;
                 }
                 .link {
@@ -666,8 +684,8 @@
         .arrow {
           width: 87px;
           height: 20px;
-          background: url("../images/bg-mobile-arrow.png") no-repeat center!important;
-          background-size: 87px 20px!important;
+          background: url("../images/bg-mobile-arrow.png") no-repeat center !important;
+          background-size: 87px 20px !important;
           z-index: 1;
           span {
             display: none !important;
