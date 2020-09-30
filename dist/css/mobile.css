@@ -4093,7 +4093,7 @@
     width: 87px;
     height: 20px;
     background: url("../images/bg-mobile-arrow.png") no-repeat center !important;
-    background-size: 87px 20px;
+    background-size: 87px 20px !important;
     z-index: 1;
   }
   /* line 673, src/sass/components/_catalog.scss */
