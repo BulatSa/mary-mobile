@@ -278,7 +278,8 @@
       }
       .services__photo-and-hashtag__right {
         float: none;
-        width: 320px;
+        max-width: 320px;
+        width: 100%;
         margin: 0 auto;
         height: 255px;
         .services__photo-and-hashtag__photo1,
@@ -288,10 +289,13 @@
           height: 131px;
         }
         .services__photo-and-hashtag__photo1 {
+          left: 5px;
           transform: rotate(2.79deg);
         }
         .services__photo-and-hashtag__photo2 {
           top: 30px;
+          right: 15px;
+          left: initial;
           transform: rotate(15deg);
         }
         .services__photo-and-hashtag__photo3 {
