@@ -1,19 +1,28 @@
 $(function () {
   if (document.documentElement.clientWidth <= 680) {
     // Mobile Menu Toggle
+    const menuMobile = document.querySelector(".menu-mobile");
+    const body = document.querySelector('body');
     const mobileMenuToggle = (e) => {
       e.preventDefault();
+      let scrollTop = window.scrollY;
       const dataLink = e.target.dataset.menuMobileLink;
       const linkedMenu = document.querySelector(`.${dataLink}`);
       const burger = document.querySelector(".menu-mobile__item--burger");
       if (linkedMenu.classList.contains("open")) {
         linkedMenu.classList.remove("open");
+        body.classList.remove('open-menu');
         closeAllMobileMenu("data-menu-mobile-link");
         mobileBurgerClose(burger);
+        if (scrollTop < 50) {
+          menuMobile.classList.remove("show-bg");
+        }
       } else {
         closeAllMobileMenu("data-menu-mobile-link");
         linkedMenu.classList.add("open");
+        body.classList.add('open-menu');
         mobileBurgerOpen(burger);
+        menuMobile.classList.add("show-bg");
       }
     };
 
@@ -44,7 +53,6 @@ $(function () {
     // End of Mobile Menu Toggle
 
     // menuMobileScrollToggle on Scroll
-    const menuMobile = document.querySelector(".menu-mobile");
     if (menuMobile) {
       let lastScrollTop = 0;
       const menuTransparent =
@@ -72,6 +80,21 @@ $(function () {
       window.addEventListener("scroll", menuMobileScrollToggle);
     }
     // End of menuMobileScrollToggle on Scroll
+
+    // Offers page hide call btn
+    const fittingButtonOnOffers = document.querySelector('.offers_page .fitting-button');
+    if (fittingButtonOnOffers) {
+      const toggleFittingButtonOnOffers = () => {
+        let scrollTop = window.scrollY;
+        if (scrollTop > 220) {
+          fittingButtonOnOffers.classList.add('visible');
+        } else {
+          fittingButtonOnOffers.classList.remove('visible');
+        }
+      }
+      window.addEventListener("scroll",toggleFittingButtonOnOffers);
+    }
+    // End Offers page hide call btn
 
     // Replace Service MakeUp block
     const removeEventListeners = (el) => {

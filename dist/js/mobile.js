@@ -4,20 +4,31 @@
 $(function () {
   if (document.documentElement.clientWidth <= 680) {
     // Mobile Menu Toggle
+    var menuMobile = document.querySelector(".menu-mobile");
+    var body = document.querySelector('body');
+
     var mobileMenuToggle = function mobileMenuToggle(e) {
       e.preventDefault();
+      var scrollTop = window.scrollY;
       var dataLink = e.target.dataset.menuMobileLink;
       var linkedMenu = document.querySelector(".".concat(dataLink));
       var burger = document.querySelector(".menu-mobile__item--burger");
 
       if (linkedMenu.classList.contains("open")) {
         linkedMenu.classList.remove("open");
+        body.classList.remove('open-menu');
         closeAllMobileMenu("data-menu-mobile-link");
         mobileBurgerClose(burger);
+
+        if (scrollTop < 50) {
+          menuMobile.classList.remove("show-bg");
+        }
       } else {
         closeAllMobileMenu("data-menu-mobile-link");
         linkedMenu.classList.add("open");
+        body.classList.add('open-menu');
         mobileBurgerOpen(burger);
+        menuMobile.classList.add("show-bg");
       }
     };
 
@@ -47,8 +58,6 @@ $(function () {
     // menuMobileScrollToggle on Scroll
 
 
-    var menuMobile = document.querySelector(".menu-mobile");
-
     if (menuMobile) {
       var lastScrollTop = 0;
       var menuTransparent = menuMobile.dataset.menuTransparent === "true" ? true : false;
@@ -75,6 +84,24 @@ $(function () {
 
       window.addEventListener("scroll", menuMobileScrollToggle);
     } // End of menuMobileScrollToggle on Scroll
+    // Offers page hide call btn
+
+
+    var fittingButtonOnOffers = document.querySelector('.offers_page .fitting-button');
+
+    if (fittingButtonOnOffers) {
+      var toggleFittingButtonOnOffers = function toggleFittingButtonOnOffers() {
+        var scrollTop = window.scrollY;
+
+        if (scrollTop > 220) {
+          fittingButtonOnOffers.classList.add('visible');
+        } else {
+          fittingButtonOnOffers.classList.remove('visible');
+        }
+      };
+
+      window.addEventListener("scroll", toggleFittingButtonOnOffers);
+    } // End Offers page hide call btn
     // Replace Service MakeUp block
 
 

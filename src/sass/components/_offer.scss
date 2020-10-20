@@ -10,6 +10,15 @@
         margin-bottom: 7px;
       }
     }
+    .fitting-button {
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.3s ease!important;
+      &.visible {
+        opacity: 1;
+        pointer-events: all;
+      }
+    }
   }
   .offer__wrapper {
     padding-left: 20px;

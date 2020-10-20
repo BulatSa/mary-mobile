@@ -204,7 +204,10 @@
       height: 15px;
       margin-right: 0;
       margin-bottom: 0;
-      background: url("../images/bg-product-panel-top.png") no-repeat center top;
+      background-image: url("../images/bg-product-panel-top.png")!important;
+      background-color: rgba(0,0,0,0);
+      background-repeat: no-repeat;
+      background-position: center top;
       background-size: 148px 15px;
     }
     .panel {
@@ -326,7 +329,10 @@
       .arrow {
         width: 87px;
         height: 20px;
-        background: url("../images/bg-mobile-arrow.png") no-repeat center;
+        margin-bottom: -1px;
+        background-image: url("../images/bg-mobile-arrow.png")!important;
+        background-repeat: no-repeat;
+        background-position: center;
         background-size: 87px 20px;
         z-index: 1;
       }
@@ -390,7 +396,10 @@
       height: 15px;
       margin-right: 0;
       margin-bottom: 0;
-      background: url("../images/bg-product-panel-top-white.png") no-repeat center top;
+      background-image: url("../images/bg-product-panel-top-white.png")!important;
+      background-color: rgba(0,0,0,0);
+      background-repeat: no-repeat;
+      background-position: center top;
       background-size: 148px 15px;
     }
     .panel {
@@ -418,7 +427,10 @@
       .arrow {
         width: 87px;
         height: 20px;
-        background: url("../images/bg-mobile-arrow-purple.png") no-repeat center !important;
+        margin-bottom: -1px;
+        background-image: url("../images/bg-mobile-arrow-purple.png")!important;
+        background-repeat: no-repeat;
+        background-position: center;
         background-size: 87px 20px !important;
         z-index: 1;
       }
