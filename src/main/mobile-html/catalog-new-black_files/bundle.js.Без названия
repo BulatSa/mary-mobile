@@ -1,0 +1,2 @@
+(function(d,p,t,u){var s=d.createElement(t);s.async=1;s.src=u;p.appendChild(s);})(document, document.body, 'script', '//preregistration.marytrufel.ru/static/js/main.908d80f7.js?da06545eda4ae536f610');
+(function(d,p,t,u){var l=d.createElement(t);l.rel='stylesheet';l.href=u;p.appendChild(l);})(document, document.body, 'link', '//preregistration.marytrufel.ru/static/css/main.b2701a2f.css?da06545eda4ae536f610');
