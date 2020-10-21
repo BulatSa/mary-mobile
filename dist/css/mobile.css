@@ -1330,30 +1330,31 @@
     padding: 0;
     padding-left: 100px;
     font-size: 18px;
+    white-space: nowrap;
     background-position: center left;
     background-size: 81px 80px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
-  /* line 186, src/sass/components/_dress-page.scss */
+  /* line 187, src/sass/components/_dress-page.scss */
   .dress-page .content {
     padding-top: 0;
     padding-left: 20px;
     padding-right: 20px;
   }
-  /* line 191, src/sass/components/_dress-page.scss */
+  /* line 192, src/sass/components/_dress-page.scss */
   .dress-page .panel-parent {
     display: none;
     width: 148px;
     margin-left: 0;
     padding-left: 0;
   }
-  /* line 197, src/sass/components/_dress-page.scss */
+  /* line 198, src/sass/components/_dress-page.scss */
   .dress-page .panel-container {
     width: 148px;
     padding-left: 0;
   }
-  /* line 201, src/sass/components/_dress-page.scss */
+  /* line 202, src/sass/components/_dress-page.scss */
   .dress-page .panel-top {
     float: none;
     width: 148px;
@@ -1366,84 +1367,86 @@
     background-position: center top;
     background-size: 148px 15px;
   }
-  /* line 213, src/sass/components/_dress-page.scss */
+  /* line 214, src/sass/components/_dress-page.scss */
   .dress-page .panel {
     float: none;
     width: 148px;
     margin: 0;
-    background: none;
+    background: none !important;
   }
-  /* line 218, src/sass/components/_dress-page.scss */
+  /* line 219, src/sass/components/_dress-page.scss */
   .dress-page .panel .panel__content {
     width: 148px;
     font-size: 10px;
     background: url("../images/bg-product-panel-middle.png") repeat-y center center;
     background-size: 148px 160px;
   }
-  /* line 224, src/sass/components/_dress-page.scss */
+  /* line 225, src/sass/components/_dress-page.scss */
   .dress-page .panel .panel__content h1 {
     margin: 0;
     margin-bottom: 0;
     font-size: 20px;
   }
-  /* line 229, src/sass/components/_dress-page.scss */
+  /* line 230, src/sass/components/_dress-page.scss */
   .dress-page .panel .panel__content .designer {
     margin: 0;
     font-size: 10px;
   }
-  /* line 233, src/sass/components/_dress-page.scss */
+  /* line 234, src/sass/components/_dress-page.scss */
   .dress-page .panel .panel__content .collection {
     margin: 0;
     margin-bottom: 5px;
     font-size: 10px;
   }
-  /* line 239, src/sass/components/_dress-page.scss */
+  /* line 240, src/sass/components/_dress-page.scss */
   .dress-page .panel .panel__content .colors p {
     margin-bottom: 0;
   }
-  /* line 243, src/sass/components/_dress-page.scss */
+  /* line 244, src/sass/components/_dress-page.scss */
   .dress-page .panel .panel__content .colors .colors__rounds .color {
     width: 20px;
     height: 20px;
   }
-  /* line 249, src/sass/components/_dress-page.scss */
+  /* line 250, src/sass/components/_dress-page.scss */
   .dress-page .panel .panel__content .features {
     margin: 0;
     margin-bottom: 3px;
   }
-  /* line 253, src/sass/components/_dress-page.scss */
+  /* line 254, src/sass/components/_dress-page.scss */
   .dress-page .panel .panel__content .price {
     margin: 0;
     margin-bottom: 0;
   }
-  /* line 256, src/sass/components/_dress-page.scss */
+  /* line 257, src/sass/components/_dress-page.scss */
   .dress-page .panel .panel__content .price ins {
     font-size: 20px;
   }
-  /* line 260, src/sass/components/_dress-page.scss */
+  /* line 261, src/sass/components/_dress-page.scss */
   .dress-page .panel .panel__content .available {
     margin: 0;
     font-size: 10px;
   }
-  /* line 264, src/sass/components/_dress-page.scss */
+  /* line 265, src/sass/components/_dress-page.scss */
   .dress-page .panel .panel__content .panel__content__middle {
     margin: 0;
   }
-  /* line 268, src/sass/components/_dress-page.scss */
+  /* line 269, src/sass/components/_dress-page.scss */
   .dress-page .panel .panel__bottom {
     top: initial;
     width: 148px;
     height: 15px;
     margin-top: 0px;
-    background: url("../images/bg-product-panel-bottom.png") no-repeat center bottom;
+    background-image: url("../images/bg-product-panel-bottom.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
     background-size: 148px 15px;
   }
-  /* line 278, src/sass/components/_dress-page.scss */
+  /* line 280, src/sass/components/_dress-page.scss */
   .dress-page .pager {
     margin: 0;
     padding: 40px 20px 50px;
   }
-  /* line 282, src/sass/components/_dress-page.scss */
+  /* line 284, src/sass/components/_dress-page.scss */
   .dress-page .pager__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1451,11 +1454,11 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  /* line 286, src/sass/components/_dress-page.scss */
+  /* line 288, src/sass/components/_dress-page.scss */
   .dress-page .pager__prev {
     display: none;
   }
-  /* line 289, src/sass/components/_dress-page.scss */
+  /* line 291, src/sass/components/_dress-page.scss */
   .dress-page .pager__next {
     width: 100%;
     max-width: 310px;
@@ -1467,26 +1470,26 @@
         -ms-flex-order: 1;
             order: 1;
   }
-  /* line 297, src/sass/components/_dress-page.scss */
+  /* line 299, src/sass/components/_dress-page.scss */
   .dress-page .pager__next .label {
     font-size: 35px;
     background: none !important;
     z-index: 1;
   }
-  /* line 302, src/sass/components/_dress-page.scss */
+  /* line 304, src/sass/components/_dress-page.scss */
   .dress-page .pager__next .images {
     position: relative;
     margin-bottom: 50px;
     z-index: 0;
   }
-  /* line 306, src/sass/components/_dress-page.scss */
+  /* line 308, src/sass/components/_dress-page.scss */
   .dress-page .pager__next .images .preview {
     display: block;
     max-width: 168px;
     width: 100%;
     margin-left: auto;
   }
-  /* line 311, src/sass/components/_dress-page.scss */
+  /* line 313, src/sass/components/_dress-page.scss */
   .dress-page .pager__next .images .preview img {
     max-width: 168px;
     width: 100%;
@@ -1494,11 +1497,11 @@
     display: block;
     outline: none;
   }
-  /* line 318, src/sass/components/_dress-page.scss */
+  /* line 320, src/sass/components/_dress-page.scss */
   .dress-page .pager__next .images .preview .image-border {
     display: none;
   }
-  /* line 321, src/sass/components/_dress-page.scss */
+  /* line 323, src/sass/components/_dress-page.scss */
   .dress-page .pager__next .images .preview.rotated {
     position: absolute;
     top: 0;
@@ -1506,7 +1509,7 @@
     -webkit-transform: translate(30px, 3px) rotate(-10deg);
             transform: translate(30px, 3px) rotate(-10deg);
   }
-  /* line 329, src/sass/components/_dress-page.scss */
+  /* line 331, src/sass/components/_dress-page.scss */
   .dress-page .pager__next .arrow {
     width: 87px;
     height: 20px;
@@ -1517,7 +1520,7 @@
     background-size: 87px 20px;
     z-index: 1;
   }
-  /* line 340, src/sass/components/_dress-page.scss */
+  /* line 342, src/sass/components/_dress-page.scss */
   .dress-page .pager__all {
     margin: 0 auto 50px;
     padding: 0;
@@ -1525,11 +1528,11 @@
         -ms-flex-order: 0;
             order: 0;
   }
-  /* line 344, src/sass/components/_dress-page.scss */
+  /* line 346, src/sass/components/_dress-page.scss */
   .dress-page .pager__all .next-collection-silhouette {
     display: none !important;
   }
-  /* line 350, src/sass/components/_dress-page.scss */
+  /* line 352, src/sass/components/_dress-page.scss */
   .dress-page .footer__hint .order-button-wrapper .fitting-button {
     width: 142px;
     height: 44px;
@@ -1537,11 +1540,11 @@
     background: url("../images/bg-order-button-short.png");
     background-size: 142px 44px;
   }
-  /* line 359, src/sass/components/_dress-page.scss */
+  /* line 361, src/sass/components/_dress-page.scss */
   .dress-page .favourite-link {
     display: block;
   }
-  /* line 361, src/sass/components/_dress-page.scss */
+  /* line 363, src/sass/components/_dress-page.scss */
   .dress-page .favourite-link .favourite-link__control {
     width: 47px;
     height: 47px;
@@ -1550,7 +1553,7 @@
     left: initial;
     background-size: 47px 47px;
   }
-  /* line 379, src/sass/components/_dress-page.scss */
+  /* line 381, src/sass/components/_dress-page.scss */
   .evening.dress-page .columns .columns__right .columns__right__padding .columns__right__padding__service a.white span.arrow-after:after {
     top: 3px !important;
     width: 87px !important;
@@ -1558,7 +1561,7 @@
     background: url("../images/bg-mobile-arrow-purple.png") no-repeat center !important;
     background-size: 87px 20px !important;
   }
-  /* line 393, src/sass/components/_dress-page.scss */
+  /* line 395, src/sass/components/_dress-page.scss */
   .evening.dress-page .panel-top {
     float: none;
     width: 148px;
@@ -1571,18 +1574,18 @@
     background-position: center top;
     background-size: 148px 15px;
   }
-  /* line 405, src/sass/components/_dress-page.scss */
-  .evening.dress-page .panel {
-    background: none;
-  }
   /* line 407, src/sass/components/_dress-page.scss */
+  .evening.dress-page .panel {
+    background: none !important;
+  }
+  /* line 409, src/sass/components/_dress-page.scss */
   .evening.dress-page .panel .panel__content {
     width: 148px;
     font-size: 10px;
     background: url("../images/bg-product-panel-middle-white.png") repeat-y center center;
     background-size: 148px 160px;
   }
-  /* line 414, src/sass/components/_dress-page.scss */
+  /* line 416, src/sass/components/_dress-page.scss */
   .evening.dress-page .panel .panel__bottom {
     top: initial;
     width: 148px;
@@ -1594,7 +1597,7 @@
     background-position: center bottom;
     background-size: 148px 15px;
   }
-  /* line 427, src/sass/components/_dress-page.scss */
+  /* line 429, src/sass/components/_dress-page.scss */
   .evening.dress-page .pager__next .arrow {
     width: 87px;
     height: 20px;
@@ -1604,6 +1607,10 @@
     background-position: center;
     background-size: 87px 20px !important;
     z-index: 1;
+  }
+  /* line 448, src/sass/components/_dress-page.scss */
+  .retina .evening.dress-page .pager__next .arrow {
+    background-image: url("../images/bg-mobile-arrow-purple.png") !important;
   }
 }
 
