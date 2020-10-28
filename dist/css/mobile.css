@@ -1437,16 +1437,17 @@
     height: 15px;
     margin-top: 0px;
     background-image: url("../images/bg-product-panel-bottom.png");
+    background-color: rgba(0, 0, 0, 0);
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: 148px 15px;
   }
-  /* line 280, src/sass/components/_dress-page.scss */
+  /* line 281, src/sass/components/_dress-page.scss */
   .dress-page .pager {
     margin: 0;
     padding: 40px 20px 50px;
   }
-  /* line 284, src/sass/components/_dress-page.scss */
+  /* line 285, src/sass/components/_dress-page.scss */
   .dress-page .pager__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1454,11 +1455,11 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  /* line 288, src/sass/components/_dress-page.scss */
+  /* line 289, src/sass/components/_dress-page.scss */
   .dress-page .pager__prev {
     display: none;
   }
-  /* line 291, src/sass/components/_dress-page.scss */
+  /* line 292, src/sass/components/_dress-page.scss */
   .dress-page .pager__next {
     width: 100%;
     max-width: 310px;
@@ -1470,26 +1471,26 @@
         -ms-flex-order: 1;
             order: 1;
   }
-  /* line 299, src/sass/components/_dress-page.scss */
+  /* line 300, src/sass/components/_dress-page.scss */
   .dress-page .pager__next .label {
     font-size: 35px;
     background: none !important;
     z-index: 1;
   }
-  /* line 304, src/sass/components/_dress-page.scss */
+  /* line 305, src/sass/components/_dress-page.scss */
   .dress-page .pager__next .images {
     position: relative;
     margin-bottom: 50px;
     z-index: 0;
   }
-  /* line 308, src/sass/components/_dress-page.scss */
+  /* line 309, src/sass/components/_dress-page.scss */
   .dress-page .pager__next .images .preview {
     display: block;
     max-width: 168px;
     width: 100%;
     margin-left: auto;
   }
-  /* line 313, src/sass/components/_dress-page.scss */
+  /* line 314, src/sass/components/_dress-page.scss */
   .dress-page .pager__next .images .preview img {
     max-width: 168px;
     width: 100%;
@@ -1497,11 +1498,11 @@
     display: block;
     outline: none;
   }
-  /* line 320, src/sass/components/_dress-page.scss */
+  /* line 321, src/sass/components/_dress-page.scss */
   .dress-page .pager__next .images .preview .image-border {
     display: none;
   }
-  /* line 323, src/sass/components/_dress-page.scss */
+  /* line 324, src/sass/components/_dress-page.scss */
   .dress-page .pager__next .images .preview.rotated {
     position: absolute;
     top: 0;
@@ -1509,7 +1510,7 @@
     -webkit-transform: translate(30px, 3px) rotate(-10deg);
             transform: translate(30px, 3px) rotate(-10deg);
   }
-  /* line 331, src/sass/components/_dress-page.scss */
+  /* line 332, src/sass/components/_dress-page.scss */
   .dress-page .pager__next .arrow {
     width: 87px;
     height: 20px;
@@ -1520,7 +1521,7 @@
     background-size: 87px 20px;
     z-index: 1;
   }
-  /* line 342, src/sass/components/_dress-page.scss */
+  /* line 343, src/sass/components/_dress-page.scss */
   .dress-page .pager__all {
     margin: 0 auto 50px;
     padding: 0;
@@ -1528,11 +1529,11 @@
         -ms-flex-order: 0;
             order: 0;
   }
-  /* line 346, src/sass/components/_dress-page.scss */
+  /* line 347, src/sass/components/_dress-page.scss */
   .dress-page .pager__all .next-collection-silhouette {
     display: none !important;
   }
-  /* line 352, src/sass/components/_dress-page.scss */
+  /* line 353, src/sass/components/_dress-page.scss */
   .dress-page .footer__hint .order-button-wrapper .fitting-button {
     width: 142px;
     height: 44px;
@@ -1540,11 +1541,11 @@
     background: url("../images/bg-order-button-short.png");
     background-size: 142px 44px;
   }
-  /* line 361, src/sass/components/_dress-page.scss */
+  /* line 362, src/sass/components/_dress-page.scss */
   .dress-page .favourite-link {
     display: block;
   }
-  /* line 363, src/sass/components/_dress-page.scss */
+  /* line 364, src/sass/components/_dress-page.scss */
   .dress-page .favourite-link .favourite-link__control {
     width: 47px;
     height: 47px;
@@ -1553,7 +1554,7 @@
     left: initial;
     background-size: 47px 47px;
   }
-  /* line 381, src/sass/components/_dress-page.scss */
+  /* line 382, src/sass/components/_dress-page.scss */
   .evening.dress-page .columns .columns__right .columns__right__padding .columns__right__padding__service a.white span.arrow-after:after {
     top: 3px !important;
     width: 87px !important;
@@ -1561,7 +1562,7 @@
     background: url("../images/bg-mobile-arrow-purple.png") no-repeat center !important;
     background-size: 87px 20px !important;
   }
-  /* line 395, src/sass/components/_dress-page.scss */
+  /* line 396, src/sass/components/_dress-page.scss */
   .evening.dress-page .panel-top {
     float: none;
     width: 148px;
@@ -1574,18 +1575,18 @@
     background-position: center top;
     background-size: 148px 15px;
   }
-  /* line 407, src/sass/components/_dress-page.scss */
+  /* line 408, src/sass/components/_dress-page.scss */
   .evening.dress-page .panel {
     background: none !important;
   }
-  /* line 409, src/sass/components/_dress-page.scss */
+  /* line 410, src/sass/components/_dress-page.scss */
   .evening.dress-page .panel .panel__content {
     width: 148px;
     font-size: 10px;
     background: url("../images/bg-product-panel-middle-white.png") repeat-y center center;
     background-size: 148px 160px;
   }
-  /* line 416, src/sass/components/_dress-page.scss */
+  /* line 417, src/sass/components/_dress-page.scss */
   .evening.dress-page .panel .panel__bottom {
     top: initial;
     width: 148px;
@@ -1597,7 +1598,7 @@
     background-position: center bottom;
     background-size: 148px 15px;
   }
-  /* line 429, src/sass/components/_dress-page.scss */
+  /* line 430, src/sass/components/_dress-page.scss */
   .evening.dress-page .pager__next .arrow {
     width: 87px;
     height: 20px;
@@ -1608,7 +1609,7 @@
     background-size: 87px 20px !important;
     z-index: 1;
   }
-  /* line 448, src/sass/components/_dress-page.scss */
+  /* line 450, src/sass/components/_dress-page.scss */
   .retina .evening.dress-page .pager__next .arrow {
     background-image: url("../images/bg-mobile-arrow-purple.png") !important;
   }

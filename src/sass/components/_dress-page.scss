@@ -205,8 +205,8 @@
       height: 15px;
       margin-right: 0;
       margin-bottom: 0;
-      background-image: url("../images/bg-product-panel-top.png")!important;
-      background-color: rgba(0,0,0,0);
+      background-image: url("../images/bg-product-panel-top.png") !important;
+      background-color: rgba(0, 0, 0, 0);
       background-repeat: no-repeat;
       background-position: center top;
       background-size: 148px 15px;
@@ -215,7 +215,7 @@
       float: none;
       width: 148px;
       margin: 0;
-      background: none!important;
+      background: none !important;
       .panel__content {
         width: 148px;
         font-size: 10px;
@@ -272,6 +272,7 @@
         height: 15px;
         margin-top: 0px;
         background-image: url("../images/bg-product-panel-bottom.png");
+        background-color: rgba(0, 0, 0, 0);
         background-repeat: no-repeat;
         background-position: center bottom;
         background-size: 148px 15px;
@@ -332,7 +333,7 @@
         width: 87px;
         height: 20px;
         margin-bottom: -1px;
-        background-image: url("../images/bg-mobile-arrow.png")!important;
+        background-image: url("../images/bg-mobile-arrow.png") !important;
         background-repeat: no-repeat;
         background-position: center;
         background-size: 87px 20px;
@@ -353,7 +354,7 @@
           width: 142px;
           height: 44px;
           left: 16px;
-          background: url('../images/bg-order-button-short.png');
+          background: url("../images/bg-order-button-short.png");
           background-size: 142px 44px;
         }
       }
@@ -398,19 +399,19 @@
       height: 15px;
       margin-right: 0;
       margin-bottom: 0;
-      background-image: url("../images/bg-product-panel-top-white.png")!important;
-      background-color: rgba(0,0,0,0);
+      background-image: url("../images/bg-product-panel-top-white.png") !important;
+      background-color: rgba(0, 0, 0, 0);
       background-repeat: no-repeat;
       background-position: center top;
       background-size: 148px 15px;
     }
     .panel {
-      background: none!important;
+      background: none !important;
       .panel__content {
         width: 148px;
         font-size: 10px;
-        background: url("../images/bg-product-panel-middle-white.png") repeat-y center
-          center;
+        background: url("../images/bg-product-panel-middle-white.png") repeat-y
+          center center;
         background-size: 148px 160px;
       }
       .panel__bottom {
@@ -418,8 +419,8 @@
         width: 148px;
         height: 15px;
         margin-top: 0px;
-        background-image: url("../images/bg-product-panel-bottom-white.png")!important;
-        background-color: rgba(0,0,0,0);
+        background-image: url("../images/bg-product-panel-bottom-white.png") !important;
+        background-color: rgba(0, 0, 0, 0);
         background-repeat: no-repeat;
         background-position: center bottom;
         background-size: 148px 15px;
@@ -430,7 +431,7 @@
         width: 87px;
         height: 20px;
         margin-bottom: -1px;
-        background-image: url("../images/bg-mobile-arrow-purple.png")!important;
+        background-image: url("../images/bg-mobile-arrow-purple.png") !important;
         background-repeat: no-repeat;
         background-position: center;
         background-size: 87px 20px !important;
@@ -442,13 +443,14 @@
   .retina {
     .evening.dress-page {
       .pager__prev {
-        .arrow {}
+        .arrow {
+        }
       }
       .pager__next {
         .arrow {
-          background-image: url("../images/bg-mobile-arrow-purple.png")!important;
+          background-image: url("../images/bg-mobile-arrow-purple.png") !important;
         }
       }
-    }  
+    }
   }
 }
