@@ -400,7 +400,7 @@
                     .price {
                       .previous-price + .actual-price {
                         top: -70px;
-                        left: -90px;
+                        left: -100px;
                         transform: scale(0.25);
                       }
                     }
@@ -559,6 +559,12 @@
                       text-align: right;
                       top: -50px;
                       right: 0px;
+                      transform: scale(0.4);
+                    }
+                    .previous-price + .actual-price.price-length-6 {
+                      text-align: right;
+                      top: -50px;
+                      right: 30px;
                       transform: scale(0.4);
                     }
                   }
@@ -955,13 +961,13 @@
           position: absolute;
           top: initial;
           bottom: 140px;
-          left: 51%;
+          left: 53%;
           right: initial;
           display: block;
           max-width: 168px;
           width: 100%;
           margin-left: auto;
-          transform: translate3d(-85%, 0, 0) rotate(-10deg);
+          transform: translate3d(-85%, 0, 0) rotate(-14deg);
           img {
             max-width: 168px;
             width: 100%;
@@ -975,7 +981,7 @@
         }
         .preview-2 {
           top: initial;
-          bottom: 140px;
+          bottom: 135px;
           left: 50%;
           display: block;
           max-width: 168px;

@@ -5,7 +5,7 @@ $(function () {
   if (document.documentElement.clientWidth <= 680) {
     // Mobile Menu Toggle
     var menuMobile = document.querySelector(".menu-mobile");
-    var body = document.querySelector('body');
+    var body = document.querySelector("body");
 
     var mobileMenuToggle = function mobileMenuToggle(e) {
       e.preventDefault();
@@ -16,7 +16,7 @@ $(function () {
 
       if (linkedMenu.classList.contains("open")) {
         linkedMenu.classList.remove("open");
-        body.classList.remove('open-menu');
+        body.classList.remove("open-menu");
         closeAllMobileMenu("data-menu-mobile-link");
         mobileBurgerClose(burger);
 
@@ -26,7 +26,7 @@ $(function () {
       } else {
         closeAllMobileMenu("data-menu-mobile-link");
         linkedMenu.classList.add("open");
-        body.classList.add('open-menu');
+        body.classList.add("open-menu");
         mobileBurgerOpen(burger);
         menuMobile.classList.add("show-bg");
       }
@@ -87,16 +87,16 @@ $(function () {
     // Offers page hide call btn
 
 
-    var fittingButtonOnOffers = document.querySelector('.offers_page .fitting-button');
+    var fittingButtonOnOffers = document.querySelector(".offers_page .fitting-button");
 
     if (fittingButtonOnOffers) {
       var toggleFittingButtonOnOffers = function toggleFittingButtonOnOffers() {
         var scrollTop = window.scrollY;
 
         if (scrollTop > 220) {
-          fittingButtonOnOffers.classList.add('visible');
+          fittingButtonOnOffers.classList.add("visible");
         } else {
-          fittingButtonOnOffers.classList.remove('visible');
+          fittingButtonOnOffers.classList.remove("visible");
         }
       };
 
@@ -139,26 +139,55 @@ $(function () {
       });
     } // Main page Fotorama
     // About us More
+    //const aboutUs = document.querySelector(".authors-container .about-us");
+    //const aboutUsLink = document.querySelector(
+    //  ".authors-container .about-us__more a"
+    //);
+    //
+    //if (aboutUsLink) {
+    //  const toggleAboutUsText = (e) => {
+    //    e.preventDefault();
+    //    if (aboutUs.classList.contains("open")) {
+    //      aboutUs.classList.remove("open");
+    //      aboutUsLink.textContent = "Читать далее";
+    //    } else {
+    //      aboutUs.classList.add("open");
+    //      aboutUsLink.textContent = "Свернуть";
+    //    }
+    //  };
+    //
+    //  aboutUsLink.addEventListener("click", toggleAboutUsText);
+    //}
+    // About us More
+    // About us More Jquery
 
 
-    var aboutUs = document.querySelector(".authors-container .about-us");
-    var aboutUsLink = document.querySelector(".authors-container .about-us__more a");
+    var $aboutUsMobile = $(".authors-container .about-us__mobile");
+    var $aboutUsLink = $(".authors-container .about-us__more a");
+    var $aboutUsFull = $(".about-us__mobile-full");
 
-    if (aboutUsLink) {
-      var toggleAboutUsText = function toggleAboutUsText(e) {
-        e.preventDefault();
+    if ($aboutUsLink.length && $aboutUsFull.length) {
+      $aboutUsFull.slideUp();
+      $aboutUsLink.on("click", function () {
+        var elementClick = $(this).attr("href");
+        var destination = $(elementClick).offset().top - 50;
+        var $this = $(this);
 
-        if (aboutUs.classList.contains("open")) {
-          aboutUs.classList.remove("open");
-          aboutUsLink.textContent = "Читать далее";
+        if ($aboutUsMobile.hasClass("open")) {
+          $aboutUsMobile.removeClass("open");
+          $this.text("Читать далее");
         } else {
-          aboutUs.classList.add("open");
-          aboutUsLink.textContent = "Свернуть";
+          $aboutUsMobile.addClass("open");
+          $this.text("Свернуть");
         }
-      };
 
-      aboutUsLink.addEventListener("click", toggleAboutUsText);
-    } // About us More
+        $aboutUsFull.slideToggle();
+        $("html,body").stop().animate({
+          scrollTop: destination
+        }, 400);
+        return false;
+      });
+    } // About us More Jquery
     // Fitting button
 
 

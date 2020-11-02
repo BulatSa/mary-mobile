@@ -608,7 +608,7 @@
         position: relative;
         width: 100%;
         max-height: 264px;
-        display: -webkit-box;
+        display: none;
         -webkit-line-clamp: 8;
         -webkit-box-orient: vertical;
         padding-bottom: 40px;
@@ -640,6 +640,25 @@
             }
           }
         }
+      }
+      .about-us__mobile-wrap {
+        position: relative;
+      }
+      .about-us__mobile {
+        position: relative;
+        padding-bottom: 40px;
+        text-align: left;
+        font-size: 20px;
+        line-height: 1.4;
+        p {
+          margin: 0 0 1em;
+          font-size: 20px;
+          line-height: 1.4;
+        }
+      }
+      .about-us__mobile-prev {
+      }
+      .about-us__mobile-full {
       }
       .about-us__more {
         display: block;

@@ -1,6 +1,9 @@
 @media screen and (max-width: 700px) {
   body {
     padding-top: 50px;
+    &.scroll-lock {
+      overflow: hidden;
+    } 
   }
   html, body, .content, .footer-wrapper {
     min-width: auto!important;

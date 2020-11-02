@@ -2,7 +2,7 @@ $(function () {
   if (document.documentElement.clientWidth <= 680) {
     // Mobile Menu Toggle
     const menuMobile = document.querySelector(".menu-mobile");
-    const body = document.querySelector('body');
+    const body = document.querySelector("body");
     const mobileMenuToggle = (e) => {
       e.preventDefault();
       let scrollTop = window.scrollY;
@@ -11,7 +11,7 @@ $(function () {
       const burger = document.querySelector(".menu-mobile__item--burger");
       if (linkedMenu.classList.contains("open")) {
         linkedMenu.classList.remove("open");
-        body.classList.remove('open-menu');
+        body.classList.remove("open-menu");
         closeAllMobileMenu("data-menu-mobile-link");
         mobileBurgerClose(burger);
         if (scrollTop < 50) {
@@ -20,7 +20,7 @@ $(function () {
       } else {
         closeAllMobileMenu("data-menu-mobile-link");
         linkedMenu.classList.add("open");
-        body.classList.add('open-menu');
+        body.classList.add("open-menu");
         mobileBurgerOpen(burger);
         menuMobile.classList.add("show-bg");
       }
@@ -82,17 +82,19 @@ $(function () {
     // End of menuMobileScrollToggle on Scroll
 
     // Offers page hide call btn
-    const fittingButtonOnOffers = document.querySelector('.offers_page .fitting-button');
+    const fittingButtonOnOffers = document.querySelector(
+      ".offers_page .fitting-button"
+    );
     if (fittingButtonOnOffers) {
       const toggleFittingButtonOnOffers = () => {
         let scrollTop = window.scrollY;
         if (scrollTop > 220) {
-          fittingButtonOnOffers.classList.add('visible');
+          fittingButtonOnOffers.classList.add("visible");
         } else {
-          fittingButtonOnOffers.classList.remove('visible');
+          fittingButtonOnOffers.classList.remove("visible");
         }
-      }
-      window.addEventListener("scroll",toggleFittingButtonOnOffers);
+      };
+      window.addEventListener("scroll", toggleFittingButtonOnOffers);
     }
     // End Offers page hide call btn
 
@@ -134,26 +136,53 @@ $(function () {
     // Main page Fotorama
 
     // About us More
-    const aboutUs = document.querySelector(".authors-container .about-us");
-    const aboutUsLink = document.querySelector(
-      ".authors-container .about-us__more a"
-    );
-
-    if (aboutUsLink) {
-      const toggleAboutUsText = (e) => {
-        e.preventDefault();
-        if (aboutUs.classList.contains("open")) {
-          aboutUs.classList.remove("open");
-          aboutUsLink.textContent = "Читать далее";
-        } else {
-          aboutUs.classList.add("open");
-          aboutUsLink.textContent = "Свернуть";
-        }
-      };
-
-      aboutUsLink.addEventListener("click", toggleAboutUsText);
-    }
+    //const aboutUs = document.querySelector(".authors-container .about-us");
+    //const aboutUsLink = document.querySelector(
+    //  ".authors-container .about-us__more a"
+    //);
+    //
+    //if (aboutUsLink) {
+    //  const toggleAboutUsText = (e) => {
+    //    e.preventDefault();
+    //    if (aboutUs.classList.contains("open")) {
+    //      aboutUs.classList.remove("open");
+    //      aboutUsLink.textContent = "Читать далее";
+    //    } else {
+    //      aboutUs.classList.add("open");
+    //      aboutUsLink.textContent = "Свернуть";
+    //    }
+    //  };
+    //
+    //  aboutUsLink.addEventListener("click", toggleAboutUsText);
+    //}
     // About us More
+
+    // About us More Jquery
+    const $aboutUsMobile = $(".authors-container .about-us__mobile");
+    const $aboutUsLink = $(".authors-container .about-us__more a");
+    const $aboutUsFull = $(".about-us__mobile-full");
+    if ($aboutUsLink.length && $aboutUsFull.length) {
+      $aboutUsFull.slideUp();
+      $aboutUsLink.on("click", function () {
+        const elementClick = $(this).attr("href");
+        const destination = $(elementClick).offset().top - 50;
+
+        const $this = $(this);
+        if ($aboutUsMobile.hasClass("open")) {
+          $aboutUsMobile.removeClass("open");
+          $this.text("Читать далее");
+        } else {
+          $aboutUsMobile.addClass("open");
+          $this.text("Свернуть");
+        }
+
+        $aboutUsFull.slideToggle();
+
+        $("html,body").stop().animate({ scrollTop: destination }, 400);
+        return false;
+      });
+    }
+    // About us More Jquery
 
     // Fitting button
     const fittingButton = document.querySelector(".main-page .fitting-button");
