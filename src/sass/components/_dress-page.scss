@@ -328,6 +328,11 @@
             transform: translate(30px, 3px) rotate(-10deg);
           }
         }
+        &.one {
+          .preview {
+            margin: 0 auto;
+          }
+        }
       }
       .arrow {
         width: 87px;
@@ -350,10 +355,13 @@
     }
     .footer__hint {
       .order-button-wrapper {
+        height: 44px;
+        margin-bottom: 10px;
         .fitting-button {
           width: 142px;
           height: 44px;
           left: 16px;
+          margin-right: 32px;
           background: url("../images/bg-order-button-short.png");
           background-size: 142px 44px;
         }
