@@ -1474,26 +1474,35 @@
         -ms-flex-order: 1;
             order: 1;
   }
-  /* line 300, src/sass/components/_dress-page.scss */
+  /* line 301, src/sass/components/_dress-page.scss */
+  .dress-page .pager__next:hover .arrow {
+    background-image: none !important;
+    background-position: center;
+  }
+  /* line 304, src/sass/components/_dress-page.scss */
+  .dress-page .pager__next:hover .arrow:after {
+    opacity: 1;
+  }
+  /* line 309, src/sass/components/_dress-page.scss */
   .dress-page .pager__next .label {
     font-size: 35px;
     background: none !important;
     z-index: 1;
   }
-  /* line 305, src/sass/components/_dress-page.scss */
+  /* line 314, src/sass/components/_dress-page.scss */
   .dress-page .pager__next .images {
     position: relative;
     margin-bottom: 50px;
     z-index: 0;
   }
-  /* line 309, src/sass/components/_dress-page.scss */
+  /* line 318, src/sass/components/_dress-page.scss */
   .dress-page .pager__next .images .preview {
     display: block;
     max-width: 168px;
     width: 100%;
     margin-left: auto;
   }
-  /* line 314, src/sass/components/_dress-page.scss */
+  /* line 323, src/sass/components/_dress-page.scss */
   .dress-page .pager__next .images .preview img {
     max-width: 168px;
     width: 100%;
@@ -1501,11 +1510,7 @@
     display: block;
     outline: none;
   }
-  /* line 321, src/sass/components/_dress-page.scss */
-  .dress-page .pager__next .images .preview .image-border {
-    display: none;
-  }
-  /* line 324, src/sass/components/_dress-page.scss */
+  /* line 333, src/sass/components/_dress-page.scss */
   .dress-page .pager__next .images .preview.rotated {
     position: absolute;
     top: 0;
@@ -1513,12 +1518,13 @@
     -webkit-transform: translate(30px, 3px) rotate(-10deg);
             transform: translate(30px, 3px) rotate(-10deg);
   }
-  /* line 332, src/sass/components/_dress-page.scss */
+  /* line 341, src/sass/components/_dress-page.scss */
   .dress-page .pager__next .images.one .preview {
     margin: 0 auto;
   }
-  /* line 337, src/sass/components/_dress-page.scss */
+  /* line 346, src/sass/components/_dress-page.scss */
   .dress-page .pager__next .arrow {
+    position: relative;
     width: 87px;
     height: 20px;
     margin-bottom: -1px;
@@ -1528,7 +1534,23 @@
     background-size: 87px 20px;
     z-index: 1;
   }
-  /* line 348, src/sass/components/_dress-page.scss */
+  /* line 356, src/sass/components/_dress-page.scss */
+  .dress-page .pager__next .arrow:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 87px;
+    height: 20px;
+    margin-bottom: -1px;
+    opacity: 0;
+    background-image: url("../images/bg-mobile-arrow-purple-dark.png") !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 87px 20px;
+  }
+  /* line 373, src/sass/components/_dress-page.scss */
   .dress-page .pager__all {
     margin: 0 auto 50px;
     padding: 0;
@@ -1536,16 +1558,16 @@
         -ms-flex-order: 0;
             order: 0;
   }
-  /* line 352, src/sass/components/_dress-page.scss */
+  /* line 377, src/sass/components/_dress-page.scss */
   .dress-page .pager__all .next-collection-silhouette {
     display: none !important;
   }
-  /* line 357, src/sass/components/_dress-page.scss */
+  /* line 382, src/sass/components/_dress-page.scss */
   .dress-page .footer__hint .order-button-wrapper {
     height: 44px;
     margin-bottom: 10px;
   }
-  /* line 360, src/sass/components/_dress-page.scss */
+  /* line 385, src/sass/components/_dress-page.scss */
   .dress-page .footer__hint .order-button-wrapper .fitting-button {
     width: 142px;
     height: 44px;
@@ -1554,11 +1576,11 @@
     background: url("../images/bg-order-button-short.png");
     background-size: 142px 44px;
   }
-  /* line 370, src/sass/components/_dress-page.scss */
+  /* line 395, src/sass/components/_dress-page.scss */
   .dress-page .favourite-link {
     display: block;
   }
-  /* line 372, src/sass/components/_dress-page.scss */
+  /* line 397, src/sass/components/_dress-page.scss */
   .dress-page .favourite-link .favourite-link__control {
     width: 47px;
     height: 47px;
@@ -1567,7 +1589,7 @@
     left: initial;
     background-size: 47px 47px;
   }
-  /* line 390, src/sass/components/_dress-page.scss */
+  /* line 415, src/sass/components/_dress-page.scss */
   .evening.dress-page .columns .columns__right .columns__right__padding .columns__right__padding__service a.white span.arrow-after:after {
     top: 3px !important;
     width: 87px !important;
@@ -1575,7 +1597,7 @@
     background: url("../images/bg-mobile-arrow-purple.png") no-repeat center !important;
     background-size: 87px 20px !important;
   }
-  /* line 404, src/sass/components/_dress-page.scss */
+  /* line 429, src/sass/components/_dress-page.scss */
   .evening.dress-page .panel-top {
     float: none;
     width: 148px;
@@ -1588,18 +1610,18 @@
     background-position: center top;
     background-size: 148px 15px;
   }
-  /* line 416, src/sass/components/_dress-page.scss */
+  /* line 441, src/sass/components/_dress-page.scss */
   .evening.dress-page .panel {
     background: none !important;
   }
-  /* line 418, src/sass/components/_dress-page.scss */
+  /* line 443, src/sass/components/_dress-page.scss */
   .evening.dress-page .panel .panel__content {
     width: 148px;
     font-size: 10px;
     background: url("../images/bg-product-panel-middle-white.png") repeat-y center center;
     background-size: 148px 160px;
   }
-  /* line 425, src/sass/components/_dress-page.scss */
+  /* line 450, src/sass/components/_dress-page.scss */
   .evening.dress-page .panel .panel__bottom {
     top: initial;
     width: 148px;
@@ -1611,7 +1633,7 @@
     background-position: center bottom;
     background-size: 148px 15px;
   }
-  /* line 438, src/sass/components/_dress-page.scss */
+  /* line 463, src/sass/components/_dress-page.scss */
   .evening.dress-page .pager__next .arrow {
     width: 87px;
     height: 20px;
@@ -1622,7 +1644,7 @@
     background-size: 87px 20px !important;
     z-index: 1;
   }
-  /* line 458, src/sass/components/_dress-page.scss */
+  /* line 483, src/sass/components/_dress-page.scss */
   .retina .evening.dress-page .pager__next .arrow {
     background-image: url("../images/bg-mobile-arrow-purple.png") !important;
   }
@@ -4057,32 +4079,61 @@
     padding-bottom: 0;
     margin: 20px auto 0;
   }
-  /* line 540, src/sass/components/_catalog.scss */
+  /* line 541, src/sass/components/_catalog.scss */
+  .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li .photo-top-distance .selection:hover .arrow {
+    background-image: none !important;
+    background-position: center;
+  }
+  /* line 544, src/sass/components/_catalog.scss */
+  .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li .photo-top-distance .selection:hover .arrow:after {
+    opacity: 1;
+  }
+  /* line 549, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li .photo-top-distance .selection span.selection__container {
     position: relative;
     display: block;
   }
-  /* line 544, src/sass/components/_catalog.scss */
+  /* line 553, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li .photo-top-distance .selection span.link {
     margin: 20px auto 0;
     font-size: 18px;
     background-position: 0 21px;
     background-size: 10px 1px;
   }
-  /* line 552, src/sass/components/_catalog.scss */
+  /* line 559, src/sass/components/_catalog.scss */
+  .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li .photo-top-distance .selection .arrow {
+    position: relative;
+  }
+  /* line 561, src/sass/components/_catalog.scss */
+  .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li .photo-top-distance .selection .arrow:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 87px;
+    height: 20px;
+    margin-bottom: -1px;
+    opacity: 0;
+    background-image: url("../images/bg-mobile-arrow-purple-dark.png") !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 87px 20px;
+  }
+  /* line 579, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-layout-factoid, .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-layout-selection {
     width: 100% !important;
     margin-bottom: 30px;
   }
-  /* line 556, src/sass/components/_catalog.scss */
+  /* line 583, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-layout-factoid + li, .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-layout-selection + li {
     width: 100% !important;
   }
-  /* line 560, src/sass/components/_catalog.scss */
+  /* line 587, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-1-1-1 {
     margin-bottom: 30px;
   }
-  /* line 563, src/sass/components/_catalog.scss */
+  /* line 590, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-1-1-1 .price .previous-price + .actual-price {
     text-align: right;
     top: -50px;
@@ -4090,7 +4141,7 @@
     -webkit-transform: scale(0.4);
             transform: scale(0.4);
   }
-  /* line 569, src/sass/components/_catalog.scss */
+  /* line 596, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-1-1-1 .price .previous-price + .actual-price.price-length-6 {
     text-align: right;
     top: -50px;
@@ -4098,14 +4149,14 @@
     -webkit-transform: scale(0.4);
             transform: scale(0.4);
   }
-  /* line 579, src/sass/components/_catalog.scss */
+  /* line 606, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-2-1-1 .price .previous-price + .actual-price {
     top: -40px;
     left: 60px;
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
   }
-  /* line 588, src/sass/components/_catalog.scss */
+  /* line 615, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-2-1-2 .price .previous-price + .actual-price {
     top: -50px;
     left: initial;
@@ -4113,23 +4164,23 @@
     -webkit-transform: scale(0.75);
             transform: scale(0.75);
   }
-  /* line 596, src/sass/components/_catalog.scss */
+  /* line 623, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-2-2-1 {
     width: 100%;
     padding-top: 0;
   }
-  /* line 600, src/sass/components/_catalog.scss */
+  /* line 627, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-2-2-1 .price .previous-price + .actual-price {
     text-align: right;
     top: -40px;
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
   }
-  /* line 607, src/sass/components/_catalog.scss */
+  /* line 634, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-2-2-2 {
     width: 100%;
   }
-  /* line 610, src/sass/components/_catalog.scss */
+  /* line 637, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-2-2-2 .price .previous-price + .actual-price {
     top: -50px;
     left: initial;
@@ -4137,7 +4188,7 @@
     -webkit-transform: scale(0.75);
             transform: scale(0.75);
   }
-  /* line 620, src/sass/components/_catalog.scss */
+  /* line 647, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-1-1 .price .previous-price + .actual-price {
     top: -70px;
     left: initial;
@@ -4145,7 +4196,7 @@
     -webkit-transform: scale(0.45);
             transform: scale(0.45);
   }
-  /* line 630, src/sass/components/_catalog.scss */
+  /* line 657, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-1-2 .price .previous-price + .actual-price {
     top: -40px;
     left: initial;
@@ -4153,16 +4204,16 @@
     -webkit-transform: scale(0.75);
             transform: scale(0.75);
   }
-  /* line 639, src/sass/components/_catalog.scss */
+  /* line 666, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-1-3 .image-wrapper {
     -webkit-transform: rotate(2deg) translate3d(0, 0, 0);
             transform: rotate(2deg) translate3d(0, 0, 0);
   }
-  /* line 643, src/sass/components/_catalog.scss */
+  /* line 670, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-1-3 .price .previous-price {
     left: initial;
   }
-  /* line 646, src/sass/components/_catalog.scss */
+  /* line 673, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-1-3 .price .previous-price + .actual-price {
     text-align: right;
     top: -40px;
@@ -4170,7 +4221,7 @@
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
   }
-  /* line 656, src/sass/components/_catalog.scss */
+  /* line 683, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-2-1 .price .previous-price + .actual-price {
     text-align: right;
     top: -70px;
@@ -4178,7 +4229,7 @@
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
   }
-  /* line 666, src/sass/components/_catalog.scss */
+  /* line 693, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-2-2 .price .previous-price + .actual-price {
     top: -40px;
     left: initial;
@@ -4186,12 +4237,12 @@
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
   }
-  /* line 675, src/sass/components/_catalog.scss */
+  /* line 702, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-2-3 .image-wrapper {
     -webkit-transform: rotate(-2deg) translate3d(0, 0, 0);
             transform: rotate(-2deg) translate3d(0, 0, 0);
   }
-  /* line 679, src/sass/components/_catalog.scss */
+  /* line 706, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-2-3 .price .previous-price + .actual-price {
     text-align: right;
     top: -70px;
@@ -4199,12 +4250,12 @@
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
   }
-  /* line 687, src/sass/components/_catalog.scss */
+  /* line 714, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-3-1 {
     width: 100%;
     padding-top: 0;
   }
-  /* line 691, src/sass/components/_catalog.scss */
+  /* line 718, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-3-1 .price .previous-price + .actual-price {
     text-align: right;
     top: -80px;
@@ -4212,20 +4263,20 @@
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
   }
-  /* line 696, src/sass/components/_catalog.scss */
+  /* line 723, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-3-1 .price .previous-price + .actual-price + .price-length-6 {
     left: -20px;
   }
-  /* line 703, src/sass/components/_catalog.scss */
+  /* line 730, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-3-2 .image-wrapper {
     -webkit-transform: rotate(2deg) translate3d(0, 0, 0);
             transform: rotate(2deg) translate3d(0, 0, 0);
   }
-  /* line 707, src/sass/components/_catalog.scss */
+  /* line 734, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-3-2 .price .previous-price {
     left: initial;
   }
-  /* line 710, src/sass/components/_catalog.scss */
+  /* line 737, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-3-2 .price .previous-price + .actual-price {
     text-align: right;
     top: -60px;
@@ -4233,7 +4284,7 @@
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
   }
-  /* line 720, src/sass/components/_catalog.scss */
+  /* line 747, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-3-3 .price .previous-price + .actual-price {
     text-align: right;
     top: -30px;
@@ -4241,7 +4292,7 @@
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
   }
-  /* line 730, src/sass/components/_catalog.scss */
+  /* line 757, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-4-1 .price .previous-price + .actual-price {
     top: -70px;
     left: initial;
@@ -4249,7 +4300,7 @@
     -webkit-transform: scale(0.45);
             transform: scale(0.45);
   }
-  /* line 740, src/sass/components/_catalog.scss */
+  /* line 767, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-4-2 .price .previous-price + .actual-price {
     text-align: right;
     top: -30px;
@@ -4257,12 +4308,12 @@
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
   }
-  /* line 749, src/sass/components/_catalog.scss */
+  /* line 776, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-4-3 .image-wrapper {
     -webkit-transform: rotate(-2deg) translate3d(0, 0, 0);
             transform: rotate(-2deg) translate3d(0, 0, 0);
   }
-  /* line 753, src/sass/components/_catalog.scss */
+  /* line 780, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection ul li.photo-3-4-3 .price .previous-price + .actual-price {
     text-align: right;
     top: -50px;
@@ -4270,7 +4321,7 @@
     -webkit-transform: scale(0.75);
             transform: scale(0.75);
   }
-  /* line 764, src/sass/components/_catalog.scss */
+  /* line 791, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection a .name {
     display: inline;
     white-space: initial;
@@ -4278,35 +4329,35 @@
     text-decoration: underline;
     background: none;
   }
-  /* line 772, src/sass/components/_catalog.scss */
+  /* line 799, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection a.selection span.title {
     font-size: 25px;
     line-height: 1.25;
     font-weight: normal;
   }
-  /* line 776, src/sass/components/_catalog.scss */
+  /* line 803, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection a.selection span.title span.digits {
     font-size: 100px;
     line-height: 1;
     margin-top: -70px;
   }
-  /* line 782, src/sass/components/_catalog.scss */
+  /* line 809, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection a.selection .arrow {
     width: 87px;
     height: 20px;
     background: url("../images/bg-mobile-arrow.png") no-repeat center !important;
     background-size: 87px 20px !important;
   }
-  /* line 789, src/sass/components/_catalog.scss */
+  /* line 816, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection a.selection .link {
     margin-top: 20px;
   }
-  /* line 794, src/sass/components/_catalog.scss */
+  /* line 821, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection .image-wrapper {
     margin-bottom: 10px;
     padding-bottom: 0;
   }
-  /* line 797, src/sass/components/_catalog.scss */
+  /* line 824, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection .image-wrapper .front-image {
     position: relative;
     top: initial;
@@ -4317,16 +4368,16 @@
     max-width: 100%;
     height: auto;
   }
-  /* line 808, src/sass/components/_catalog.scss */
+  /* line 835, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection .small-factoid {
     padding-bottom: 0;
   }
-  /* line 810, src/sass/components/_catalog.scss */
+  /* line 837, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection .small-factoid span.text {
     font-size: 20px;
     line-height: 1.3;
   }
-  /* line 814, src/sass/components/_catalog.scss */
+  /* line 841, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection .small-factoid .small-factoid_content {
     position: relative;
     left: initial;
@@ -4334,32 +4385,32 @@
     top: initial;
     bottom: initial;
   }
-  /* line 821, src/sass/components/_catalog.scss */
+  /* line 848, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .designer-collection-wrapper .collection .small-factoid .small-factoid_content1
 .small-factoid_content2
 .small-factoid_content3 {
     padding-top: 0;
   }
-  /* line 829, src/sass/components/_catalog.scss */
+  /* line 856, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .dress__fav.dress__fav_heart {
     width: 36px;
     height: 35px;
     background-size: 36px 35px;
   }
-  /* line 834, src/sass/components/_catalog.scss */
+  /* line 861, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .testimonial {
     width: 100%;
     height: auto;
     margin: 0 0 50px;
   }
-  /* line 838, src/sass/components/_catalog.scss */
+  /* line 865, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .testimonial .frame {
     width: 192px;
     height: 278px;
     margin: 0 auto 20px;
     background-size: contain;
   }
-  /* line 843, src/sass/components/_catalog.scss */
+  /* line 870, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .testimonial .frame img {
     display: block;
     width: 140px;
@@ -4369,7 +4420,7 @@
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
   }
-  /* line 852, src/sass/components/_catalog.scss */
+  /* line 879, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .testimonial .text-container-wrapper {
     display: block;
     position: relative;
@@ -4377,11 +4428,11 @@
     left: initial;
     height: auto;
   }
-  /* line 858, src/sass/components/_catalog.scss */
+  /* line 885, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .testimonial .text-container-wrapper .text-container {
     display: block;
   }
-  /* line 860, src/sass/components/_catalog.scss */
+  /* line 887, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .testimonial .text-container-wrapper .text-container .text {
     width: 100%;
     padding: 0 5px;
@@ -4389,7 +4440,7 @@
     line-height: 1.3;
     text-align: center;
   }
-  /* line 866, src/sass/components/_catalog.scss */
+  /* line 893, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .testimonial .text-container-wrapper .text-container .text .quote-left {
     left: initial;
     width: 14px;
@@ -4397,7 +4448,7 @@
     margin-left: -20px;
     margin-top: 0;
   }
-  /* line 874, src/sass/components/_catalog.scss */
+  /* line 901, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .testimonial .text-container-wrapper .text-container .text .quote-right {
     position: relative;
     width: 14px;
@@ -4405,18 +4456,18 @@
     margin-left: 5px;
     vertical-align: sub;
   }
-  /* line 882, src/sass/components/_catalog.scss */
+  /* line 909, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .testimonial .text-container-wrapper .text-container a {
     margin-top: 15px;
     padding: 0;
     text-align: center;
   }
-  /* line 890, src/sass/components/_catalog.scss */
+  /* line 917, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .fact-wrapper {
     height: auto !important;
     margin-bottom: 50px;
   }
-  /* line 893, src/sass/components/_catalog.scss */
+  /* line 920, src/sass/components/_catalog.scss */
   .catalog .collections-wrapper .collections .fact-wrapper .fact {
     position: relative;
     top: initial !important;
@@ -4426,7 +4477,7 @@
     height: auto;
     margin: 0 auto;
   }
-  /* line 905, src/sass/components/_catalog.scss */
+  /* line 932, src/sass/components/_catalog.scss */
   .catalog .silhouette-toggler-wrapper {
     position: fixed;
     width: 59px;
@@ -4436,12 +4487,12 @@
     bottom: 20px;
     z-index: 500;
   }
-  /* line 913, src/sass/components/_catalog.scss */
+  /* line 940, src/sass/components/_catalog.scss */
   .catalog .silhouette-toggler-wrapper .silhouette-toggler-bg {
     height: 44px;
     margin-left: 0;
   }
-  /* line 916, src/sass/components/_catalog.scss */
+  /* line 943, src/sass/components/_catalog.scss */
   .catalog .silhouette-toggler-wrapper .silhouette-toggler-bg .silhouette-toggler {
     position: relative;
     right: initial;
@@ -4451,12 +4502,12 @@
     height: 44px;
     padding: 0;
   }
-  /* line 925, src/sass/components/_catalog.scss */
+  /* line 952, src/sass/components/_catalog.scss */
   .catalog .silhouette-toggler-wrapper .silhouette-toggler-bg .silhouette-toggler .silhouette-toggler-cloud-tail,
   .catalog .silhouette-toggler-wrapper .silhouette-toggler-bg .silhouette-toggler .silhouette-button {
     display: none;
   }
-  /* line 929, src/sass/components/_catalog.scss */
+  /* line 956, src/sass/components/_catalog.scss */
   .catalog .silhouette-toggler-wrapper .silhouette-toggler-bg .silhouette-toggler .silhouette-toggler-cloud {
     display: block;
     width: 100%;
@@ -4466,7 +4517,7 @@
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  /* line 937, src/sass/components/_catalog.scss */
+  /* line 964, src/sass/components/_catalog.scss */
   .catalog .silhouette-toggler-wrapper .silhouette-toggler-bg .silhouette-toggler .turn-button {
     padding: 0;
     padding-top: 8px;
@@ -4476,22 +4527,48 @@
     -webkit-tap-highlight-color: transparent;
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   }
-  /* line 944, src/sass/components/_catalog.scss */
+  /* line 971, src/sass/components/_catalog.scss */
   .catalog .silhouette-toggler-wrapper .silhouette-toggler-bg .silhouette-toggler .turn-button .turn-label {
     width: 25px;
     height: 19px;
     background: url("../images/icons/turn.png") no-repeat center;
     background-size: 25px 19px;
   }
-  /* line 950, src/sass/components/_catalog.scss */
+  /* line 977, src/sass/components/_catalog.scss */
   .catalog .silhouette-toggler-wrapper .silhouette-toggler-bg .silhouette-toggler .turn-button p {
     display: none !important;
   }
-  /* line 957, src/sass/components/_catalog.scss */
+  /* line 984, src/sass/components/_catalog.scss */
   .catalog .next-collection-wrapper {
     overflow: hidden;
   }
-  /* line 959, src/sass/components/_catalog.scss */
+  /* line 987, src/sass/components/_catalog.scss */
+  .catalog .next-collection-wrapper:hover .dress-count {
+    color: #ef37da;
+    text-decoration: none;
+    background: -webkit-gradient(linear, right top, left top, from(rgba(239, 55, 218, 0.5)), to(rgba(239, 55, 218, 0.5)));
+    background: linear-gradient(to left, rgba(239, 55, 218, 0.5), rgba(239, 55, 218, 0.5) 100%);
+    background-position: 0 24px;
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
+  }
+  /* line 999, src/sass/components/_catalog.scss */
+  .catalog .next-collection-wrapper:hover .image-border {
+    border: 1px solid rgba(239, 55, 218, 0.5);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: inline-block;
+  }
+  /* line 1005, src/sass/components/_catalog.scss */
+  .catalog .next-collection-wrapper:hover .next-collection .arrow {
+    background-image: none !important;
+    background-position: center;
+  }
+  /* line 1008, src/sass/components/_catalog.scss */
+  .catalog .next-collection-wrapper:hover .next-collection .arrow:after {
+    opacity: 1;
+  }
+  /* line 1014, src/sass/components/_catalog.scss */
   .catalog .next-collection-wrapper .next-collection {
     display: block;
     width: 100%;
@@ -4499,22 +4576,22 @@
     margin: 0 auto;
     padding: 40px 15px 35px;
   }
-  /* line 965, src/sass/components/_catalog.scss */
+  /* line 1020, src/sass/components/_catalog.scss */
   .catalog .next-collection-wrapper .next-collection .next-collection__content {
     display: block;
     height: auto;
   }
-  /* line 969, src/sass/components/_catalog.scss */
+  /* line 1024, src/sass/components/_catalog.scss */
   .catalog .next-collection-wrapper .next-collection p.name {
     padding: 0;
     font-size: 35px;
   }
-  /* line 972, src/sass/components/_catalog.scss */
+  /* line 1027, src/sass/components/_catalog.scss */
   .catalog .next-collection-wrapper .next-collection p.name span.title {
     margin-bottom: 300px;
     padding: 0;
   }
-  /* line 977, src/sass/components/_catalog.scss */
+  /* line 1032, src/sass/components/_catalog.scss */
   .catalog .next-collection-wrapper .next-collection .preview-1 {
     position: absolute;
     top: initial;
@@ -4528,7 +4605,7 @@
     -webkit-transform: translate3d(-85%, 0, 0) rotate(-14deg);
             transform: translate3d(-85%, 0, 0) rotate(-14deg);
   }
-  /* line 988, src/sass/components/_catalog.scss */
+  /* line 1043, src/sass/components/_catalog.scss */
   .catalog .next-collection-wrapper .next-collection .preview-1 img {
     max-width: 168px;
     width: 100%;
@@ -4536,11 +4613,7 @@
     display: block;
     outline: none;
   }
-  /* line 995, src/sass/components/_catalog.scss */
-  .catalog .next-collection-wrapper .next-collection .preview-1 .image-border {
-    display: none;
-  }
-  /* line 999, src/sass/components/_catalog.scss */
+  /* line 1054, src/sass/components/_catalog.scss */
   .catalog .next-collection-wrapper .next-collection .preview-2 {
     top: initial;
     bottom: 135px;
@@ -4552,7 +4625,7 @@
     -webkit-transform: translate3d(-10%, 0, 0);
             transform: translate3d(-10%, 0, 0);
   }
-  /* line 1008, src/sass/components/_catalog.scss */
+  /* line 1063, src/sass/components/_catalog.scss */
   .catalog .next-collection-wrapper .next-collection .preview-2 img {
     max-width: 168px;
     width: 100%;
@@ -4560,36 +4633,49 @@
     display: block;
     outline: none;
   }
-  /* line 1015, src/sass/components/_catalog.scss */
-  .catalog .next-collection-wrapper .next-collection .preview-2 .image-border {
-    display: none;
-  }
-  /* line 1019, src/sass/components/_catalog.scss */
+  /* line 1074, src/sass/components/_catalog.scss */
   .catalog .next-collection-wrapper .next-collection .arrow {
+    position: relative;
     width: 87px;
     height: 20px;
     background: url("../images/bg-mobile-arrow.png") no-repeat center !important;
     background-size: 87px 20px !important;
     z-index: 1;
   }
-  /* line 1025, src/sass/components/_catalog.scss */
+  /* line 1081, src/sass/components/_catalog.scss */
   .catalog .next-collection-wrapper .next-collection .arrow span {
     display: none !important;
     background: none !important;
   }
-  /* line 1030, src/sass/components/_catalog.scss */
+  /* line 1085, src/sass/components/_catalog.scss */
+  .catalog .next-collection-wrapper .next-collection .arrow:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 87px;
+    height: 20px;
+    margin-bottom: -1px;
+    opacity: 0;
+    background-image: url("../images/bg-mobile-arrow-purple-dark.png") !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 87px 20px;
+  }
+  /* line 1101, src/sass/components/_catalog.scss */
   .catalog .next-collection-wrapper .next-collection .dress-count {
     margin-top: 20px;
     font-size: 18px;
     background-position: 0 21px;
     background-size: 10px 1px;
   }
-  /* line 1039, src/sass/components/_catalog.scss */
+  /* line 1110, src/sass/components/_catalog.scss */
   .catalog .footer__hint .order-button-wrapper {
     height: 44px;
     margin-bottom: 10px;
   }
-  /* line 1042, src/sass/components/_catalog.scss */
+  /* line 1113, src/sass/components/_catalog.scss */
   .catalog .footer__hint .order-button-wrapper .fitting-button {
     width: 142px;
     height: 44px;
@@ -4598,7 +4684,7 @@
     background: url("../images/bg-order-button-short.png");
     background-size: 142px 44px;
   }
-  /* line 1058, src/sass/components/_catalog.scss */
+  /* line 1129, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul[data-role="collection_list"] li.photo-1-1-1 .badge {
     top: 10px;
     right: 10px;
@@ -4606,7 +4692,7 @@
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
-  /* line 1066, src/sass/components/_catalog.scss */
+  /* line 1137, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul[data-role="collection_list"] li.photo-2-1-1 .badge {
     top: -10px;
     right: 0px;
@@ -4614,7 +4700,7 @@
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
   }
-  /* line 1073, src/sass/components/_catalog.scss */
+  /* line 1144, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul[data-role="collection_list"] li.photo-2-1-1.baloon-badge .badge {
     top: -5px;
     right: initial;
@@ -4622,7 +4708,7 @@
     -webkit-transform: scale(0.75);
             transform: scale(0.75);
   }
-  /* line 1082, src/sass/components/_catalog.scss */
+  /* line 1153, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul[data-role="collection_list"] li.photo-2-1-2 .badge {
     top: -10px;
     right: 0px;
@@ -4630,7 +4716,7 @@
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
   }
-  /* line 1089, src/sass/components/_catalog.scss */
+  /* line 1160, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul[data-role="collection_list"] li.photo-2-1-2.baloon-badge .badge {
     top: -5px;
     right: -20px;
@@ -4638,7 +4724,7 @@
     -webkit-transform: scale(0.75);
             transform: scale(0.75);
   }
-  /* line 1098, src/sass/components/_catalog.scss */
+  /* line 1169, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul[data-role="collection_list"] li.photo-2-2-1 .badge {
     top: 10px;
     left: 10px;
@@ -4646,7 +4732,7 @@
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
-  /* line 1106, src/sass/components/_catalog.scss */
+  /* line 1177, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul[data-role="collection_list"] li.photo-2-2-2 .badge {
     top: 10px;
     left: 10px;
@@ -4654,7 +4740,7 @@
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
-  /* line 1114, src/sass/components/_catalog.scss */
+  /* line 1185, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul[data-role="collection_list"] li.photo-3-1-1 .badge {
     top: 10px;
     right: 10px;
@@ -4662,7 +4748,7 @@
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
-  /* line 1122, src/sass/components/_catalog.scss */
+  /* line 1193, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul[data-role="collection_list"] li.photo-3-1-2 .badge {
     top: 10px;
     right: 10px;
@@ -4670,7 +4756,7 @@
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
-  /* line 1130, src/sass/components/_catalog.scss */
+  /* line 1201, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul[data-role="collection_list"] li.photo-3-1-3 .badge {
     top: 10px;
     left: 10px;
@@ -4678,7 +4764,7 @@
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
-  /* line 1138, src/sass/components/_catalog.scss */
+  /* line 1209, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul[data-role="collection_list"] li.photo-3-2-1 .badge {
     top: 10px;
     left: 10px;
@@ -4686,7 +4772,7 @@
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
-  /* line 1146, src/sass/components/_catalog.scss */
+  /* line 1217, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul[data-role="collection_list"] li.photo-3-2-2 .badge {
     top: 10px;
     left: 10px;
@@ -4694,7 +4780,7 @@
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
-  /* line 1154, src/sass/components/_catalog.scss */
+  /* line 1225, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul[data-role="collection_list"] li.photo-3-2-3 .badge {
     top: 10px;
     right: 10px;
@@ -4702,7 +4788,7 @@
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
-  /* line 1162, src/sass/components/_catalog.scss */
+  /* line 1233, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul[data-role="collection_list"] li.photo-3-3-1 .badge {
     top: 10px;
     right: 10px;
@@ -4710,7 +4796,7 @@
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
-  /* line 1170, src/sass/components/_catalog.scss */
+  /* line 1241, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul[data-role="collection_list"] li.photo-3-3-2 .badge {
     top: 10px;
     right: 10px;
@@ -4718,7 +4804,7 @@
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
-  /* line 1178, src/sass/components/_catalog.scss */
+  /* line 1249, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul[data-role="collection_list"] li.photo-3-3-3 .badge {
     top: 10px;
     left: 10px;
@@ -4726,7 +4812,7 @@
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
-  /* line 1186, src/sass/components/_catalog.scss */
+  /* line 1257, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul[data-role="collection_list"] li.photo-3-4-1 .badge {
     top: 10px;
     right: 10px;
@@ -4734,7 +4820,7 @@
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
-  /* line 1194, src/sass/components/_catalog.scss */
+  /* line 1265, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul[data-role="collection_list"] li.photo-3-4-2 .badge {
     top: 10px;
     right: 10px;
@@ -4742,7 +4828,7 @@
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
-  /* line 1202, src/sass/components/_catalog.scss */
+  /* line 1273, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul[data-role="collection_list"] li.photo-3-4-3 .badge {
     top: 10px;
     right: 10px;
@@ -4750,7 +4836,7 @@
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
-  /* line 1220, src/sass/components/_catalog.scss */
+  /* line 1291, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul.halfed li.photo-2-1-1 .badge {
     top: -10px;
     right: -15px;
@@ -4758,7 +4844,7 @@
     -webkit-transform: scale(0.75);
             transform: scale(0.75);
   }
-  /* line 1227, src/sass/components/_catalog.scss */
+  /* line 1298, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul.halfed li.photo-2-1-1.baloon-badge .badge {
     top: -15px;
     right: -40px;
@@ -4766,7 +4852,7 @@
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
   }
-  /* line 1236, src/sass/components/_catalog.scss */
+  /* line 1307, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul.halfed li.photo-2-1-2 .badge {
     top: -10px;
     right: -15px;
@@ -4774,7 +4860,7 @@
     -webkit-transform: scale(0.75);
             transform: scale(0.75);
   }
-  /* line 1243, src/sass/components/_catalog.scss */
+  /* line 1314, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul.halfed li.photo-2-1-2.baloon-badge .badge {
     top: -15px;
     right: -40px;
@@ -4782,7 +4868,7 @@
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
   }
-  /* line 1252, src/sass/components/_catalog.scss */
+  /* line 1323, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul.halfed li.photo-2-2-1 .badge {
     top: -10px;
     right: -15px;
@@ -4790,7 +4876,7 @@
     -webkit-transform: scale(0.75);
             transform: scale(0.75);
   }
-  /* line 1259, src/sass/components/_catalog.scss */
+  /* line 1330, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul.halfed li.photo-2-2-1.baloon-badge .badge {
     top: -15px;
     left: -45px;
@@ -4798,7 +4884,7 @@
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
   }
-  /* line 1268, src/sass/components/_catalog.scss */
+  /* line 1339, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul.halfed li.photo-2-2-2 .badge {
     top: -10px;
     right: -15px;
@@ -4806,7 +4892,7 @@
     -webkit-transform: scale(0.75);
             transform: scale(0.75);
   }
-  /* line 1275, src/sass/components/_catalog.scss */
+  /* line 1346, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul.halfed li.photo-2-2-2.baloon-badge .badge {
     top: -15px;
     left: -45px;
@@ -4814,7 +4900,7 @@
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
   }
-  /* line 1284, src/sass/components/_catalog.scss */
+  /* line 1355, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul.halfed li.photo-3-1-1 .badge {
     top: -10px;
     right: -15px;
@@ -4822,7 +4908,7 @@
     -webkit-transform: scale(0.75);
             transform: scale(0.75);
   }
-  /* line 1291, src/sass/components/_catalog.scss */
+  /* line 1362, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul.halfed li.photo-3-1-1.baloon-badge .badge {
     top: -15px;
     right: -40px;
@@ -4830,7 +4916,7 @@
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
   }
-  /* line 1300, src/sass/components/_catalog.scss */
+  /* line 1371, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul.halfed li.photo-3-1-2 .badge {
     top: -10px;
     right: -15px;
@@ -4838,7 +4924,7 @@
     -webkit-transform: scale(0.75);
             transform: scale(0.75);
   }
-  /* line 1307, src/sass/components/_catalog.scss */
+  /* line 1378, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul.halfed li.photo-3-1-2.baloon-badge .badge {
     top: -15px;
     right: -40px;
@@ -4846,13 +4932,13 @@
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
   }
-  /* line 1316, src/sass/components/_catalog.scss */
+  /* line 1387, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul.halfed li.photo-3-1-3 .badge {
     top: 10px;
     left: 10px;
     right: initial;
   }
-  /* line 1323, src/sass/components/_catalog.scss */
+  /* line 1394, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul.halfed li.photo-3-2-1 .badge {
     top: -10px;
     right: 0px;
@@ -4860,7 +4946,7 @@
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
   }
-  /* line 1330, src/sass/components/_catalog.scss */
+  /* line 1401, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul.halfed li.photo-3-2-1.baloon-badge .badge {
     top: -15px;
     right: -40px;
@@ -4868,7 +4954,7 @@
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
   }
-  /* line 1339, src/sass/components/_catalog.scss */
+  /* line 1410, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul.halfed li.photo-3-2-2 .badge {
     top: -10px;
     right: 0px;
@@ -4876,7 +4962,7 @@
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
   }
-  /* line 1346, src/sass/components/_catalog.scss */
+  /* line 1417, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul.halfed li.photo-3-2-2.baloon-badge .badge {
     top: -15px;
     right: -40px;
@@ -4884,7 +4970,7 @@
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
   }
-  /* line 1355, src/sass/components/_catalog.scss */
+  /* line 1426, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul.halfed li.photo-3-2-3 .badge {
     top: 10px;
     right: 10px;
@@ -4892,7 +4978,7 @@
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
-  /* line 1363, src/sass/components/_catalog.scss */
+  /* line 1434, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul.halfed li.photo-3-3-1 .badge {
     top: -10px;
     right: 0px;
@@ -4900,7 +4986,7 @@
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
   }
-  /* line 1370, src/sass/components/_catalog.scss */
+  /* line 1441, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul.halfed li.photo-3-3-1.baloon-badge .badge {
     top: -15px;
     right: -10px;
@@ -4908,7 +4994,7 @@
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
   }
-  /* line 1379, src/sass/components/_catalog.scss */
+  /* line 1450, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul.halfed li.photo-3-3-2 .badge {
     top: -10px;
     right: 0px;
@@ -4916,7 +5002,7 @@
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
   }
-  /* line 1386, src/sass/components/_catalog.scss */
+  /* line 1457, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul.halfed li.photo-3-3-2.baloon-badge .badge {
     top: -15px;
     right: -40px;
@@ -4924,7 +5010,7 @@
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
   }
-  /* line 1399, src/sass/components/_catalog.scss */
+  /* line 1470, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul.halfed li.photo-3-4-1 .badge {
     top: -10px;
     right: -10px;
@@ -4932,7 +5018,7 @@
     -webkit-transform: scale(0.75);
             transform: scale(0.75);
   }
-  /* line 1406, src/sass/components/_catalog.scss */
+  /* line 1477, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul.halfed li.photo-3-4-1.baloon-badge .badge {
     top: -15px;
     right: -40px;
@@ -4940,7 +5026,7 @@
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
   }
-  /* line 1415, src/sass/components/_catalog.scss */
+  /* line 1486, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul.halfed li.photo-3-4-2 .badge {
     top: -10px;
     right: -10px;
@@ -4948,7 +5034,7 @@
     -webkit-transform: scale(0.75);
             transform: scale(0.75);
   }
-  /* line 1422, src/sass/components/_catalog.scss */
+  /* line 1493, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul.halfed li.photo-3-4-2.baloon-badge .badge {
     top: -15px;
     right: -40px;
@@ -4956,7 +5042,7 @@
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
   }
-  /* line 1431, src/sass/components/_catalog.scss */
+  /* line 1502, src/sass/components/_catalog.scss */
   .catalog.evening .collections .collection ul.halfed li.photo-3-4-3 .badge {
     top: 10px;
     right: 10px;
@@ -4964,7 +5050,7 @@
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
-  /* line 1444, src/sass/components/_catalog.scss */
+  /* line 1515, src/sass/components/_catalog.scss */
   .catalog .footer .footer-wrapper {
     padding-bottom: 40px;
   }

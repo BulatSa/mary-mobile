@@ -537,6 +537,15 @@
                     max-width: 380px;
                     padding-bottom: 0;
                     margin: 20px auto 0;
+                    &:hover {
+                      .arrow {
+                        background-image: none!important;
+                        background-position: center;
+                        &:after {
+                          opacity: 1;
+                        }
+                      }
+                    }
                     span.selection__container {
                       position: relative;
                       display: block;
@@ -546,6 +555,24 @@
                       font-size: 18px;
                       background-position: 0 21px;
                       background-size: 10px 1px;
+                    }
+                    .arrow {
+                      position: relative;
+                      &:after {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 87px;
+                        height: 20px;
+                        margin-bottom: -1px;
+                        opacity: 0;
+                        background-image: url("../images/bg-mobile-arrow-purple-dark.png") !important;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: 87px 20px;
+                      }
                     }
                   }
                 }
@@ -693,7 +720,7 @@
                       top: -80px;
                       left: 0;
                       transform: scale(0.5);
-                      &+.price-length-6 {
+                      & + .price-length-6 {
                         left: -20px;
                       }
                     }
@@ -956,6 +983,34 @@
     }
     .next-collection-wrapper {
       overflow: hidden;
+      &:hover {
+        .dress-count {
+          color: #ef37da;
+          text-decoration: none;
+          background: linear-gradient(
+            to left,
+            rgba(239, 55, 218, 0.5),
+            rgba(239, 55, 218, 0.5) 100%
+          );
+          background-position: 0 24px;
+          background-size: 10px 1px;
+          background-repeat: repeat-x;
+        }
+        .image-border {
+          border: 1px solid rgba(239, 55, 218, 0.5);
+          box-sizing: border-box;
+          display: inline-block;
+        }
+        .next-collection {
+          .arrow {
+            background-image: none !important;
+            background-position: center;
+            &:after {
+              opacity: 1;
+            }
+          }
+        }
+      }
       .next-collection {
         display: block;
         width: 100%;
@@ -993,7 +1048,7 @@
             outline: none;
           }
           .image-border {
-            display: none;
+            //display: none;
           }
         }
         .preview-2 {
@@ -1013,10 +1068,11 @@
             outline: none;
           }
           .image-border {
-            display: none;
+            //display: none;
           }
         }
         .arrow {
+          position: relative;
           width: 87px;
           height: 20px;
           background: url("../images/bg-mobile-arrow.png") no-repeat center !important;
@@ -1025,6 +1081,21 @@
           span {
             display: none !important;
             background: none !important;
+          }
+          &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 87px;
+            height: 20px;
+            margin-bottom: -1px;
+            opacity: 0;
+            background-image: url("../images/bg-mobile-arrow-purple-dark.png") !important;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 87px 20px;
           }
         }
         .dress-count {
