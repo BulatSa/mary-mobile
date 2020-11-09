@@ -539,7 +539,7 @@
                     margin: 20px auto 0;
                     &:hover {
                       .arrow {
-                        background-image: none!important;
+                        background-image: none !important;
                         background-position: center;
                         &:after {
                           opacity: 1;
@@ -1125,6 +1125,13 @@
         .collection {
           ul[data-role="collection_list"] {
             li {
+              a {
+                p.price {
+                  .actual-price {
+                    border-bottom: 1px solid #fff;
+                  }
+                }
+              }
               &.photo-1-1-1 {
                 .badge {
                   top: 10px;
