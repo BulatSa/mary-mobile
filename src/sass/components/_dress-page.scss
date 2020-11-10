@@ -116,6 +116,13 @@
             }
             a {
               font-size: 18px;
+              &:hover {
+                .arrow-after {
+                  &:after {
+                    background-image: url("../images/bg-mobile-arrow-purple-dark.png") !important;
+                  }
+                }
+              }
             }
             .arrow-after {
               &:after {
@@ -254,6 +261,11 @@
         .price {
           margin: 0;
           margin-bottom: 0;
+          del {
+            margin-bottom: -10px;
+            font-size: 14px;
+            line-height: 18px;
+          }
           ins {
             font-size: 20px;
           }
@@ -264,6 +276,7 @@
         }
         .panel__content__middle {
           margin: 0;
+          padding: 0 6px;
         }
       }
       .panel__bottom {

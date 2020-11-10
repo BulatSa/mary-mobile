@@ -136,8 +136,9 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    height: 43px;
     margin-top: 0;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
   }
   /* line 102, src/sass/components/_footer.scss */
   .footer__hint .order-button-wrapper .fitting-button {
@@ -1265,6 +1266,10 @@
     font-size: 18px;
   }
   /* line 121, src/sass/components/_dress-page.scss */
+  .dress-page .columns .columns__right .columns__right__padding .columns__right__padding__service a:hover .arrow-after:after {
+    background-image: url("../images/bg-mobile-arrow-purple-dark.png") !important;
+  }
+  /* line 128, src/sass/components/_dress-page.scss */
   .dress-page .columns .columns__right .columns__right__padding .columns__right__padding__service .arrow-after:after {
     top: 3px !important;
     width: 87px !important;
@@ -1272,12 +1277,12 @@
     background: url("../images/bg-mobile-arrow.png") no-repeat center !important;
     background-size: 87px 20px !important;
   }
-  /* line 132, src/sass/components/_dress-page.scss */
+  /* line 139, src/sass/components/_dress-page.scss */
   .dress-page .columns .columns__right .dress__fav,
   .dress-page .columns .columns__right .content__about {
     display: none;
   }
-  /* line 137, src/sass/components/_dress-page.scss */
+  /* line 144, src/sass/components/_dress-page.scss */
   .dress-page .columns .columns__left {
     width: 100%;
     margin: 0;
@@ -1287,16 +1292,16 @@
         -ms-flex-order: 0;
             order: 0;
   }
-  /* line 143, src/sass/components/_dress-page.scss */
+  /* line 150, src/sass/components/_dress-page.scss */
   .dress-page .columns .columns__left .columns__left__holder {
     padding: 0;
   }
-  /* line 146, src/sass/components/_dress-page.scss */
+  /* line 153, src/sass/components/_dress-page.scss */
   .dress-page .columns .columns__left .columns__left__padding {
     padding: 0;
     margin: 0 -20px 10px;
   }
-  /* line 149, src/sass/components/_dress-page.scss */
+  /* line 156, src/sass/components/_dress-page.scss */
   .dress-page .columns .columns__left .columns__left__padding .panel-parent {
     position: absolute;
     top: 315px;
@@ -1304,19 +1309,19 @@
     display: block;
     z-index: 1;
   }
-  /* line 157, src/sass/components/_dress-page.scss */
+  /* line 164, src/sass/components/_dress-page.scss */
   .dress-page .columns .columns__left .content__about {
     display: block;
     margin: 0 0 50px;
     padding: 0 20px;
     text-align: center;
   }
-  /* line 162, src/sass/components/_dress-page.scss */
+  /* line 169, src/sass/components/_dress-page.scss */
   .dress-page .columns .columns__left .content__about p {
     font-size: 20px;
     line-height: 1.6;
   }
-  /* line 168, src/sass/components/_dress-page.scss */
+  /* line 175, src/sass/components/_dress-page.scss */
   .dress-page .columns .columns__left .dress__fav.dress__fav_big {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1339,25 +1344,25 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
-  /* line 187, src/sass/components/_dress-page.scss */
+  /* line 194, src/sass/components/_dress-page.scss */
   .dress-page .content {
     padding-top: 0;
     padding-left: 20px;
     padding-right: 20px;
   }
-  /* line 192, src/sass/components/_dress-page.scss */
+  /* line 199, src/sass/components/_dress-page.scss */
   .dress-page .panel-parent {
     display: none;
     width: 148px;
     margin-left: 0;
     padding-left: 0;
   }
-  /* line 198, src/sass/components/_dress-page.scss */
+  /* line 205, src/sass/components/_dress-page.scss */
   .dress-page .panel-container {
     width: 148px;
     padding-left: 0;
   }
-  /* line 202, src/sass/components/_dress-page.scss */
+  /* line 209, src/sass/components/_dress-page.scss */
   .dress-page .panel-top {
     float: none;
     width: 148px;
@@ -1370,70 +1375,77 @@
     background-position: center top;
     background-size: 148px 15px;
   }
-  /* line 214, src/sass/components/_dress-page.scss */
+  /* line 221, src/sass/components/_dress-page.scss */
   .dress-page .panel {
     float: none;
     width: 148px;
     margin: 0;
     background: none !important;
   }
-  /* line 219, src/sass/components/_dress-page.scss */
+  /* line 226, src/sass/components/_dress-page.scss */
   .dress-page .panel .panel__content {
     width: 148px;
     font-size: 10px;
     background: url("../images/bg-product-panel-middle.png") repeat-y center center;
     background-size: 148px 160px;
   }
-  /* line 225, src/sass/components/_dress-page.scss */
+  /* line 232, src/sass/components/_dress-page.scss */
   .dress-page .panel .panel__content h1 {
     margin: 0;
     margin-bottom: 0;
     font-size: 20px;
   }
-  /* line 230, src/sass/components/_dress-page.scss */
+  /* line 237, src/sass/components/_dress-page.scss */
   .dress-page .panel .panel__content .designer {
     margin: 0;
     font-size: 10px;
   }
-  /* line 234, src/sass/components/_dress-page.scss */
+  /* line 241, src/sass/components/_dress-page.scss */
   .dress-page .panel .panel__content .collection {
     margin: 0;
     margin-bottom: 5px;
     font-size: 10px;
   }
-  /* line 240, src/sass/components/_dress-page.scss */
+  /* line 247, src/sass/components/_dress-page.scss */
   .dress-page .panel .panel__content .colors p {
     margin-bottom: 0;
   }
-  /* line 244, src/sass/components/_dress-page.scss */
+  /* line 251, src/sass/components/_dress-page.scss */
   .dress-page .panel .panel__content .colors .colors__rounds .color {
     width: 20px;
     height: 20px;
   }
-  /* line 250, src/sass/components/_dress-page.scss */
+  /* line 257, src/sass/components/_dress-page.scss */
   .dress-page .panel .panel__content .features {
     margin: 0;
     margin-bottom: 3px;
   }
-  /* line 254, src/sass/components/_dress-page.scss */
+  /* line 261, src/sass/components/_dress-page.scss */
   .dress-page .panel .panel__content .price {
     margin: 0;
     margin-bottom: 0;
   }
-  /* line 257, src/sass/components/_dress-page.scss */
+  /* line 264, src/sass/components/_dress-page.scss */
+  .dress-page .panel .panel__content .price del {
+    margin-bottom: -10px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  /* line 269, src/sass/components/_dress-page.scss */
   .dress-page .panel .panel__content .price ins {
     font-size: 20px;
   }
-  /* line 261, src/sass/components/_dress-page.scss */
+  /* line 273, src/sass/components/_dress-page.scss */
   .dress-page .panel .panel__content .available {
     margin: 0;
     font-size: 10px;
   }
-  /* line 265, src/sass/components/_dress-page.scss */
+  /* line 277, src/sass/components/_dress-page.scss */
   .dress-page .panel .panel__content .panel__content__middle {
     margin: 0;
+    padding: 0 6px;
   }
-  /* line 269, src/sass/components/_dress-page.scss */
+  /* line 282, src/sass/components/_dress-page.scss */
   .dress-page .panel .panel__bottom {
     top: initial;
     width: 148px;
@@ -1445,12 +1457,12 @@
     background-position: center bottom;
     background-size: 148px 15px;
   }
-  /* line 281, src/sass/components/_dress-page.scss */
+  /* line 294, src/sass/components/_dress-page.scss */
   .dress-page .pager {
     margin: 0;
     padding: 40px 20px 50px;
   }
-  /* line 285, src/sass/components/_dress-page.scss */
+  /* line 298, src/sass/components/_dress-page.scss */
   .dress-page .pager__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1458,11 +1470,11 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  /* line 289, src/sass/components/_dress-page.scss */
+  /* line 302, src/sass/components/_dress-page.scss */
   .dress-page .pager__prev {
     display: none;
   }
-  /* line 292, src/sass/components/_dress-page.scss */
+  /* line 305, src/sass/components/_dress-page.scss */
   .dress-page .pager__next {
     width: 100%;
     max-width: 310px;
@@ -1474,35 +1486,35 @@
         -ms-flex-order: 1;
             order: 1;
   }
-  /* line 301, src/sass/components/_dress-page.scss */
+  /* line 314, src/sass/components/_dress-page.scss */
   .dress-page .pager__next:hover .arrow {
     background-image: none !important;
     background-position: center;
   }
-  /* line 304, src/sass/components/_dress-page.scss */
+  /* line 317, src/sass/components/_dress-page.scss */
   .dress-page .pager__next:hover .arrow:after {
     opacity: 1;
   }
-  /* line 309, src/sass/components/_dress-page.scss */
+  /* line 322, src/sass/components/_dress-page.scss */
   .dress-page .pager__next .label {
     font-size: 35px;
     background: none !important;
     z-index: 1;
   }
-  /* line 314, src/sass/components/_dress-page.scss */
+  /* line 327, src/sass/components/_dress-page.scss */
   .dress-page .pager__next .images {
     position: relative;
     margin-bottom: 50px;
     z-index: 0;
   }
-  /* line 318, src/sass/components/_dress-page.scss */
+  /* line 331, src/sass/components/_dress-page.scss */
   .dress-page .pager__next .images .preview {
     display: block;
     max-width: 168px;
     width: 100%;
     margin-left: auto;
   }
-  /* line 323, src/sass/components/_dress-page.scss */
+  /* line 336, src/sass/components/_dress-page.scss */
   .dress-page .pager__next .images .preview img {
     max-width: 168px;
     width: 100%;
@@ -1510,7 +1522,7 @@
     display: block;
     outline: none;
   }
-  /* line 333, src/sass/components/_dress-page.scss */
+  /* line 346, src/sass/components/_dress-page.scss */
   .dress-page .pager__next .images .preview.rotated {
     position: absolute;
     top: 0;
@@ -1518,11 +1530,11 @@
     -webkit-transform: translate(30px, 3px) rotate(-10deg);
             transform: translate(30px, 3px) rotate(-10deg);
   }
-  /* line 341, src/sass/components/_dress-page.scss */
+  /* line 354, src/sass/components/_dress-page.scss */
   .dress-page .pager__next .images.one .preview {
     margin: 0 auto;
   }
-  /* line 346, src/sass/components/_dress-page.scss */
+  /* line 359, src/sass/components/_dress-page.scss */
   .dress-page .pager__next .arrow {
     position: relative;
     width: 87px;
@@ -1534,7 +1546,7 @@
     background-size: 87px 20px;
     z-index: 1;
   }
-  /* line 356, src/sass/components/_dress-page.scss */
+  /* line 369, src/sass/components/_dress-page.scss */
   .dress-page .pager__next .arrow:after {
     content: "";
     position: absolute;
@@ -1550,7 +1562,7 @@
     background-position: center;
     background-size: 87px 20px;
   }
-  /* line 373, src/sass/components/_dress-page.scss */
+  /* line 386, src/sass/components/_dress-page.scss */
   .dress-page .pager__all {
     margin: 0 auto 50px;
     padding: 0;
@@ -1558,16 +1570,16 @@
         -ms-flex-order: 0;
             order: 0;
   }
-  /* line 377, src/sass/components/_dress-page.scss */
+  /* line 390, src/sass/components/_dress-page.scss */
   .dress-page .pager__all .next-collection-silhouette {
     display: none !important;
   }
-  /* line 382, src/sass/components/_dress-page.scss */
+  /* line 395, src/sass/components/_dress-page.scss */
   .dress-page .footer__hint .order-button-wrapper {
     height: 44px;
     margin-bottom: 10px;
   }
-  /* line 385, src/sass/components/_dress-page.scss */
+  /* line 398, src/sass/components/_dress-page.scss */
   .dress-page .footer__hint .order-button-wrapper .fitting-button {
     width: 142px;
     height: 44px;
@@ -1576,11 +1588,11 @@
     background: url("../images/bg-order-button-short.png");
     background-size: 142px 44px;
   }
-  /* line 395, src/sass/components/_dress-page.scss */
+  /* line 408, src/sass/components/_dress-page.scss */
   .dress-page .favourite-link {
     display: block;
   }
-  /* line 397, src/sass/components/_dress-page.scss */
+  /* line 410, src/sass/components/_dress-page.scss */
   .dress-page .favourite-link .favourite-link__control {
     width: 47px;
     height: 47px;
@@ -1589,7 +1601,7 @@
     left: initial;
     background-size: 47px 47px;
   }
-  /* line 415, src/sass/components/_dress-page.scss */
+  /* line 428, src/sass/components/_dress-page.scss */
   .evening.dress-page .columns .columns__right .columns__right__padding .columns__right__padding__service a.white span.arrow-after:after {
     top: 3px !important;
     width: 87px !important;
@@ -1597,7 +1609,7 @@
     background: url("../images/bg-mobile-arrow-purple.png") no-repeat center !important;
     background-size: 87px 20px !important;
   }
-  /* line 429, src/sass/components/_dress-page.scss */
+  /* line 442, src/sass/components/_dress-page.scss */
   .evening.dress-page .panel-top {
     float: none;
     width: 148px;
@@ -1610,18 +1622,18 @@
     background-position: center top;
     background-size: 148px 15px;
   }
-  /* line 441, src/sass/components/_dress-page.scss */
+  /* line 454, src/sass/components/_dress-page.scss */
   .evening.dress-page .panel {
     background: none !important;
   }
-  /* line 443, src/sass/components/_dress-page.scss */
+  /* line 456, src/sass/components/_dress-page.scss */
   .evening.dress-page .panel .panel__content {
     width: 148px;
     font-size: 10px;
     background: url("../images/bg-product-panel-middle-white.png") repeat-y center center;
     background-size: 148px 160px;
   }
-  /* line 450, src/sass/components/_dress-page.scss */
+  /* line 463, src/sass/components/_dress-page.scss */
   .evening.dress-page .panel .panel__bottom {
     top: initial;
     width: 148px;
@@ -1633,7 +1645,7 @@
     background-position: center bottom;
     background-size: 148px 15px;
   }
-  /* line 463, src/sass/components/_dress-page.scss */
+  /* line 476, src/sass/components/_dress-page.scss */
   .evening.dress-page .pager__next .arrow {
     width: 87px;
     height: 20px;
@@ -1644,7 +1656,7 @@
     background-size: 87px 20px !important;
     z-index: 1;
   }
-  /* line 483, src/sass/components/_dress-page.scss */
+  /* line 496, src/sass/components/_dress-page.scss */
   .retina .evening.dress-page .pager__next .arrow {
     background-image: url("../images/bg-mobile-arrow-purple.png") !important;
   }
