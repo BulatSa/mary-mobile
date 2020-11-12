@@ -1,0 +1,28 @@
+@media screen and (max-width: 700px) {
+  .favourites-share {
+    top: 85px;
+  }
+  .favourites {
+    padding-top: 25px;
+  }
+  .favourites-page {
+    .footer {
+      .short-email, .fairy {
+        position: relative;
+        top: initial;
+        left: initial;
+        bottom: initial;
+        right: initial;
+      }
+      .fitting-button {
+        padding-bottom: 0;
+      }
+    }
+  }
+  .dress__favourite-dresses-panel__container {
+    padding: 2px 5px 0;
+  }
+  .dress__favourite-dresses-panel__email-header {
+    margin: -17px -20px 0;
+  }
+}
