@@ -927,27 +927,35 @@
               display: none;
             }
             &.collection-p0 {
-              img {
-                height: 170%;
-                //margin-top: 35%;
+              a {
+                img {
+                  height: 150%;
+                  //margin-top: 35%;
+                }
               }
             }
             &.collection-p1 {
-              img {
-                height: 170%;
-                //margin-top: 40%;
+              a {
+                img {
+                  height: 150%;
+                  //margin-top: 40%;
+                }
               }
             }
             &.collection-p2 {
-              img {
-                height: 170%;
-                //margin-top: 40%;
+              a {
+                img {
+                  height: 150%;
+                  //margin-top: 40%;
+                }
               }
             }
             &.collection-p3 {
-              img {
-                height: 170%;
-                margin-top: -5%;
+              a {
+                img {
+                  height: 150%;
+                  margin-top: -5%;
+                }
               }
               .image-wrapper {
                 transform: rotate(0);
